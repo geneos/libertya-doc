@@ -15,26 +15,22 @@ La documentación de texto plano también es útil para colaboradores a través 
 
 Piense en Sphinx como una infraestructura de documentación: abstrae las partes tediosas y ofrece funcionalidad automática para solucionar problemas comunes como el indexado de títulos y el resaltado de código especial (si se están mostrando ejemplos de código) con el resaltado de sintaxis apropiado.
 
-Pasos
------
+**Pasos**
 
 1. Instalar Sphinx (Linux - Ubuntu)
 
-pip install Sphinx
+.. topic:: pip install Sphinx
 
 2. Iniciar el asistente para crear el proyecto
 
-sphinx-quickstart
+.. topic:: sphinx-quickstart
 
 3. Sphinx genera la siguiente estructura de proyecto
 
-build  make.bat  Makefile  source
+.. topic:: build  make.bat  Makefile  source
 
 4. Dentro de source tendremos los archivos de documentación y algunos de configuración
 
-all-about-me.rst  _static conf.py index.rst _templates
-
-
-
+.. topic:: all-about-me.rst  _static conf.py index.rst _templates
 
 
