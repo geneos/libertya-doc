@@ -9,6 +9,7 @@ Conceptos preliminares de costos
    :maxdepth: 2
 
    manufactura-costos-conceptos
+   manufactura-costos-ejemplo
 
 Costos en Libertya
 ------------------
