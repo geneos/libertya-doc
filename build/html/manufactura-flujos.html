@@ -92,13 +92,21 @@
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Flujos de Trabajo</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Flujos de Trabajo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#definicion-de-tipos-de-recursos">Definición de Tipos de Recursos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#recurso-de-manufactura">Recurso de manufactura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#definicion-de-recursos">Definición de Recursos</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Planeamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
 </ul>
 </li>
@@ -150,6 +158,55 @@
             
   <div class="section" id="manufactura-flujos-de-trabajo">
 <h1>Manufactura - Flujos de Trabajo<a class="headerlink" href="#manufactura-flujos-de-trabajo" title="Enlazar permanentemente con este título">¶</a></h1>
+<p><strong>Definir el flujo de trabajo de manufactura y la lista de recursos utilizados en producción</strong></p>
+<p>Antes de dar de alta nuevos recursos de manufactura, debemos generar los <strong>Tipos de Recurso.</strong></p>
+<p>Los <strong>Tipo de recurso de manufactura</strong> proveen un agrupamiento mediante una relación jerárquica: por ejemplo un <strong>centro de trabajo</strong> se puede integrar en una <strong>estación de trabajo, una línea de producción</strong>, que a su vez junto a otras líneas se integran en una <strong>Planta</strong>. Esta agrupación de tipos de recursos, se utilizará para calcular la capacidad requerida y disponible de producción mediante la sumatoria individual de las capacidades de cada recurso.</p>
+<p>Un primer nivel de agrupamiento será utilizado para definir una tipología de recursos que tengan en común una serie de características.</p>
+<div class="section" id="definicion-de-tipos-de-recursos">
+<h2>Definición de Tipos de Recursos<a class="headerlink" href="#definicion-de-tipos-de-recursos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Ir a Gestión de Ingenieria, Recursos de Manufactura, Tipo de Recurso de Manufactura y hacer click en el icono de nuevo registro  para generar un tipo de recurso.</p>
+<ul class="simple">
+<li><strong>Compañía</strong> Cliente para esta instalación Compañía ó entidad legal</li>
+<li><strong>Organización</strong> Entidad organizacional dentro de la compañía.</li>
+<li><strong>Clave de Búsqueda</strong> Clave de búsqueda para el registro en el formato requerido; debe ser única.</li>
+<li><strong>Nombre</strong> Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud.</li>
+<li><strong>Descripción</strong> Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.</li>
+<li><strong>Activo</strong> El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes.</li>
+<li><strong>UM</strong> Unidad de Medida La UM define una unidad de medida única (dias, horas, kilos, litros).</li>
+<li><strong>Permitir fracciones de UM</strong> Permitir fracciones de unidad de medida Si se habilita; se puede entrar fracciones de la unidad de medida.</li>
+<li><strong>Categoría del Producto</strong> Categoría de la que este producto es parte Identifica la categoría a la que pertenecen este producto.</li>
+<li><strong>Categoría del Impuesto</strong> La categoría de impuesto proporciona un método de agrupación de impuestos similares.</li>
+<li><strong>Asignación Única solamente</strong> Solamente una asignación a la vez (No se puede tener asignaciones dobles de tiempo o asignaciones concurrentes) Si se selecciona; solo se puede tener una asignación a la vez para un momento en el tiempo. No es posible tener asignaciones concurrentes.</li>
+<li><strong>Tiempo Disponible</strong> Indica si el recurso tiene tiempo disponible Indica si el recurso está disponible sólo en algún momento</li>
+<li><strong>Inicio</strong> Momento cuando el tiempo disponible comienza Momento cuando el tiempo disponible comienza</li>
+<li><strong>Final</strong> Momento cuando el tiempo disponible finaliza Momento cuando el tiempo disponible termina</li>
+<li><strong>Día Disponible</strong> Recurso tiene disponibilidad del día Recurso solo esta disponible algunos días (lunes, martes...)</li>
+</ul>
+<div class="section" id="recurso-de-manufactura">
+<h3>Recurso de manufactura<a class="headerlink" href="#recurso-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Ahora podemos definir todos los Recursos de Manufactura, clasificados mediante los tipos de recursos, para poder utilizarlos luego en el flujo de trabajo.</p>
+<p>Un <strong>Recurso de Manufactura</strong> es cualquier cosa requerida como soporte para el proceso de producción. Principalmente responde a la pregunta: ¿En dónde se hace un producto?. Cada recurso de trabajo es único dentro de la organización y puedo definir tantos recursos como sea necesario.</p>
+</div>
+<div class="section" id="definicion-de-recursos">
+<h3>Definición de Recursos<a class="headerlink" href="#definicion-de-recursos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Ir a Gestión de Ingenieria, Recursos de Manufactura, Recurso de Manufactura y hacer click en el icono de nuevo registro  para generar un nuevo recurso.</p>
+<ul class="simple">
+<li><strong>Compañía</strong> Cliente para esta instalación Compañía ó entidad legal</li>
+<li><strong>Organización</strong> Entidad organizacional dentro de la compañía Una organización es una unidad de la compañía o entidad legal</li>
+<li><strong>Clave de Búsqueda</strong> Clave de búsqueda para el registro en el formato requerido; debe ser única Una clave de búsqueda le permite a usted un método rápido de encontrar un registro en particular</li>
+<li><strong>Nombre</strong> Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud.</li>
+<li><strong>Descripción</strong> Descripción corta opcional del registro Una descripción está limitada a 255 caracteres.</li>
+<li><strong>Activo</strong> El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes.</li>
+<li><strong>Tipo de Recurso</strong> Es el tipo de recurso Manufactura registrado en el paso anterior.</li>
+<li><strong>Almacén</strong> El Almacén indica un Almacén único donde los productos son almacenados.</li>
+<li><strong>Usuario</strong> Indica un usuario de referencia o contacto.</li>
+<li><strong>Disponible</strong> Indica si el recurso está disponible.</li>
+<li><strong>Es Recurso Manufactura</strong> Indica si el recurso es requerido para la producción</li>
+<li><strong>Tiempo Encolado</strong> Es una referencia donde se ingresa el tiempo total de encolado del recurso.</li>
+<li><strong>Tiempo de espera</strong> El tiempo de preparación es el requerido para ejecutar las actividades necesarias para preparar el recurso de manufactura hasta que esté listo para comenzar con el proceso de fabricación.</li>
+</ul>
+</div>
+</div>
 </div>
 
 
