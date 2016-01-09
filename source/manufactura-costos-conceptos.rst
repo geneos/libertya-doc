@@ -2,6 +2,9 @@
 Manufactura - Costos
 ************************
 
+Naturaleza de los Costos
+------------------------
+
 El costo de un producto se puede considerar compuesto por varios rubros:
 
 	1. Materias Primas

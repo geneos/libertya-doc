@@ -9,7 +9,6 @@ Conceptos preliminares de costos
    :maxdepth: 2
 
    manufactura-costos-conceptos
-   manufactura-costos-ejemplo
 
 Costos en Libertya
 ------------------
@@ -98,4 +97,11 @@ Este proceso, permite la asignación de costos manuales a la Orden de Manufactur
 	* Factura de Gastos: Permite definir una factura desde la que se tomará el monto de la aplicación del costo.
 	* Valor del Costo: Permite definir de forma manual el monto de la aplicación del costo.
 
+Ejemplo de configuración de costos
+----------------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   manufactura-costos-ejemplo
 
