@@ -30,17 +30,15 @@ carga de Recursos.
 **Flotación Posterior** – Se utilizará posteriormente para el balanceo de la carga de
 Recursos.
 
-En el Grupo Cantidades se introduce la cantidad de producto a fabricar con  la Orden de Manufactura y su Unidad de Medida.
+En el **Grupo Cantidades** se introduce la cantidad de producto a fabricar con  la Orden de Manufactura y su Unidad de Medida.
 
-La Cantidad del Lote y la Cantidad del Tamaño del lote nos indica cuantos lotes de producción integran la OM y de que tamaño serán.    
+La **Cantidad del Lote** y la **Cantidad del Tamaño del lote** nos indica cuantos lotes de producción integran la OM y de que tamaño serán. Estos datos son tomados del Flujo de Trabajo de la OM. 
 
-Estos datos son tomados del Flujo de Trabajo de la OM. 
+En el campo **Cantidad Entregada** se muestra la cantidad que ha sido entregada al almacén de producto terminado hasta el momento.
 
-En el campo Cantidad Entregada se muestra la cantidad que ha sido entregada al almacén de producto terminado hasta el momento.
+La **cantidad Rechazada**: en este campo se muestra la cantidad que no ha cubierto las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.
 
-La cantidad Rechazada: en este campo se muestra la cantidad que no ha cubierto las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.
+En  el  campo **Rendimiento** se  despliega  la  cantidad  de  producto  que  reúne  las especificaciones de calidad dividida entre la cantidad total de la orden a producir.
 
-En  el  campo Rendimiento se  despliega  la  cantidad  de  producto  que  reúne  las especificaciones de calidad dividida entre la cantidad total de la orden a producir.
-
-Proyecto y Campaña se refieren a las dimensiones estándar de Libertya.
+**Proyecto y Campaña** se refieren a las dimensiones estándar de Libertya.
 
