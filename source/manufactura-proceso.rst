@@ -27,6 +27,7 @@ Luego de la ejecución y especialmente, si se obtuvieron Avisos, se deben verifi
 Al realizar una Consulta de MRP, se pueden verificar las cantidades comprometidas tanto por pronóstico como por Orden de Manufactura para un producto determinado. Ir a Gestión de Manufactura, MRP, Consulta de MRP. En esta ventana se puede indicar el producto para obtener un listado de toda la demanda del producto, ya sea generadas tanto por órdenes de venta, como por pronósticos.
 
 **Avisos del MRP**
+
 Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias para poder alcanzar el Planeamiento de Producción correctamente.
 
 
