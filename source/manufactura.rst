@@ -39,7 +39,9 @@ Contenidos:
    manufactura-pronostico
    manufactura-proceso
    manufactura-om
+   manufactura-revision
    manufactura-operaciones
    manufactura-costos
    manufactura-informes
+   manufactura-checklist
 
