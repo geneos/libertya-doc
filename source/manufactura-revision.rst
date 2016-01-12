@@ -1,6 +1,6 @@
-******************************
-Manufactura Revisión a detalle
-******************************
+********************************
+Manufactura - Revisión a detalle
+********************************
 
 Se puede verificar el detalle del cálculo en la opción de menú Gestión de Planificación > MRP > Revisión a detalle
 
