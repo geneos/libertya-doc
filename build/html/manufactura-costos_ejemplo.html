@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Búsqueda &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
+  <title>Manufactura - Ejemplo de Configuración de Costos &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
   
 
   
@@ -65,7 +65,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -88,7 +88,6 @@
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -120,8 +119,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Manufactura - Ejemplo de Configuración de Costos</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/manufactura-costos_ejemplo.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -130,19 +133,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="manufactura-ejemplo-de-configuracion-de-costos">
+<h1>Manufactura - Ejemplo de Configuración de Costos<a class="headerlink" href="#manufactura-ejemplo-de-configuracion-de-costos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p><strong>Introducción</strong></p>
+<p>Se fabrica un producto <strong>P1</strong> cuya fórmula para una unidad de producto es la siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Producto <strong>P2</strong> - 5 unidades</li>
+<li>Producto <strong>P3</strong> - 1 unidad</li>
+<li>Producto <strong>P4</strong> - 5 unidades</li>
+</ul>
+</div></blockquote>
+<p>Por otra parte el flujo de trabajo para la producción de <strong>P1</strong> es el siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Etapa 1, recurso asociado <strong>R1</strong>, tiempo consumido por unidad de P1 es 2 segundos.</li>
+<li>Etapa 2, recurso asociado <strong>R2</strong>, tiempo consumido por unidad de P1 es 6 segundos.</li>
+</ul>
+</div></blockquote>
+<p>Para poder sacar el costo de una Orden de Manufactura de <strong>P1</strong>, necesitamos previamente, configurar los elementos de costos de los componentes de la fórmula de <strong>P1</strong>, y de los recursos del flujo de trabajo de <strong>P1</strong>.</p>
+<p><strong>Pasos a Paso</strong></p>
+<ol class="arabic">
+<li><p class="first">Configurar para cada <strong>Artículo</strong> de la fórmula (P2, P3 y P4) un registro de Coste de Artículo, definiendo la asociación entre:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Esquema Contable.</li>
+<li>Almacén.</li>
+<li>Tipo de Coste.</li>
+<li>Elemento de Coste.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Configurar para cada <strong>Recurso</strong> (representado por una Artículo) del flujo de trabajo (R1 y R2) un registro de Coste de Artículo, definiendo la asociación entre:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Esquema Contable.</li>
+<li>Almacén.</li>
+<li>Tipo de Coste.</li>
+<li>Elemento de Coste.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p>3 - Configurar en la pestaña de <strong>Contabilidad</strong>, de la ventana <strong>Subfamilia</strong> del Artículo (lo mismo vale para los Recursos), el <strong>Tipo de Coste</strong> que va a tomar el sistema para el cálculo, que debe coincidir con el configurado en Coste de Artículo. para cada producto de la fórmula (P2, P3 y P4).</p>
+<p>Esto permite que cada Subfamilia, pueda tomar un método de costeo diferente. En caso de querer un único método de costeo, hacer esta configuración a nivel de <strong>Esquema Contable</strong>. Este último tipo de configuración se usaría por ejemplo en caso de usar como método de costeo único &#8220;Costo Estándar&#8221;.</p>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
@@ -185,7 +221,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="_static/translations.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -201,14 +236,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

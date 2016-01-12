@@ -40,5 +40,6 @@ Contenidos:
    manufactura-proceso
    manufactura-om
    manufactura-operaciones
+   manufactura-costos
    manufactura-informes
 

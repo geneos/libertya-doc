@@ -19,6 +19,7 @@ Contenidos:
    ventas
    finanzas
    contabilidad
+   stock
    manufactura
 
 

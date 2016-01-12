@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Manufactura - Orden de Manufactura &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
+  <title>Manufactura - Ejemplo de Configuración de Costos &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
   
 
   
@@ -31,9 +31,9 @@
 
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
-        <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
-        <link rel="next" title="Manufactura - Operaciones con Ordenes de Manufactura" href="manufactura-operaciones.html"/>
-        <link rel="prev" title="Manufactura - Proceso MRP" href="manufactura-proceso.html"/> 
+        <link rel="up" title="Manufactura - Costos" href="manufactura-costos.html"/>
+        <link rel="next" title="Manufactura - Informes" href="manufactura-informes.html"/>
+        <link rel="prev" title="Manufactura - Costos" href="manufactura-costos-conceptos.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,15 +91,24 @@
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Orden de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="manufactura-costos.html#conceptos-preliminares-de-costos">Conceptos preliminares de costos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manufactura-costos.html#costos-en-libertya">Costos en Libertya</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="manufactura-costos.html#ejemplo-de-configuracion-de-costos">Ejemplo de configuración de costos</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="">Manufactura - Ejemplo de Configuración de Costos</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
 </ul>
 </li>
@@ -135,11 +144,13 @@
       
           <li><a href="manufactura.html">Módulo de Manufactura</a> &raquo;</li>
       
-    <li>Manufactura - Orden de Manufactura</li>
+          <li><a href="manufactura-costos.html">Manufactura - Costos</a> &raquo;</li>
+      
+    <li>Manufactura - Ejemplo de Configuración de Costos</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/manufactura-om.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/manufactura-costos-ejemplo.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -149,39 +160,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="manufactura-orden-de-manufactura">
-<h1>Manufactura - Orden de Manufactura<a class="headerlink" href="#manufactura-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Una Orden de Manufactura es un documento que indica a la planta el compromiso de
-fabricar un producto en una cantidad establecida y en una fecha específica.
-Para  generar  o  modificar  manualmente  una  Orden  de  Manufactura  debemos ir a:
-Manufactura -&gt; Control de Producción -&gt; Manufactura Discreta -&gt; Orden de Manufactura.</p>
-<p>La Orden de Manufactura integra componentes de la lista de materiales, del flujo de
-trabajo y de los datos de planeación.</p>
-<p><strong>Fecha de última Entrega</strong>:Es la fecha de la última vez que el material de esta orden
-fue entregado al almacén.
-<strong>Fecha de Inicio programada</strong>: Es la fecha en que el MRP establece que la orden
-debe ser surtida a la planta.
-<strong>Fecha de Terminación Programada</strong>: Es la fecha en que el MRP establece que la
-orden debe ser entregada al almacén.
-<strong>Fecha de Inicio Real</strong>: Es la fecha en que la orden es liberada a la planta para ser
-producida.
-<strong>Fecha de Terminación Real</strong>: Es la fecha en que se elabora el cierre de la orden.
-<strong>Flotación Anterior</strong> – Se utilizará posteriormente para el proceso de balanceo de la
-carga de Recursos.**
-Flotación Posterior** – Se utilizará posteriormente para el balanceo de la carga de
-Recursos.</p>
-<p>En el Grupo Cantidades se introduce la cantidad de producto a fabricar con  la
-Orden de Manufactura y su Unidad de Medida.
-La Cantidad del Lote y la Cantidad del Tamaño del lote nos indica cuantos lotes
-de producción integran la OM y de que tamaño serán.
-Estos datos son tomados del Flujo de Trabajo de la OM.
-En el campo Cantidad Entregada se muestra la cantidad que ha sido entregada al
-almacén de producto terminado hasta el momento.
-La cantidad Rechazada: en este campo se muestra la cantidad que no ha cubierto
-las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.
-En  el  campo Rendimiento se  despliega  la  cantidad  de  producto  que  reúne  las
-especificaciones de calidad dividida entre la cantidad total de la orden a producir.
-Proyecto y Campaña se refieren a las dimensiones estándar de Libertya.</p>
+  <div class="section" id="manufactura-ejemplo-de-configuracion-de-costos">
+<h1>Manufactura - Ejemplo de Configuración de Costos<a class="headerlink" href="#manufactura-ejemplo-de-configuracion-de-costos" title="Enlazar permanentemente con este título">¶</a></h1>
+<p><strong>Introducción</strong></p>
+<p>Se fabrica un producto <strong>P1</strong> cuya fórmula para una unidad de producto es la siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Producto <strong>P2</strong> - 5 unidades</li>
+<li>Producto <strong>P3</strong> - 1 unidad</li>
+<li>Producto <strong>P4</strong> - 5 unidades</li>
+</ul>
+</div></blockquote>
+<p>Por otra parte el flujo de trabajo para la producción de <strong>P1</strong> es el siguiente:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Etapa 1, recurso asociado <strong>R1</strong>, tiempo consumido por unidad de P1 es 2 segundos.</li>
+<li>Etapa 2, recurso asociado <strong>R2</strong>, tiempo consumido por unidad de P1 es 6 segundos.</li>
+</ul>
+</div></blockquote>
+<p>Para poder sacar el costo de una Orden de Manufactura de <strong>P1</strong>, necesitamos previamente, configurar los elementos de costos de los componentes de la fórmula de <strong>P1</strong>, y de los recursos del flujo de trabajo de <strong>P1</strong>.</p>
+<p><strong>Pasos a Paso</strong></p>
+<ol class="arabic">
+<li><p class="first">Configurar para cada <strong>Artículo</strong> de la fórmula (P2, P3 y P4) un registro de Coste de Artículo, definiendo la asociación entre:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Esquema Contable.</li>
+<li>Almacén.</li>
+<li>Tipo de Coste.</li>
+<li>Elemento de Coste.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Configurar para cada <strong>Recurso</strong> (representado por una Artículo) del flujo de trabajo (R1 y R2) un registro de Coste de Artículo, definiendo la asociación entre:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Esquema Contable.</li>
+<li>Almacén.</li>
+<li>Tipo de Coste.</li>
+<li>Elemento de Coste.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p>3 - Configurar en la pestaña de <strong>Contabilidad</strong>, de la ventana <strong>Subfamilia</strong> del Artículo (lo mismo vale para los Recursos), el <strong>Tipo de Coste</strong> que va a tomar el sistema para el cálculo, que debe coincidir con el configurado en Coste de Artículo. para cada producto de la fórmula (P2, P3 y P4).</p>
+<p>Esto permite que cada Subfamilia, pueda tomar un método de costeo diferente. En caso de querer un único método de costeo, hacer esta configuración a nivel de <strong>Esquema Contable</strong>. Este último tipo de configuración se usaría por ejemplo en caso de usar como método de costeo único &#8220;Costo Estándar&#8221;.</p>
 </div>
 
 
@@ -191,10 +213,10 @@ Proyecto y Campaña se refieren a las dimensiones estándar de Libertya.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manufactura-operaciones.html" class="btn btn-neutral float-right" title="Manufactura - Operaciones con Ordenes de Manufactura" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manufactura-informes.html" class="btn btn-neutral float-right" title="Manufactura - Informes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-proceso.html" class="btn btn-neutral" title="Manufactura - Proceso MRP" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-costos-conceptos.html" class="btn btn-neutral" title="Manufactura - Costos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

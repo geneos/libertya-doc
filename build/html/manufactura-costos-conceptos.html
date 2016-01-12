@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Manufactura - Orden de Manufactura &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
+  <title>Manufactura - Costos &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
   
 
   
@@ -31,9 +31,9 @@
 
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
-        <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
-        <link rel="next" title="Manufactura - Operaciones con Ordenes de Manufactura" href="manufactura-operaciones.html"/>
-        <link rel="prev" title="Manufactura - Proceso MRP" href="manufactura-proceso.html"/> 
+        <link rel="up" title="Manufactura - Costos" href="manufactura-costos.html"/>
+        <link rel="next" title="Manufactura - Informes" href="manufactura-informes.html"/>
+        <link rel="prev" title="Manufactura - Costos" href="manufactura-costos.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -97,9 +97,17 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Orden de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="manufactura-costos.html#conceptos-preliminares-de-costos">Conceptos preliminares de costos</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="">Manufactura - Costos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="manufactura-costos.html#costos-en-libertya">Costos en Libertya</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manufactura-costos.html#ejemplo-de-configuracion-de-costos">Ejemplo de configuración de costos</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
 </ul>
 </li>
@@ -135,11 +143,13 @@
       
           <li><a href="manufactura.html">Módulo de Manufactura</a> &raquo;</li>
       
-    <li>Manufactura - Orden de Manufactura</li>
+          <li><a href="manufactura-costos.html">Manufactura - Costos</a> &raquo;</li>
+      
+    <li>Manufactura - Costos</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/manufactura-om.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/manufactura-costos-conceptos.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -149,39 +159,76 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="manufactura-orden-de-manufactura">
-<h1>Manufactura - Orden de Manufactura<a class="headerlink" href="#manufactura-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Una Orden de Manufactura es un documento que indica a la planta el compromiso de
-fabricar un producto en una cantidad establecida y en una fecha específica.
-Para  generar  o  modificar  manualmente  una  Orden  de  Manufactura  debemos ir a:
-Manufactura -&gt; Control de Producción -&gt; Manufactura Discreta -&gt; Orden de Manufactura.</p>
-<p>La Orden de Manufactura integra componentes de la lista de materiales, del flujo de
-trabajo y de los datos de planeación.</p>
-<p><strong>Fecha de última Entrega</strong>:Es la fecha de la última vez que el material de esta orden
-fue entregado al almacén.
-<strong>Fecha de Inicio programada</strong>: Es la fecha en que el MRP establece que la orden
-debe ser surtida a la planta.
-<strong>Fecha de Terminación Programada</strong>: Es la fecha en que el MRP establece que la
-orden debe ser entregada al almacén.
-<strong>Fecha de Inicio Real</strong>: Es la fecha en que la orden es liberada a la planta para ser
-producida.
-<strong>Fecha de Terminación Real</strong>: Es la fecha en que se elabora el cierre de la orden.
-<strong>Flotación Anterior</strong> – Se utilizará posteriormente para el proceso de balanceo de la
-carga de Recursos.**
-Flotación Posterior** – Se utilizará posteriormente para el balanceo de la carga de
-Recursos.</p>
-<p>En el Grupo Cantidades se introduce la cantidad de producto a fabricar con  la
-Orden de Manufactura y su Unidad de Medida.
-La Cantidad del Lote y la Cantidad del Tamaño del lote nos indica cuantos lotes
-de producción integran la OM y de que tamaño serán.
-Estos datos son tomados del Flujo de Trabajo de la OM.
-En el campo Cantidad Entregada se muestra la cantidad que ha sido entregada al
-almacén de producto terminado hasta el momento.
-La cantidad Rechazada: en este campo se muestra la cantidad que no ha cubierto
-las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.
-En  el  campo Rendimiento se  despliega  la  cantidad  de  producto  que  reúne  las
-especificaciones de calidad dividida entre la cantidad total de la orden a producir.
-Proyecto y Campaña se refieren a las dimensiones estándar de Libertya.</p>
+  <div class="section" id="manufactura-costos">
+<h1>Manufactura - Costos<a class="headerlink" href="#manufactura-costos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="naturaleza-de-los-costos">
+<h2>Naturaleza de los Costos<a class="headerlink" href="#naturaleza-de-los-costos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El costo de un producto se puede considerar compuesto por varios rubros:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Materias Primas</li>
+<li>Mano de Obra Directa</li>
+<li>Gastos Generales de Fabricación</li>
+<li>Costo de Ventas</li>
+<li>Costo Administrativo-Financiero</li>
+</ol>
+</div></blockquote>
+<p><strong>Clasificación de costos</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Costos Fijos y Variables</li>
+<li>Costos Directos e Indirectos</li>
+</ol>
+</div></blockquote>
+<p>Los Costos Variables son los que dependen del volumen de la fabricación.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Mano de Obra directa</li>
+<li>Materia Prima</li>
+</ul>
+</div></blockquote>
+<p>Los Costos Fijos son independientes del volumen de la fabricación.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Alquiler de predios</li>
+<li>Seguro</li>
+</ul>
+</div></blockquote>
+<p>Los Costos Directos están asociados unívocamente a la fabricación del producto, por lo tanto son específicos de este.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Mano de Obra directa</li>
+<li>Materia Prima</li>
+<li>Gastos Generales directos (transporte)</li>
+<li>Gastos de Comercialización directos</li>
+</ul>
+</div></blockquote>
+<p>Los Costos Indirectos son aquellos que no son imputables directamente a un producto por no poder definir con exactitud la porción de los mismos a imputar.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Mano de Obra indirecta</li>
+<li>Productos de mantenimiento</li>
+<li>Gastos de Supervisión</li>
+<li>Gastos de Comercialización indirectos</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="composicion-de-costos">
+<h2>Composición de costos<a class="headerlink" href="#composicion-de-costos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los costos de producción se componen de tres variables:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Costos de materiales y recursos</li>
+<li>Costos de mano de obra</li>
+<li>Costos indirectos</li>
+</ol>
+</div></blockquote>
+<p><strong>Costos de Materiales:</strong> costos de materiales que se calcula en función de los consumos reales de materiales de la orden de producción, tomando para las materias primas el precio de última compra y para los elaborados el costo sacado del costeo de la orden de producción que le da origen dividido en la cantidad de unidades reales obtenidas en dicha orden.</p>
+<p>El sistema tendría cargada la fórmula con el estándar y al final permitiría asignar lo que realmente se utilizó y costear en base a esto. Se necesita además conocer el desvío sobre los consumos teóricos.</p>
+<p><strong>Costos de Recursos:</strong> el tiempo de trabajo se calcula en función de los consumos reales de recursos de la orden de producción y el costo se debería de estimar en función de la amortización anual de los recursos y la cantidad de horas anuales de trabajo.</p>
+<p><strong>Costos de mano de obra:</strong> se debe generar un esquema que posibilite la carga de horas y los costos asociados para cada orden.</p>
+<p><strong>Costos Indirectos:</strong> se debe generar un esquema que posibilite la distribución (prorrateo) de costos por órdenes en base a determinados criterios. Se plantea la posibilidad de  afectar las órdenes de manufactura al sector de almacenes correspondiente. Estos costos podríamos trabajarlos en base a los efectivamente sufridos en el mes anterior (o podríamos tomar promedios) y llegar con alguna base de prorrateo al centro de costo en algunos casos y a la orden de producción en otros.</p>
+</div>
 </div>
 
 
@@ -191,10 +238,10 @@ Proyecto y Campaña se refieren a las dimensiones estándar de Libertya.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manufactura-operaciones.html" class="btn btn-neutral float-right" title="Manufactura - Operaciones con Ordenes de Manufactura" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manufactura-informes.html" class="btn btn-neutral float-right" title="Manufactura - Informes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-proceso.html" class="btn btn-neutral" title="Manufactura - Proceso MRP" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-costos.html" class="btn btn-neutral" title="Manufactura - Costos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
