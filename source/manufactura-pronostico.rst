@@ -2,9 +2,10 @@
 Manufactura - Pronóstico
 ************************
 
-**Pronosticar**
+Pronosticar
+-----------
 
-Ir a Gestión de Manufactura, Gestión de Planificación, Gestión de Pronóstico, Pronosticar.
+Ir a Gestión de Manufactura > Gestión de Planificación > Gestión de Pronóstico > Pronosticar.
 
 Se deben configurar los siguientes parámetros:
 

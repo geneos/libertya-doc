@@ -1,24 +1,31 @@
-Ejecución del MRP
-=================
+*******************************
+Manufactura - Ejecución del MRP
+*******************************
 
 El MRP es un proceso que combina las Listas de Materiales, datos de existencia, órdenes abiertas de compra y manufactura y el Plan Maestro de Producción  para calcular el requerimiento de los materiales. Genera órdenes planeadas para balancear la demanda de productos con  su  abastecimiento  y  emite  recomendaciones  para  recibir  el  material  en cantidades  y  fechas  para  cubrir  los  requerimientos  del  PMP  de  la  manera  más eficiente. El proceso MRP debe completarse siguiendo los paso detallados a continuación:
 
-**Paso 1: Niveles inferiores**
+Paso 1: Niveles inferiores
+--------------------------
+
 Este proceso identifica el nivel más bajo de un producto dentro de cualquier estructura. Se utiliza para el cálculo del requerimiento neto de un producto una vez que se han calculado todos  los  requerimientos  brutos  del  producto  hasta  la  estructura  que  utiliza  el producto en el nivel más bajo.
 
-**Paso 2: Crear Registros MRP** 
+Paso 2: Crear Registros MRP 
+---------------------------
+
 Antes de comenzar con el proceso se deben proveer los parámetros 
 
 **AVISOS**
 Cuando el proceso finaliza se visualiza una ventana con posibles errores.
 
-**Paso 3: Calcular Plan de Materiales**
+Paso 3: Calcular Plan de Materiales
+-----------------------------------
+
 Cumplidos los pasos anteriores, podemos calcular el plan de materiales. En el cálculo de plan de materiales, se utilizan los datos provistos por el PMP, es decir los datos maestros que relacionan las Listas de Materiales, los recursos de manufactura y los flujos de trabajo y distribución. Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción.
 
 Cuando este proceso finaliza, se muestran las Órdenes de Manufactura, las Requisiones y los Avisos que fueron generados. 
 
-**Revisar y confirmar la producción**
-=====================================
+Revisar y confirmar la producción
+---------------------------------
  
 Luego de la ejecución y especialmente, si se obtuvieron Avisos, se deben verificar los resultados mediante las siguientes opciones:
 
