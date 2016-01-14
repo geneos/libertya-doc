@@ -2,7 +2,7 @@
 Módulo de Manufactura
 *********************
 
-El módulo de Manufactura se basa en MRP (Material Resource Plannig).
+El módulo de Manufactura se basa en MRP (Material Resource Planning).
 
 El MRP, consiste esencialmente, en un cálculo de necesidades netas de los artículos
 (productos terminados, productos intermedios, materias primas) introduciendo un factor nuevo, no considerado en los métodos tradicionales de gestión de stocks, que es el plazo de fabricación o plazo de entrega en la compra de cada uno de los artículos, lo que en definitiva conduce a modular a lo largo del tiempo las necesidades, ya que indica la oportunidad de fabricar (o aprovisionar) los componentes, con la  debida planificación respecto a su utilización en la fase siguiente de fabricación.
