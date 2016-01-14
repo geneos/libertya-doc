@@ -2,7 +2,7 @@
 Manufactura - Pronóstico
 ************************
 
-El Pronóstico permite definir la proyección de la producción que va a tener como entrada el proceso del MRP. Los elementos del pronóstico definen fechas y cantidades necesarias, para cada producto, generalmete a nivel de productos finales, lo que no quita que puedan agregarse pronósticos de productos intermedios. El pronóstico puede tener, una o varias de las siguientes entradas:
+El Pronóstico permite definir la proyección de la producción que va a tener como entrada el proceso del MRP. Los elementos del pronóstico definen fechas y cantidades necesarias, para cada producto, generalmente a nivel de productos finales, lo que no quita que puedan agregarse pronósticos de productos intermedios. El pronóstico puede tener, una o varias de las siguientes entradas:
 
 	* Producción por ventas planificadas
 	* Producción por ventas regulares
