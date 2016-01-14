@@ -18,7 +18,7 @@ Lista de materiales y fórmulas
 	* **Descripción:** Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.
 	* **Ayuda:** El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item. 
 	* **Activo:** El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes 
-	* **Aviso de Cambio Cuenta de materiales (ingeniería) cambio de aviso (versión).
+	* **Aviso de Cambio:** Cuenta de materiales (ingeniería) cambio de aviso (versión).
 	* **Nro del Documento:** Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre "<>".
 	* **Tipo LDM:** Tipo de Lista de Materiales.
 	* **LDM Usada:** Uso de lista de materiales. El predeterminado de la LDM es usado, Si hay alternativos no están definidos. 
@@ -29,11 +29,12 @@ Lista de materiales y fórmulas
 	* **Organización:** Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.
 	* **No. Línea:** Indica el Número de Línea único y controlará el orden de despliegue de las líneas dentro de un documento. Lo define el sistema de forma automática.
 	* **Artículo:** Identifica un elemento/producto que es parte de una lista de materiales.
-	* **Tipo de componente:** Define el comportamiento del producto en la fórmula, debe ser alguno de los siguientes:
+	* **Tipo de componente:**
 		* Componente: identifica a una materia prima, ingrediente, parte o subproducto que es utilizado en el ensamblado de un proceso de fabricación superior.
-		* Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción. 
-	    * Empaque: este producto no será tenido en cuenta para calcular la cantidad total de componentes cuando la opción “Es Porcentaje Cantidad” se encuentre seleccionado.
-	    * Fantasma: indica que el producto es un ensamble ficticio, esto es, un conjunto de componentes que se agrupan sólo para hacer más fácil el análisis de forma separada del resto de la LDM. Cuando el MRP genera un requerimiento del fantasma y lo proyectado no está disponible, el proceso va al nivel mínimo y comienza un nuevo ciclo de MRP pero sin crear órdenes del producto fantasma.
+		* Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción.
+		* Empaque: este producto no será tenido en cuenta para calcular la cantidad total de componentes cuando la opción “Es Porcentaje Cantidad” se encuentre seleccionado.
+		* Fantasma: indica que el producto es un ensamble ficticio, esto es, un conjunto de componentes que se agrupan sólo para hacer más fácil el análisis de forma separada del resto de la LDM. Cuando el MRP genera un requerimiento del fantasma y lo proyectado no está disponible, el proceso va al nivel mínimo y comienza un nuevo ciclo de MRP pero sin crear órdenes del producto fantasma.
+		* Nota: Define el comportamiento del producto en la fórmula.
 6. Guardar.
 
 .. figure:: _static/images/ly_ldm_1.png

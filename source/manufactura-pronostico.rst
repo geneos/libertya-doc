@@ -10,7 +10,7 @@ El Pronóstico permite definir la proyección de la producción que va a tener c
 	* Producción por aprovisionamiento
 	* Otras
 
-1. Acceder a la opción del menú **Gestión de Manufactura →  Gestión de Planificación → Provisión/Pronóstico de Materiales**. El sistema presenta una ventana como lo muestra la Imagen 36.
+1. Acceder a la opción del menú **Gestión de Manufactura →  Gestión de Planificación → Provisión/Pronóstico de Materiales**. El sistema presenta una ventana como lo muestra la Imagen 38.
 2. Campos a ingresar en la cabecera:
 	* **Compañía:** Cliente para esta instalación compañía o entidad legal 
 	* **Organización:** Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.
@@ -22,7 +22,7 @@ El Pronóstico permite definir la proyección de la producción que va a tener c
 	* **Calendario**.
 	* **Año**.
 3. Guardar.
-4. Seleccionar pestaña **Línea**, el sistema presenta una ventana como lo muestra la Imagen 37.
+4. Seleccionar pestaña **Línea**, el sistema presenta una ventana como lo muestra la Imagen 39.
 5. Campos a ingresar:
 	* **Compañía:** Cliente para esta instalación compañía o entidad legal 
 	* **Organización:** Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.
@@ -43,14 +43,14 @@ El Pronóstico permite definir la proyección de la producción que va a tener c
     :align: center
     :figclass: align-center
 
-    Imagen 36: Pronóstico
+    Imagen 38: Pronóstico
 
 .. figure:: _static/images/ly_pronost_2.png
     :alt: Pronóstico - Líneas
     :align: center
     :figclass: align-center
 
-    Imagen 37: Pronóstico - Líneas
+    Imagen 39: Pronóstico - Líneas
 
 
 La demanda de producción también puede generarse a través de órdenes de manufactura manuales.

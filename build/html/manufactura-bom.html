@@ -174,7 +174,7 @@
 <li><strong>Descripción:</strong> Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.</li>
 <li><strong>Ayuda:</strong> El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item.</li>
 <li><strong>Activo:</strong> El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes</li>
-<li><a href="#id1"><span class="problematic" id="id2">**</span></a>Aviso de Cambio Cuenta de materiales (ingeniería) cambio de aviso (versión).</li>
+<li><strong>Aviso de Cambio:</strong> Cuenta de materiales (ingeniería) cambio de aviso (versión).</li>
 <li><strong>Nro del Documento:</strong> Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre &#8220;&lt;&gt;&#8221;.</li>
 <li><strong>Tipo LDM:</strong> Tipo de Lista de Materiales.</li>
 <li><strong>LDM Usada:</strong> Uso de lista de materiales. El predeterminado de la LDM es usado, Si hay alternativos no están definidos.</li>
@@ -198,16 +198,13 @@
 <li><p class="first"><strong>Artículo:</strong> Identifica un elemento/producto que es parte de una lista de materiales.</p>
 </li>
 <li><dl class="first docutils">
-<dt><strong>Tipo de componente:</strong> Define el comportamiento del producto en la fórmula, debe ser alguno de los siguientes:</dt>
-<dd><blockquote class="first">
-<div><ul class="simple">
+<dt><strong>Tipo de componente:</strong></dt>
+<dd><ul class="first last simple">
 <li>Componente: identifica a una materia prima, ingrediente, parte o subproducto que es utilizado en el ensamblado de un proceso de fabricación superior.</li>
 <li>Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción.</li>
-</ul>
-</div></blockquote>
-<ul class="last simple">
 <li>Empaque: este producto no será tenido en cuenta para calcular la cantidad total de componentes cuando la opción “Es Porcentaje Cantidad” se encuentre seleccionado.</li>
 <li>Fantasma: indica que el producto es un ensamble ficticio, esto es, un conjunto de componentes que se agrupan sólo para hacer más fácil el análisis de forma separada del resto de la LDM. Cuando el MRP genera un requerimiento del fantasma y lo proyectado no está disponible, el proceso va al nivel mínimo y comienza un nuevo ciclo de MRP pero sin crear órdenes del producto fantasma.</li>
+<li>Nota: Define el comportamiento del producto en la fórmula.</li>
 </ul>
 </dd>
 </dl>
@@ -219,11 +216,11 @@
 <li><p class="first">Guardar.</p>
 </li>
 </ol>
-<div class="align-center figure" id="id3">
+<div class="align-center figure" id="id1">
 <img alt="Lista de Materiales" src="_images/ly_ldm_1.png" />
 <p class="caption"><span class="caption-text">Imagen 34: Lista de Materiales</span></p>
 </div>
-<div class="align-center figure" id="id4">
+<div class="align-center figure" id="id2">
 <img alt="Lista de Materiales - Componentes" src="_images/ly_ldm_2.png" />
 <p class="caption"><span class="caption-text">Imagen 35: Lista de Materiales - Componentes</span></p>
 </div>

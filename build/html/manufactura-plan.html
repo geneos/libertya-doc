@@ -97,13 +97,13 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 </ul>
 </li>
 </ul>
@@ -154,7 +154,80 @@
             
   <div class="section" id="datos-de-planificacion-de-producto">
 <h1>Datos de Planificación de producto<a class="headerlink" href="#datos-de-planificacion-de-producto" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Para calcular el Plan de Materiales, primero debemos realizar el Planeamiento de Datos del producto. El planeamiento de datos del producto contiene los datos que relaciona a los productos con su lista de materiales con sus recursos de manufactura, su flujo de trabajo (proceso de manufactura) y con la distribución.</p>
+<p>Para calcular el Plan de Materiales, primero debemos configurar los <strong>Datos de Planeamiento de los Productos</strong> que intervienen en el proceso productivo.</p>
+<p>Los Datos de Planeamiento de los Productos varian según los productos sean comprados o fabricados. Para los primeros se deben configurar los datos relacionados a tiempos y políticas de compra, mientras que para los segundos, los datos y políticas de fabricación, entre ellos la Lista de Materiales y el Flujo de Trabajo.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de Planificación → Datos de Planificación de Productos</strong>. El sistema presenta una ventana como lo muestra la Imagen 36. Buscar el producto a configurar en la primera pestaña.</p>
+</li>
+<li><p class="first">Acceder a la pestaña <strong>Línea de Movimiento</strong>, el sistema presenta una ventana como lo muestra la Imagen 37.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last">
+<li><p class="first"><strong>Compañía:</strong> Cliente para esta instalación compañía o entidad legal</p>
+</li>
+<li><p class="first"><strong>Organización:</strong> Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.</p>
+</li>
+<li><p class="first"><strong>Activo:</strong> El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes.</p>
+</li>
+<li><p class="first"><strong>Recurso:</strong> Recurso de tipo Planta para esta configuración de Datos de Planeamiento.</p>
+</li>
+<li><p class="first"><strong>Almacén:</strong> Almacén para esta configuración de Datos de Planeamiento.</p>
+</li>
+<li><p class="first"><strong>Planificador</strong></p>
+</li>
+<li><p class="first"><strong>Lista de Materiales:</strong> En caso de productos fabricados, la Lista de Materiales correpondiente.</p>
+</li>
+<li><p class="first"><strong>Flujo de Trabajo:</strong>  En caso de productos fabricados, el Flujo de Trabajo correpondiente.</p>
+</li>
+<li><p class="first"><strong>Crear Plan:</strong> Si queremos que ela configuración de Datos de Planeamiento entre en consideración del MRP.</p>
+</li>
+<li><p class="first"><strong>Es MRP Requerido:</strong> Lo pone el sistema de forma automática, si algún cambio en las configuraciones, requiere correr nuevamente el MRP.</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Tiempos de Gestión:</strong></dt>
+<dd><ul class="first last simple">
+<li><strong>Tiempo de Entrega Prometido</strong></li>
+<li><strong>Protección Tiempo</strong></li>
+<li><strong>Tiempo de Trabajo</strong></li>
+<li><strong>Tiempo de Transferencia</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><strong>Política de Ordenamiento:</strong></p>
+</li>
+<li><p class="first"><strong>Periodo de Pedido:</strong></p>
+</li>
+<li><p class="first"><strong>Cantidad del Pedido:</strong></p>
+</li>
+<li><p class="first"><strong>Múltiplo a Ordenar:</strong></p>
+</li>
+<li><p class="first"><strong>Cantidad Mínima de Pedido:</strong></p>
+</li>
+<li><p class="first"><strong>Cantidad Máxima del Pedido:</strong></p>
+</li>
+<li><p class="first"><strong>% Rendimiento:</strong></p>
+</li>
+<li><p class="first"><strong>Cantidad Existencia Seguridad:</strong></p>
+</li>
+<li><p class="first"><strong>Es alternativo:</strong></p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Guardar.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id1">
+<img alt="Planeamiento" src="_images/ly_planeam_1.png" />
+<p class="caption"><span class="caption-text">Imagen 36: Planeamiento</span></p>
+</div>
+<div class="align-center figure" id="id2">
+<img alt="Planeamiento - Datos de Planeamiento" src="_images/ly_planeam_2.png" />
+<p class="caption"><span class="caption-text">Imagen 37: Planeamiento - Datos de Planeamiento</span></p>
+</div>
 </div>
 
 

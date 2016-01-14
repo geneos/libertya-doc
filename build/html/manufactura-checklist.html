@@ -32,7 +32,8 @@
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
-        <link rel="prev" title="Manufactura - Informes" href="manufactura-informes.html"/> 
+        <link rel="next" title="Manufactura - Ejecución del MRP" href="manufactura-proceso.html"/>
+        <link rel="prev" title="Manufactura - Pronóstico" href="manufactura-pronostico.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -96,17 +97,18 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Checklist para correr el proceso de MRP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#consideraciones-generales">Consideraciones Generales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#si-el-componente-es-comprado">Si el componente es comprado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#si-el-componente-es-fabricado">Si el componente es fabricado</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Checklist para correr el proceso de MRP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#si-el-componente-es-comprado">Si el componente es comprado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#si-el-componente-es-fabricado">Si el componente es fabricado</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -157,60 +159,65 @@
             
   <div class="section" id="manufactura-checklist-para-correr-el-proceso-de-mrp">
 <h1>Manufactura - Checklist para correr el proceso de MRP<a class="headerlink" href="#manufactura-checklist-para-correr-el-proceso-de-mrp" title="Enlazar permanentemente con este título">¶</a></h1>
-<ul class="simple">
+<div class="section" id="consideraciones-generales">
+<h2>Consideraciones Generales<a class="headerlink" href="#consideraciones-generales" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
 <li>Tanto el producto padre, como todos los componentes del mismo, tienen que tener Datos de Planificación de producto.</li>
-</ul>
-<hr class="docutils" />
-<div class="section" id="si-el-componente-es-comprado">
-<h2>Si el componente es comprado<a class="headerlink" href="#si-el-componente-es-comprado" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul>
-<li><p class="first">Desmarcar el check Es Manufacturado en artículo</p>
-</li>
-<li><p class="first">Marcar Comprado en artículo</p>
-</li>
-<li><p class="first">Debe tener proveedor asociado y código de producto del prov.</p>
-</li>
-<li><dl class="first docutils">
-<dt>Cargar datos de planificación:</dt>
-<dd><ul class="first last simple">
-<li>Recurso (planta)</li>
-<li>Almacén</li>
-<li>Tiempos (no es mandatorio)</li>
-<li>Marcar el check Crear plan</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</div>
-<div class="section" id="si-el-componente-es-fabricado">
-<h2>Si el componente es fabricado<a class="headerlink" href="#si-el-componente-es-fabricado" title="Enlazar permanentemente con este título">¶</a></h2>
-<ul>
-<li><p class="first">Desmarcar el check Comprado en el artículo</p>
-</li>
-<li><p class="first">Marcar el check Es Manufacturado en artículo</p>
-</li>
-<li><dl class="first docutils">
-<dt>Cargar datos de planificación:</dt>
-<dd><ul class="first last simple">
-<li>Lista de Materiales</li>
-<li>Flujo</li>
-<li>Recurso (planta)</li>
-<li>Almacén</li>
-<li>Tiempos (no es mandatorio)</li>
-<li>Marcar el check <strong>Crear plan</strong></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-<hr class="docutils" />
-<ul class="simple">
-<li>Al menos tenemos que tener un recurso de tipo Planta</li>
+<li>Al menos tenemos que tener un recurso de tipo Planta.</li>
 <li>Establecer el horizonte de la planta en un valor &gt; 0, tener en cuenta que esto valida las posibles demandas futuras, o sea si tengo una demanda más allá del horizonte no van a ser explotadas.</li>
 <li>Tener un pronóstico / demanda para el período actual</li>
 <li>Correr el proceso Verificar Lista de Materiales para cada familia</li>
 </ul>
+</div></blockquote>
+</div>
+<div class="section" id="si-el-componente-es-comprado">
+<h2>Si el componente es comprado<a class="headerlink" href="#si-el-componente-es-comprado" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">En la ventana <strong>Artículo</strong>, pestaña <strong>Artículo</strong>, desmarcar el check <strong>Es Manufacturado</strong> y marcar el check <strong>Comprado</strong>.</p>
+</li>
+<li><p class="first">En la ventana <strong>Artículo</strong>, pestaña <strong>Compras</strong>, cargar un registro con un proveedor asociado por defecto.</p>
+</li>
+<li><dl class="first docutils">
+<dt>En la ventana <strong>Datos de Planificación del Producto</strong>, pestaña <strong>Datos de Planificación</strong>, cargar datos que correspondan:</dt>
+<dd><ul class="first last simple">
+<li>Recurso (la Planta donde se va a producir).</li>
+<li>Almacén.</li>
+<li>Política de Ordenamiento.</li>
+<li>Tiempos (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).</li>
+<li>Cantidades (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).</li>
+<li>Marcar el check Crear Plan.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="si-el-componente-es-fabricado">
+<h2>Si el componente es fabricado<a class="headerlink" href="#si-el-componente-es-fabricado" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">En la ventana <strong>Artículo</strong>, pestaña <strong>Artículo</strong>, marcar el check <strong>Es Manufacturado</strong> y desmarcar el check <strong>Comprado</strong>..</p>
+</li>
+<li><dl class="first docutils">
+<dt>En la ventana <strong>Datos de Planificación del Producto</strong>, pestaña <strong>Datos de Planificación</strong>, cargar datos que correspondan:</dt>
+<dd><ul class="first last simple">
+<li>Recurso (la Planta donde se va a producir).</li>
+<li>Almacén.</li>
+<li>Lista de Materiales.</li>
+<li>Flujo de Trabajo</li>
+<li>Política de Ordenamiento.</li>
+<li>Tiempos (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).</li>
+<li>Cantidades (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).</li>
+<li>Marcar el check Crear Plan.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 
@@ -221,8 +228,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="manufactura-proceso.html" class="btn btn-neutral float-right" title="Manufactura - Ejecución del MRP" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="manufactura-informes.html" class="btn btn-neutral" title="Manufactura - Informes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="manufactura-pronostico.html" class="btn btn-neutral" title="Manufactura - Pronóstico" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
