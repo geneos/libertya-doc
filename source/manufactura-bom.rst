@@ -16,7 +16,7 @@ Lista de materiales y fórmulas
 	* **UM:** Unidad de Medida se refiere a unidades de medida no monetarias y además define si se permite la conversión entre unidades de medida y cómo se van a calcular.
 	* **Nombre:** Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud. 
 	* **Descripción:** Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.
-	* **Ayuda:** El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item. 
+	* **Ayuda:** El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este ítem. 
 	* **Activo:** El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes 
 	* **Aviso de Cambio:** Cuenta de materiales (ingeniería) cambio de aviso (versión).
 	* **Nro del Documento:** Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre "<>".
