@@ -1,27 +1,43 @@
-################
-Acerca de Geneos
-################
+######################
+Acerca de Libertya Doc
+######################
 
-**Somos**
+Libertya ERP
+------------
 
-	Una cooperativa conformada por profesionales de la informática, las comunicaciones y el diseño, lo que nos permite trabajar de manera integral en la búsqueda de innovación, la mejora continua y la calidad. Nos dedicamos a implementar proyectos de tecnología, basados en Software Libre, que contribuyan a mejorar y potenciar el modelo de negocios de nuestros clientes.
+Libertya es un poderoso ERP con toda su funcionalidad desarrollada y distribuida como software libre; está basado en tecnología multiplataforma, y es completamente personalizable y adaptable a las necesidades de cualquier empresa. Su arquitectura y componentes son totalmente escalables. Además, está diseñado para ser integrado fácilmente con cualquier ecosistema de software pre-existente.
 
-	Ofrecemos nuestra experiencia de más de 15 años desarrollando software para encontrar las mejores soluciones posibles. Contamos además con diversas experiencias en metodología ágiles para la mejora continua, normas y procedimientos, seguridad de la información, posicionamiento en buscadores,presencia digital, publicidad, comunicación y diseño gráfico.
+**Beneficios que diferencian a Libertya**
 
-**una cooperativa de trabajo**
+	* La empresa usuaria posee un completo control de su implementación sin estar obligada a convenios de mantenimiento obligatorios.
+	* El código del producto y toda su documentación asociada están disponibles desde un primer momento.
+	* Independencia total del proveedor y acceso permanente de una numerosa y dinámica comunidad de usuarios.
+	* Capacitación integral y asesoramiento profesional incluyendo - en caso de ser de interés - el diseño de su arquitectura interna y detalles constructivos del producto.
+	* Componentes y aplicaciones complementarias especialmente diseñadas para extender e integrar Libertya a otros productos de software.
 
-	Entendemos el cooperativismo como la forma de resignificar el trabajo y construir nuevas formas de organización en torno a este. Creemos en el cooperativismo como  un herramienta de transformación, que permite lograr una manera democrática y participativa de gestionar las formas y objetivos del trabajo de las personas.
+**Licencia**
 
-**de Tecnología, Innovación y Conocimiento**
-
-	Nos dedicamos a brindar soluciones informáticas a otras organizaciones, empresas o personas. El trabajo que realizamos consiste en el desarrollo de software, es decir, la creación de sistemas que posibilitan la resolución de una problemática específica. Las cooperativas TICs se dedican al diseño de estas aplicaciones y a garantizar su correcta implementación. Por otro lado, ofrecemos servicio de consultoría o soporte técnico y auditorías sobre los sistemas que una organización ya posee. Otro de los servicios ofrecidos son las capacitaciones a las empresas en el uso de los sistemas.
-
-**basados en Software Libre**
-
-	El software libre fomenta el trabajo colaborativo mediante comunidades de desarrollo, tiene potencial para dar soluciones y respuestas a todo tipo de requerimientos y no necesita licencias para su uso y desarrollo. Además, posee 
-	estándares abiertos y garantiza la seguridad.
+Libertya ERP es un Software de Gestión Libre regulado por la licencia LPLB 1.0 (Licencia Pública Libertya versión 1.0) mediante la cual el producto puede ser utilizado sin costo de licencias con el 100% de la funcionalidad disponible.
 
 
-.. image:: _static/images/coop_servicios.png
-    :alt: Servicios
-    :align: center
+**Código abierto**
+
+Código abierto (del inglés open source) es el término con el que se conoce al software distribuido y desarrollado libremente. Fue utilizado por primera vez en 1998 por algunos usuarios de la comunidad del software libre, tratando de usarlo como reemplazo al ambiguo nombre original en inglés del software libre (free software).
+
+Proyecto de Documentación
+-------------------------
+
+Este proyecto busca dotar al sistema, de un paquete de documentación completa. Esta documentación, busca desarrollarse de manera colaborativa.
+
+**Como Colaborar**
+
+Colaboradores
+-------------
+
+.. toctree::
+   :maxdepth: 2
+
+   all-about-geneos
+
+
+

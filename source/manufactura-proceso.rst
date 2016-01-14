@@ -2,41 +2,81 @@
 Manufactura - Ejecución del MRP
 *******************************
 
-El MRP es un proceso que combina las Listas de Materiales, datos de existencia, órdenes abiertas de compra y manufactura y el Plan Maestro de Producción  para calcular el requerimiento de los materiales. Genera órdenes planeadas para balancear la demanda de productos con  su  abastecimiento  y  emite  recomendaciones  para  recibir  el  material  en cantidades  y  fechas  para  cubrir  los  requerimientos  del  PMP  de  la  manera  más eficiente. El proceso MRP debe completarse siguiendo los paso detallados a continuación:
+La ejecución del Proceso de MRP debe completarse siguiendo los paso detallados a continuación:
 
-Paso 1: Niveles inferiores
---------------------------
+Paso 1: Calular Niveles Inferiores
+----------------------------------
 
-Este proceso identifica el nivel más bajo de un producto dentro de cualquier estructura. Se utiliza para el cálculo del requerimiento neto de un producto una vez que se han calculado todos  los  requerimientos  brutos  del  producto  hasta  la  estructura  que  utiliza  el producto en el nivel más bajo.
+Este proceso calcula y registra el nivel menor de un producto dentro de una LDM. Es usado en los cálculos del MRP y debe ser ejecutado cuando ingresa una nueva LDM.
+
+1. Acceder a la opción de menú **Gestión de Manufactura → Gestión de Planificación → MRP → Calular Niveles Inferiores**. El sistema presenta una ventana como lo muestra la Imagen 40.
+2. Ejecutar Proceso.
+
+
+.. figure:: _static/images/ly_mrp_niveles.png
+    :alt: Calular Niveles Inferiores
+    :align: center
+    :figclass: align-center
+
+    Imagen 40: Calular Niveles Inferiores
+
+
 
 Paso 2: Crear Registros MRP 
 ---------------------------
 
-Antes de comenzar con el proceso se deben proveer los parámetros 
+Este proceso recrea la demanda, órdenes aprobadas y abiertas para un producto. 
 
-**AVISOS**
-Cuando el proceso finaliza se visualiza una ventana con posibles errores.
+1. Acceder a la opción de menú **Gestión de Manufactura → Gestión de Planificación → MRP → Crear Registros MRP**. El sistema presenta una ventana como lo muestra la Imagen 41.
+2. Ejecutar Proceso.
+
+
+.. figure:: _static/images/ly_mrp_registros.png
+    :alt: Crear Registros MRP
+    :align: center
+    :figclass: align-center
+
+    Imagen 41: Crear Registros MRP
+
 
 Paso 3: Calcular Plan de Materiales
 -----------------------------------
 
-Cumplidos los pasos anteriores, podemos calcular el plan de materiales. En el cálculo de plan de materiales, se utilizan los datos provistos por el PMP, es decir los datos maestros que relacionan las Listas de Materiales, los recursos de manufactura y los flujos de trabajo y distribución. Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción.
+Cumplidos los pasos anteriores, podemos calcular el plan de materiales.
 
-Cuando este proceso finaliza, se muestran las Órdenes de Manufactura, las Requisiones y los Avisos que fueron generados. 
+Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción. Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.
 
-Revisar y confirmar la producción
----------------------------------
- 
-Luego de la ejecución y especialmente, si se obtuvieron Avisos, se deben verificar los resultados mediante las siguientes opciones:
+Cuando este proceso finaliza, se muestra un resumen de las Órdenes de Manufactura, los Avisos de Pedido a Proveedores y los Avisos del MRP que fueron generados.
 
-**Consulta del MRP**
+1. Acceder a la opción de menú **Gestión de Manufactura → Gestión de Planificación → MRP → Calcular Plan de Materiales**. El sistema presenta una ventana como lo muestra la Imagen 42.
+2. Ejecutar Proceso.
 
-Al realizar una Consulta de MRP, se pueden verificar las cantidades comprometidas tanto por pronóstico como por Orden de Manufactura para un producto determinado. Ir a Gestión de Manufactura, MRP, Consulta de MRP. En esta ventana se puede indicar el producto para obtener un listado de toda la demanda del producto, ya sea generadas tanto por órdenes de venta, como por pronósticos.
+
+.. figure:: _static/images/ly_mrp_calcular.png
+    :alt: Calcular Plan de Materiales
+    :align: center
+    :figclass: align-center
+
+    Imagen 42: Calcular Plan de Materiales
+
 
 Avisos del MRP
 --------------
 
-Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias para poder alcanzar el Planeamiento de Producción correctamente.
+Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias, para poder alcanzar el Planeamiento de Producción correctamente.
+
+1. Acceder al botón **Aviso** de la pantalla principal de la aplicación (barra inferior a la izquierda). El sistema presenta una ventana como lo muestra la Imagen 43.
+
+
+.. figure:: _static/images/ly_avisos.png
+    :alt: Avisos
+    :align: center
+    :figclass: align-center
+
+    Imagen 43: Avisos
+
+
+**Referencias**
 
 
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

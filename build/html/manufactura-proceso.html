@@ -33,7 +33,7 @@
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
         <link rel="next" title="Manufactura - Orden de Manufactura" href="manufactura-om.html"/>
-        <link rel="prev" title="Manufactura - Pronóstico" href="manufactura-pronostico.html"/> 
+        <link rel="prev" title="Manufactura - Checklist para correr el proceso de MRP" href="manufactura-checklist.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,7 +83,7 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
@@ -97,11 +97,11 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Ejecución del MRP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#paso-1-niveles-inferiores">Paso 1: Niveles inferiores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paso-1-calular-niveles-inferiores">Paso 1: Calular Niveles Inferiores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paso-2-crear-registros-mrp">Paso 2: Crear Registros MRP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paso-3-calcular-plan-de-materiales">Paso 3: Calcular Plan de Materiales</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#revisar-y-confirmar-la-produccion">Revisar y confirmar la producción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#avisos-del-mrp">Avisos del MRP</a></li>
 </ul>
 </li>
@@ -110,7 +110,6 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 </ul>
 </li>
 </ul>
@@ -161,31 +160,56 @@
             
   <div class="section" id="manufactura-ejecucion-del-mrp">
 <h1>Manufactura - Ejecución del MRP<a class="headerlink" href="#manufactura-ejecucion-del-mrp" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>El MRP es un proceso que combina las Listas de Materiales, datos de existencia, órdenes abiertas de compra y manufactura y el Plan Maestro de Producción  para calcular el requerimiento de los materiales. Genera órdenes planeadas para balancear la demanda de productos con  su  abastecimiento  y  emite  recomendaciones  para  recibir  el  material  en cantidades  y  fechas  para  cubrir  los  requerimientos  del  PMP  de  la  manera  más eficiente. El proceso MRP debe completarse siguiendo los paso detallados a continuación:</p>
-<div class="section" id="paso-1-niveles-inferiores">
-<h2>Paso 1: Niveles inferiores<a class="headerlink" href="#paso-1-niveles-inferiores" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Este proceso identifica el nivel más bajo de un producto dentro de cualquier estructura. Se utiliza para el cálculo del requerimiento neto de un producto una vez que se han calculado todos  los  requerimientos  brutos  del  producto  hasta  la  estructura  que  utiliza  el producto en el nivel más bajo.</p>
+<p>La ejecución del Proceso de MRP debe completarse siguiendo los paso detallados a continuación:</p>
+<div class="section" id="paso-1-calular-niveles-inferiores">
+<h2>Paso 1: Calular Niveles Inferiores<a class="headerlink" href="#paso-1-calular-niveles-inferiores" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este proceso calcula y registra el nivel menor de un producto dentro de una LDM. Es usado en los cálculos del MRP y debe ser ejecutado cuando ingresa una nueva LDM.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Planificación → MRP → Calular Niveles Inferiores</strong>. El sistema presenta una ventana como lo muestra la Imagen 40.</li>
+<li>Ejecutar Proceso.</li>
+</ol>
+<div class="align-center figure" id="id1">
+<img alt="Calular Niveles Inferiores" src="_images/ly_mrp_niveles.png" />
+<p class="caption"><span class="caption-text">Imagen 40: Calular Niveles Inferiores</span></p>
+</div>
 </div>
 <div class="section" id="paso-2-crear-registros-mrp">
 <h2>Paso 2: Crear Registros MRP<a class="headerlink" href="#paso-2-crear-registros-mrp" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Antes de comenzar con el proceso se deben proveer los parámetros</p>
-<p><strong>AVISOS</strong>
-Cuando el proceso finaliza se visualiza una ventana con posibles errores.</p>
+<p>Este proceso recrea la demanda, órdenes aprobadas y abiertas para un producto.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Planificación → MRP → Crear Registros MRP</strong>. El sistema presenta una ventana como lo muestra la Imagen 41.</li>
+<li>Ejecutar Proceso.</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="Crear Registros MRP" src="_images/ly_mrp_registros.png" />
+<p class="caption"><span class="caption-text">Imagen 41: Crear Registros MRP</span></p>
+</div>
 </div>
 <div class="section" id="paso-3-calcular-plan-de-materiales">
 <h2>Paso 3: Calcular Plan de Materiales<a class="headerlink" href="#paso-3-calcular-plan-de-materiales" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Cumplidos los pasos anteriores, podemos calcular el plan de materiales. En el cálculo de plan de materiales, se utilizan los datos provistos por el PMP, es decir los datos maestros que relacionan las Listas de Materiales, los recursos de manufactura y los flujos de trabajo y distribución. Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción.</p>
-<p>Cuando este proceso finaliza, se muestran las Órdenes de Manufactura, las Requisiones y los Avisos que fueron generados.</p>
+<p>Cumplidos los pasos anteriores, podemos calcular el plan de materiales.</p>
+<p>Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción. Este proceso calcula la demanda, órdenes aprobadas y abiertas para un producto.</p>
+<p>Cuando este proceso finaliza, se muestra un resumen de las Órdenes de Manufactura, los Avisos de Pedido a Proveedores y los Avisos del MRP que fueron generados.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Planificación → MRP → Calcular Plan de Materiales</strong>. El sistema presenta una ventana como lo muestra la Imagen 42.</li>
+<li>Ejecutar Proceso.</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="Calcular Plan de Materiales" src="_images/ly_mrp_calcular.png" />
+<p class="caption"><span class="caption-text">Imagen 42: Calcular Plan de Materiales</span></p>
 </div>
-<div class="section" id="revisar-y-confirmar-la-produccion">
-<h2>Revisar y confirmar la producción<a class="headerlink" href="#revisar-y-confirmar-la-produccion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Luego de la ejecución y especialmente, si se obtuvieron Avisos, se deben verificar los resultados mediante las siguientes opciones:</p>
-<p><strong>Consulta del MRP</strong></p>
-<p>Al realizar una Consulta de MRP, se pueden verificar las cantidades comprometidas tanto por pronóstico como por Orden de Manufactura para un producto determinado. Ir a Gestión de Manufactura, MRP, Consulta de MRP. En esta ventana se puede indicar el producto para obtener un listado de toda la demanda del producto, ya sea generadas tanto por órdenes de venta, como por pronósticos.</p>
 </div>
 <div class="section" id="avisos-del-mrp">
 <h2>Avisos del MRP<a class="headerlink" href="#avisos-del-mrp" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias para poder alcanzar el Planeamiento de Producción correctamente.</p>
+<p>Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias, para poder alcanzar el Planeamiento de Producción correctamente.</p>
+<ol class="arabic simple">
+<li>Acceder al botón <strong>Aviso</strong> de la pantalla principal de la aplicación (barra inferior a la izquierda). El sistema presenta una ventana como lo muestra la Imagen 43.</li>
+</ol>
+<div class="align-center figure" id="id4">
+<img alt="Avisos" src="_images/ly_avisos.png" />
+<p class="caption"><span class="caption-text">Imagen 43: Avisos</span></p>
+</div>
+<p><strong>Referencias</strong></p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="4%" />
@@ -243,7 +267,7 @@ Cuando el proceso finaliza se visualiza una ventana con posibles errores.</p>
         <a href="manufactura-om.html" class="btn btn-neutral float-right" title="Manufactura - Orden de Manufactura" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-pronostico.html" class="btn btn-neutral" title="Manufactura - Pronóstico" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-checklist.html" class="btn btn-neutral" title="Manufactura - Checklist para correr el proceso de MRP" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
