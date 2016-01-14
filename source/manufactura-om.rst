@@ -8,7 +8,7 @@ Para  generar  o  modificar  manualmente  una  Orden  de  Manufactura  debemos i
 Manufactura -> Control de Producción -> Manufactura Discreta -> Orden de Manufactura.
 
 La Orden de Manufactura integra componentes de la lista de materiales, del flujo de
-trabajo y de los datos de planeación.
+trabajo y de los datos de planeamiento.
 
 **Fecha de última Entrega**:Es la fecha de la última vez que el material de esta orden
 fue entregado al almacén.
