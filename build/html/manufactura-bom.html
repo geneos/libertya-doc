@@ -84,27 +84,26 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Lista de Materiales</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#lista-de-materiales">Lista de materiales</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#perfiles-habilitados">Perfiles habilitados</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#lista-de-materiales-y-formulas">Lista de materiales y fórmulas</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#lista-de-materiales-y-formulas">Lista de materiales y fórmulas</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
@@ -158,49 +157,55 @@
             
   <div class="section" id="manufactura-lista-de-materiales">
 <h1>Manufactura - Lista de Materiales<a class="headerlink" href="#manufactura-lista-de-materiales" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="lista-de-materiales">
-<h2>Lista de materiales<a class="headerlink" href="#lista-de-materiales" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Permite definir la composición de los productos fabricados, tanto intermedios como  terminados. Se pueden tener distintos niveles intermedios de producción, los  niveles intermedios definen la fabricación de productos que serán entrada de otros procesos productivos de niveles superiores.</p>
-<div class="section" id="perfiles-habilitados">
-<h3>Perfiles habilitados<a class="headerlink" href="#perfiles-habilitados" title="Enlazar permanentemente con este título">¶</a></h3>
-<blockquote>
-<div><strong>Manufactura</strong></div></blockquote>
-</div>
 <div class="section" id="lista-de-materiales-y-formulas">
-<h3>Lista de materiales y fórmulas<a class="headerlink" href="#lista-de-materiales-y-formulas" title="Enlazar permanentemente con este título">¶</a></h3>
-<ol class="arabic simple">
-<li>Acceder a la ventana que se encuentra en el menú Gestión de Manufactura → Gestión de Ingeniería → Lista de Materiales y Fórmulas → <strong>Lista de Materiales y Fórmula</strong>.</li>
-<li>Campos a ingresar en la cabecera:</li>
-</ol>
-<ul class="simple">
-<li>Compañía: Cliente para esta instalación compañía o entidad legal</li>
-<li>Organización: Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.</li>
-<li>Producto: Producto que va a tener una fórmula asociada.</li>
-<li>UM: Unidad de Medida se refiere a unidades de medida no monetarias y además define si se permite la conversión entre unidades de medida y cómo se van a calcular.</li>
-<li>Nombre: Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud.</li>
-<li>Descripción: Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.</li>
-<li>Ayuda: El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item.</li>
-<li>Activo: El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes</li>
-<li>Aviso de Cambio Cuenta de materiales (ingeniería) cambio de aviso (versión).</li>
-<li>Nro del Documento: Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre &#8220;&lt;&gt;&#8221;.</li>
-<li>Tipo LDM: Tipo de Lista de Materiales.</li>
-<li>LDM Usada: Uso de lista de materiales. El predeterminado de la LDM es usado, Si hay alternativos no están definidos.</li>
-</ul>
-<ol class="arabic simple" start="3">
-<li>Componentes de la LDM &amp; Fórmula</li>
-</ol>
-<p>Para cada componente se debe ingresar la siguiente información:</p>
-<ul>
-<li><p class="first">No. Línea Indica el Número de Línea único y controlará el orden de despliegue de las líneas dentro de un documento.</p>
-</li>
-<li><p class="first">Artículo El Artículo en Lista de Materiales identifica un elemento/producto que es parte de una lista de materiales.</p>
-</li>
-<li><p class="first">Tipo de componente El tipo de componente debe ser alguno de los siguientes:</p>
+<h2>Lista de materiales y fórmulas<a class="headerlink" href="#lista-de-materiales-y-formulas" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Ingeniería → Lista de Materiales y Fórmulas → Lista de Materiales y Fórmula</strong>. El sistema presenta una ventana como lo muestra la Imagen 34.</p>
 </li>
 <li><dl class="first docutils">
-<dt>Componente: identifica a una materia prima, ingrediente, parte o subproducto que es utilizado en el ensamblado de un proceso de fabricación superior.</dt>
+<dt>Campos a ingresar en la cabecera:</dt>
 <dd><ul class="first last simple">
+<li><strong>Compañía:</strong> Cliente para esta instalación compañía o entidad legal</li>
+<li><strong>Organización:</strong> Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.</li>
+<li>Producto:** Producto que va a tener una fórmula asociada.</li>
+<li><strong>UM:</strong> Unidad de Medida se refiere a unidades de medida no monetarias y además define si se permite la conversión entre unidades de medida y cómo se van a calcular.</li>
+<li><strong>Nombre:</strong> Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud.</li>
+<li><strong>Descripción:</strong> Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.</li>
+<li><strong>Ayuda:</strong> El campo Ayuda contiene una sustento, comentario o ayuda acerca de cómo usar este item.</li>
+<li><strong>Activo:</strong> El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes</li>
+<li><a href="#id1"><span class="problematic" id="id2">**</span></a>Aviso de Cambio Cuenta de materiales (ingeniería) cambio de aviso (versión).</li>
+<li><strong>Nro del Documento:</strong> Número de secuencia del documento para cada documento creado. El número del documento es usualmente generado en automático por el sistema y determinado por el tipo del documento. Si el documento no se salva; el número preliminar se despliega entre &#8220;&lt;&gt;&#8221;.</li>
+<li><strong>Tipo LDM:</strong> Tipo de Lista de Materiales.</li>
+<li><strong>LDM Usada:</strong> Uso de lista de materiales. El predeterminado de la LDM es usado, Si hay alternativos no están definidos.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Guardar.</p>
+</li>
+<li><p class="first">Seleccionar la pestaña <strong>Componentes de la LDM &amp; Fórmula</strong>, el sistema presenta una ventana como lo muestra la Imagen 35.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last">
+<li><p class="first"><strong>Compañía:</strong> Cliente para esta instalación compañía o entidad legal</p>
+</li>
+<li><p class="first"><strong>Organización:</strong> Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal.</p>
+</li>
+<li><p class="first"><strong>No. Línea:</strong> Indica el Número de Línea único y controlará el orden de despliegue de las líneas dentro de un documento. Lo define el sistema de forma automática.</p>
+</li>
+<li><p class="first"><strong>Artículo:</strong> Identifica un elemento/producto que es parte de una lista de materiales.</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Tipo de componente:</strong> Define el comportamiento del producto en la fórmula, debe ser alguno de los siguientes:</dt>
+<dd><blockquote class="first">
+<div><ul class="simple">
+<li>Componente: identifica a una materia prima, ingrediente, parte o subproducto que es utilizado en el ensamblado de un proceso de fabricación superior.</li>
 <li>Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción.</li>
+</ul>
+</div></blockquote>
+<ul class="last simple">
 <li>Empaque: este producto no será tenido en cuenta para calcular la cantidad total de componentes cuando la opción “Es Porcentaje Cantidad” se encuentre seleccionado.</li>
 <li>Fantasma: indica que el producto es un ensamble ficticio, esto es, un conjunto de componentes que se agrupan sólo para hacer más fácil el análisis de forma separada del resto de la LDM. Cuando el MRP genera un requerimiento del fantasma y lo proyectado no está disponible, el proceso va al nivel mínimo y comienza un nuevo ciclo de MRP pero sin crear órdenes del producto fantasma.</li>
 </ul>
@@ -208,6 +213,19 @@
 </dl>
 </li>
 </ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Guardar.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="Lista de Materiales" src="_images/ly_ldm_1.png" />
+<p class="caption"><span class="caption-text">Imagen 34: Lista de Materiales</span></p>
+</div>
+<div class="align-center figure" id="id4">
+<img alt="Lista de Materiales - Componentes" src="_images/ly_ldm_2.png" />
+<p class="caption"><span class="caption-text">Imagen 35: Lista de Materiales - Componentes</span></p>
 </div>
 </div>
 </div>

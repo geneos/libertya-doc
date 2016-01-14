@@ -83,14 +83,21 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Stock</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Stock</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#proceso-de-gestion-de-stock">Proceso de gestión de stock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#almacenes-y-ubicaciones">Almacenes y Ubicaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cargos">Cargos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inventario-fisico">Inventario Físico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#movimientos-de-inventario">Movimientos de Inventario</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -145,7 +152,8 @@
 <li>Conjunto de Atributos (Opcional)</li>
 <li>Cargos</li>
 </ol>
-<p><strong>Proceso de gestión de stock</strong></p>
+<div class="section" id="proceso-de-gestion-de-stock">
+<h2>Proceso de gestión de stock<a class="headerlink" href="#proceso-de-gestion-de-stock" title="Enlazar permanentemente con este título">¶</a></h2>
 <ol class="arabic">
 <li><dl class="first docutils">
 <dt>Ingresos de Artículos al Stock</dt>
@@ -193,12 +201,273 @@
 </dl>
 </li>
 </ol>
-<p><strong>Configuración de cargos</strong></p>
-<p>Para algunas de las operaciones, se deben configurar elementos especiales, para detallar motivos y/o hacer afectación contable. Para esto se utilizan los <strong>Cargos</strong>.</p>
-<p><strong>Inventario Físico</strong></p>
-<p><strong>Movimientos de Inventario</strong></p>
+</div>
+<div class="section" id="almacenes-y-ubicaciones">
+<h2>Almacenes y Ubicaciones<a class="headerlink" href="#almacenes-y-ubicaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para poder almacenar artículos y tenerlos disponibles como stock, primero se han de definir una serie de Almacenes o Ubicaciones donde se almacenaran dichos productos.</p>
+<p><strong>Almacén</strong></p>
+<p>Para esto se utiliza la ventana de Almacén. En la pestaña principal se introduce un nombre y una dirección física para nuestro almacén, a fin de que dicha dirección pueda constar en los documentos que se generen. Este último dato es obligatorio.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción de menú <strong>Entidades Configuración de la Compañía → Almacén y Ubicaciones</strong>, por defecto ingresa a la primera pestaña de <strong>Almacén</strong>, el sistema presenta una ventana como lo muestra la Imagen 22.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Clave de Búsqueda</li>
+<li>Nombre</li>
+<li>Descripción</li>
+<li>Activo</li>
+<li>Localización / Dirección</li>
+<li>Cargo de Fraccionamiento</li>
+<li>Cargo de Merma</li>
+<li>Cargo x Cambio de Artículo</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id1">
+<img alt="Almacenes" src="_images/ly_alm1.png" />
+<p class="caption"><span class="caption-text">Imagen 22: Almacenes</span></p>
+</div>
+<p><strong>Ubicación</strong></p>
+<p>En la siguiente pestaña se define cada una de las ubicaciones de las que costara el almacén.</p>
+<p>Una ubicación es una combinación de un pasillo, una estantería y un nivel de profundidad. Esto permite definir todas las combinaciones de almacenamiento posibles. Adicionalmente, se puede definir una prioridad para que los artículos salgan primero de una determinada ubicación.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña <strong>Ubicación</strong>, el sistema presenta una ventana como lo muestra la Imagen 23.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Almacén</li>
+<li>Clave de Búsqueda</li>
+<li>Activo</li>
+<li>Prioridad Relativa</li>
+<li>Predeterminado</li>
+<li>Pasillo (X)</li>
+<li>Estanteria (Y)</li>
+<li>Nivel (Z)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="Ubicaciones" src="_images/ly_alm2.png" />
+<p class="caption"><span class="caption-text">Imagen 23: Ubicaciones</span></p>
+</div>
+<p><strong>Almacenamiento</strong></p>
+<p>En la tercera pestaña se podrá consultar a posteriori que artículos ha sido  asignados a la ubicación que se hubieran seleccionado en la pestaña anterior.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña <strong>Almacenamiento</strong>, el sistema presenta una ventana como lo muestra la Imagen 24.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Ubicación</li>
+<li>Artículo</li>
+<li>Instancia del Conjunto de Attributos</li>
+<li>Activo</li>
+<li>Stock</li>
+<li>Ultima Fecha de Recuento de Inventarios</li>
+<li><ol class="first upperalpha" start="16">
+<li>Servir</li>
+</ol>
+</li>
+<li><ol class="first upperalpha" start="16">
+<li>Recibir</li>
+</ol>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="Almacenamiento" src="_images/ly_alm3.png" />
+<p class="caption"><span class="caption-text">Imagen 24: Almacenamiento</span></p>
+</div>
+</div>
+<div class="section" id="cargos">
+<h2>Cargos<a class="headerlink" href="#cargos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para algunas de las operaciones con Stock, se deben configurar elementos especiales, para detallar motivos y/o hacer afectación contable. Para esto se utilizan los <strong>Cargos</strong>.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción de menú <strong>Contabilidad → Configuración de Contabilidad → Cargo</strong>, por defecto ingresa a la primera pestaña de <strong>Almacén</strong>, el sistema presenta una ventana como lo muestra la Imagen 25.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Clave de Búsqueda</li>
+<li>Nombre</li>
+<li>Descripción</li>
+<li>Activo</li>
+<li>Tipo de Cargo</li>
+<li>Signo</li>
+<li>Importe de Cargo</li>
+<li>Categoría del Impuesto</li>
+<li>Impuesto Incluido en el Precio</li>
+<li>Mismo Impuesto</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Acceder a la pestaña <strong>Contabilidad</strong>, el sistema presenta una ventana como lo muestra la Imagen 26.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Cargo</li>
+<li>Esquema Contable</li>
+<li>Activo</li>
+<li>Cuenta de Otros Gastos</li>
+<li>Cuenta de Otros Ingresos</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id4">
+<img alt="Cargo" src="_images/ly_cargo.png" />
+<p class="caption"><span class="caption-text">Imagen 25: Cargo</span></p>
+</div>
+<div class="align-center figure" id="id5">
+<img alt="Contabilidad de Cargo" src="_images/ly_cargo_cont.png" />
+<p class="caption"><span class="caption-text">Imagen 26: Contabilidad de Cargo</span></p>
+</div>
+</div>
+<div class="section" id="inventario-fisico">
+<h2>Inventario Físico<a class="headerlink" href="#inventario-fisico" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta ventana se utiliza para realizar ajustes manuales al Stock.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción de menú <strong>Almacén → Inventario Físico</strong>, por defecto ingresa a la primera pestaña de <strong>Recuento de Inventario</strong>, el sistema presenta una ventana como lo muestra la Imagen 27.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Nro. Del Documento</li>
+<li>Descripción</li>
+<li>Tipo de Documento</li>
+<li>Fecha de Movimiento</li>
+<li>Almacén</li>
+<li>Configuracion de Inventario</li>
+<li>Generar Lista</li>
+<li>Actualizar Cantidades</li>
+<li>Proyecto</li>
+<li>Campaña</li>
+<li>Aprobación</li>
+<li>Cantidad Aprobada</li>
+<li>Estado del Documento</li>
+<li>Acción en el Documento</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Acceder a la pestaña <strong>Línea de Recuento de Inventario</strong>, el sistema presenta una ventana como lo muestra la Imagen 28.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Inventario Físico</li>
+<li>Nro. Línea</li>
+<li>Descripción</li>
+<li>Artículo</li>
+<li>Ubicación</li>
+<li>Cantidad Contada</li>
+<li>Cantidad según el sistema</li>
+<li>Diferencia</li>
+<li>Tipo de Inventario</li>
+<li>Cargo (en caso que el Tipo de Inventario sea Cargo en Cuenta)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id6">
+<img alt="Inventario Físico" src="_images/ly_invfisico_1.png" />
+<p class="caption"><span class="caption-text">Imagen 27: Inventario Físico</span></p>
+</div>
+<div class="align-center figure" id="id7">
+<img alt="Inventario Físico - Líneas" src="_images/ly_invfisico_2.png" />
+<p class="caption"><span class="caption-text">Imagen 28: Inventario Físico - Líneas</span></p>
+</div>
+</div>
+<div class="section" id="movimientos-de-inventario">
+<h2>Movimientos de Inventario<a class="headerlink" href="#movimientos-de-inventario" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta ventana se utiliza para realizar transferencias entre almacenes.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción de menú <strong>Almacén → Movimiento de Inventario</strong>, por defecto ingresa a la primera pestaña de <strong>Movimiento</strong>, el sistema presenta una ventana como lo muestra la Imagen 29.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Nro. Del Documento</li>
+<li>Descripción</li>
+<li>Fecha de Movimiento</li>
+<li>Tipo de Documento</li>
+<li>Proyecto</li>
+<li>Campaña</li>
+<li>Aprobación</li>
+<li>Cantidad Aprobada</li>
+<li>En Tránsito</li>
+<li>Fecha de Recibo</li>
+<li>Estado del Documento</li>
+<li>Acción en el Documento</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Acceder a la pestaña <strong>Línea de Movimiento</strong>, el sistema presenta una ventana como lo muestra la Imagen 30.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos que informa la pestaña:</dt>
+<dd><ul class="first last simple">
+<li>Compañía</li>
+<li>Organización</li>
+<li>Movimiento</li>
+<li>Nro. Línea</li>
+<li>Descripción</li>
+<li>Activo</li>
+<li>Artículo</li>
+<li>Conj. Atributos Origen</li>
+<li>Conj. Atributos Destino</li>
+<li>Ubicación</li>
+<li>A Ubicación</li>
+<li>Cantidad del Movimiento</li>
+<li>Cantidad Destino</li>
+<li>Cantidad Desechada</li>
+<li>Cantidad Confirmada</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id8">
+<img alt="Movimiento de Inventario" src="_images/ly_mov_1.png" />
+<p class="caption"><span class="caption-text">Imagen 29: Movimiento de Inventario</span></p>
+</div>
+<div class="align-center figure" id="id9">
+<img alt="Movimiento de Inventario - Líneas" src="_images/ly_mov_2.png" />
+<p class="caption"><span class="caption-text">Imagen 30: Movimiento de Inventario - Líneas</span></p>
+</div>
 <p><strong>Transferencia de Mercadería</strong></p>
 <p><strong>Entradas y Salidas Simples</strong></p>
+</div>
 </div>
 
 

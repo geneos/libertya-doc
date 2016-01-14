@@ -6,8 +6,9 @@ Manufactura - Checklist para correr el proceso de MRP
 
 ----------------------------
 
-Si el componente es comprado:
-#############################
+Si el componente es comprado
+----------------------------
+
 * Desmarcar el check Es Manufacturado en artículo
 * Marcar Comprado en artículo
 * Debe tener proveedor asociado y código de producto del prov.
@@ -18,8 +19,9 @@ Si el componente es comprado:
     * Marcar el check Crear plan
 
 
-Si el componente es fabricado:
-##############################
+Si el componente es fabricado
+-----------------------------
+
 * Desmarcar el check Comprado en el artículo
 * Marcar el check Es Manufacturado en artículo
 * Cargar datos de planificación:

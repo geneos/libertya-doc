@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Manufactura - Proceso MRP &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
+  <title>Manufactura - Ejecución del MRP &mdash; documentación de Documentación de Libertya ERP/MRP - 1.0</title>
   
 
   
@@ -84,22 +84,33 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Lista de Materiales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Planeamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Proceso MRP</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Ejecución del MRP</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paso-1-niveles-inferiores">Paso 1: Niveles inferiores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paso-2-crear-registros-mrp">Paso 2: Crear Registros MRP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paso-3-calcular-plan-de-materiales">Paso 3: Calcular Plan de Materiales</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#revisar-y-confirmar-la-produccion">Revisar y confirmar la producción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#avisos-del-mrp">Avisos del MRP</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 </ul>
 </li>
 </ul>
@@ -134,7 +145,7 @@
       
           <li><a href="manufactura.html">Módulo de Manufactura</a> &raquo;</li>
       
-    <li>Manufactura - Proceso MRP</li>
+    <li>Manufactura - Ejecución del MRP</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -148,8 +159,78 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="manufactura-proceso-mrp">
-<h1>Manufactura - Proceso MRP<a class="headerlink" href="#manufactura-proceso-mrp" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="manufactura-ejecucion-del-mrp">
+<h1>Manufactura - Ejecución del MRP<a class="headerlink" href="#manufactura-ejecucion-del-mrp" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El MRP es un proceso que combina las Listas de Materiales, datos de existencia, órdenes abiertas de compra y manufactura y el Plan Maestro de Producción  para calcular el requerimiento de los materiales. Genera órdenes planeadas para balancear la demanda de productos con  su  abastecimiento  y  emite  recomendaciones  para  recibir  el  material  en cantidades  y  fechas  para  cubrir  los  requerimientos  del  PMP  de  la  manera  más eficiente. El proceso MRP debe completarse siguiendo los paso detallados a continuación:</p>
+<div class="section" id="paso-1-niveles-inferiores">
+<h2>Paso 1: Niveles inferiores<a class="headerlink" href="#paso-1-niveles-inferiores" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este proceso identifica el nivel más bajo de un producto dentro de cualquier estructura. Se utiliza para el cálculo del requerimiento neto de un producto una vez que se han calculado todos  los  requerimientos  brutos  del  producto  hasta  la  estructura  que  utiliza  el producto en el nivel más bajo.</p>
+</div>
+<div class="section" id="paso-2-crear-registros-mrp">
+<h2>Paso 2: Crear Registros MRP<a class="headerlink" href="#paso-2-crear-registros-mrp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Antes de comenzar con el proceso se deben proveer los parámetros</p>
+<p><strong>AVISOS</strong>
+Cuando el proceso finaliza se visualiza una ventana con posibles errores.</p>
+</div>
+<div class="section" id="paso-3-calcular-plan-de-materiales">
+<h2>Paso 3: Calcular Plan de Materiales<a class="headerlink" href="#paso-3-calcular-plan-de-materiales" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Cumplidos los pasos anteriores, podemos calcular el plan de materiales. En el cálculo de plan de materiales, se utilizan los datos provistos por el PMP, es decir los datos maestros que relacionan las Listas de Materiales, los recursos de manufactura y los flujos de trabajo y distribución. Durante este proceso se establece si las existencias y las requisiciones existentes satisfacen las necesidades para la producción.</p>
+<p>Cuando este proceso finaliza, se muestran las Órdenes de Manufactura, las Requisiones y los Avisos que fueron generados.</p>
+</div>
+<div class="section" id="revisar-y-confirmar-la-produccion">
+<h2>Revisar y confirmar la producción<a class="headerlink" href="#revisar-y-confirmar-la-produccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Luego de la ejecución y especialmente, si se obtuvieron Avisos, se deben verificar los resultados mediante las siguientes opciones:</p>
+<p><strong>Consulta del MRP</strong></p>
+<p>Al realizar una Consulta de MRP, se pueden verificar las cantidades comprometidas tanto por pronóstico como por Orden de Manufactura para un producto determinado. Ir a Gestión de Manufactura, MRP, Consulta de MRP. En esta ventana se puede indicar el producto para obtener un listado de toda la demanda del producto, ya sea generadas tanto por órdenes de venta, como por pronósticos.</p>
+</div>
+<div class="section" id="avisos-del-mrp">
+<h2>Avisos del MRP<a class="headerlink" href="#avisos-del-mrp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario que acciones son necesarias para poder alcanzar el Planeamiento de Producción correctamente.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="96%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>MRP-001</td>
+<td>Cantidad Inicial menor que cero. Es negativa.</td>
+</tr>
+<tr class="row-even"><td>MRP-020</td>
+<td>Un pedido de aprovisionamiento debería ser creado para satisfacer un balance negativo proyectado. Este mensaje sólo es generado si &#8220;Crea Plan&#8221; es NO o si aparece un nuevo requerimiento de última hora.</td>
+</tr>
+<tr class="row-odd"><td>MRP-030</td>
+<td>Indica que un pedido de aprovisionamiento va ser procesado antes de ser necesitado y debería de ser retrasado, o bien reprogramado a un estado anterior.</td>
+</tr>
+<tr class="row-even"><td>MRP-040</td>
+<td>Indica que un pedido de aprovisionamiento programado será entregado con mucha posterioridad a ser necesario y que debería de ser reprogramado a una fecha anterior o reprocesador a un estado posterior.</td>
+</tr>
+<tr class="row-odd"><td>MRP-050</td>
+<td>Indica que un pedido de aprovisionamiento ya no es necesario y debería de ser borrado.</td>
+</tr>
+<tr class="row-even"><td>MRP-060</td>
+<td>Indica que un pedido programado debería de ser lanzado.</td>
+</tr>
+<tr class="row-odd"><td>MRP-070</td>
+<td>Lanzar pedido retrasado. Indica que un pedido de aprovisionamiento no fue lanzado cuando debía, y debe de ser lanzado o aprovisionado ahora, o la demanda reprogramada para una fecha posterior.</td>
+</tr>
+<tr class="row-even"><td>MRP-080</td>
+<td>Cantidad por debajo del minimo. Indica que un pedido de aprovisionamiento fue creado por una cantidad inferior a la cantidad mínima prevista en la planificación de stock del producto.</td>
+</tr>
+<tr class="row-odd"><td>MRP-090</td>
+<td>Cantidad por encima del máximo. Indica que un pedido de aprovisionamiento fue creado por una cantidad mayor que la cantidad máxima prevista en la planificación de stock del producto.</td>
+</tr>
+<tr class="row-even"><td>MRP-100</td>
+<td>Indica que hay un requerimiento de material no satisfecho dentro de la planificación de stock para este producto. Debería ser programado manualmente o expedir pedidos de aprovisionamiento para cumplir con la demanda o posponer los requerimientos que crearon dicha demanda.</td>
+</tr>
+<tr class="row-odd"><td>MRP-110</td>
+<td>No existe almacén de demanda. En la planificación del producto no figura la demanda.</td>
+</tr>
+<tr class="row-even"><td>MRP-120</td>
+<td>No existe almacén de suministros. En la planificación del producto no figura los suministros.</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 

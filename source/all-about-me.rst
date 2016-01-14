@@ -2,35 +2,26 @@
 Acerca de Geneos
 ################
 
-Cooperativa de Trabajo basada en Software Libre.
+**Somos**
 
-Documentación de Manuales usando Sphinx, Github y Read The Docs
----------------------------------------------------------------
+	Una cooperativa conformada por profesionales de la informática, las comunicaciones y el diseño, lo que nos permite trabajar de manera integral en la búsqueda de innovación, la mejora continua y la calidad. Nos dedicamos a implementar proyectos de tecnología, basados en Software Libre, que contribuyan a mejorar y potenciar el modelo de negocios de nuestros clientes.
 
-Sphinx es una herramienta que permite escribir documentos en texto plano para una fácil generación de salidas en formatos que satisfagan diversas necesidades.
+	Ofrecemos nuestra experiencia de más de 15 años desarrollando software para encontrar las mejores soluciones posibles. Contamos además con diversas experiencias en metodología ágiles para la mejora continua, normas y procedimientos, seguridad de la información, posicionamiento en buscadores,presencia digital, publicidad, comunicación y diseño gráfico.
 
-Se vuelve útil usando un Sistema de Control de Versiones, en nuestro caso Git para realizar el seguimiento de los cambios.
+**una cooperativa de trabajo**
 
-La documentación de texto plano también es útil para colaboradores a través de distintos sistemas. El texto plano es uno de los formatos más portables disponibles actualmente.
+	Entendemos el cooperativismo como la forma de resignificar el trabajo y construir nuevas formas de organización en torno a este. Creemos en el cooperativismo como  un herramienta de transformación, que permite lograr una manera democrática y participativa de gestionar las formas y objetivos del trabajo de las personas.
 
-Piense en Sphinx como una infraestructura de documentación: abstrae las partes tediosas y ofrece funcionalidad automática para solucionar problemas comunes como el indexado de títulos y el resaltado de código especial (si se están mostrando ejemplos de código) con el resaltado de sintaxis apropiado.
+**de Tecnología, Innovación y Conocimiento**
 
-**Pasos**
+	Nos dedicamos a brindar soluciones informáticas a otras organizaciones, empresas o personas. El trabajo que realizamos consiste en el desarrollo de software, es decir, la creación de sistemas que posibilitan la resolución de una problemática específica. Las cooperativas TICs se dedican al diseño de estas aplicaciones y a garantizar su correcta implementación. Por otro lado, ofrecemos servicio de consultoría o soporte técnico y auditorías sobre los sistemas que una organización ya posee. Otro de los servicios ofrecidos son las capacitaciones a las empresas en el uso de los sistemas.
 
-1. Instalar Sphinx (Linux - Ubuntu)
+**basados en Software Libre**
 
-.. topic:: pip install Sphinx
-
-2. Iniciar el asistente para crear el proyecto
-
-.. topic:: sphinx-quickstart
-
-3. Sphinx genera la siguiente estructura de proyecto
-
-.. topic:: build  make.bat  Makefile  source
-
-4. Dentro de source tendremos los archivos de documentación y algunos de configuración
-
-.. topic:: all-about-me.rst  _static conf.py index.rst _templates
+	El software libre fomenta el trabajo colaborativo mediante comunidades de desarrollo, tiene potencial para dar soluciones y respuestas a todo tipo de requerimientos y no necesita licencias para su uso y desarrollo. Además, posee 
+	estándares abiertos y garantiza la seguridad.
 
 
+.. image:: _static/images/coop_servicios.png
+    :alt: Servicios
+    :align: center

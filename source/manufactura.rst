@@ -22,10 +22,12 @@ Fuentes complementarias
 
 **Síntesis del Proceso MRP**
 
-.. image:: _static/images/ly_mrp.png
+.. figure:: _static/images/ly_mrp.png
     :alt: Síntesis MRP
+    :align: center
+    :figclass: align-center
 
-*Imagen N*
+    Imagen 31: Síntesis MRP
 
 
 Contenidos:
@@ -37,11 +39,11 @@ Contenidos:
    manufactura-bom
    manufactura-plan
    manufactura-pronostico
+   manufactura-checklist
    manufactura-proceso
    manufactura-om
    manufactura-revision
    manufactura-operaciones
    manufactura-costos
    manufactura-informes
-   manufactura-checklist
 

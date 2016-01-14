@@ -32,7 +32,7 @@
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="next" title="Principales Maestros de la Aplicación" href="maestros.html"/>
-        <link rel="prev" title="Acceso al Sistema" href="acceso.html"/> 
+        <link rel="prev" title="Primeros Pasos" href="acceso.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,13 +83,20 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Estructura de Aplicación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Estructura de Aplicación</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pantalla-principal">Pantalla principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#area-de-trabajo">Área de Trabajo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#iconos-del-menu">Iconos del menú</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-de-una-ventana">Estructura de una ventana</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -137,7 +144,106 @@
             
   <div class="section" id="estructura-de-aplicacion">
 <h1>Estructura de Aplicación<a class="headerlink" href="#estructura-de-aplicacion" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Estructura</p>
+<div class="section" id="pantalla-principal">
+<h2>Pantalla principal<a class="headerlink" href="#pantalla-principal" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una vez validados los datos de acceso, el sistema presenta la ventana principal, como puede verse a continuación:</p>
+<div class="align-center figure" id="id1">
+<img alt="Pantalla Principal" src="_images/ly_inicio.png" />
+<p class="caption"><span class="caption-text">Imagen 3: Pantalla Principal</span></p>
+</div>
+</div>
+<div class="section" id="area-de-trabajo">
+<h2>Área de Trabajo<a class="headerlink" href="#area-de-trabajo" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En el menú de la aplicación (área a la derecha) aparecen todos los componentes a los que se tiene acceso.</p>
+<p>El menú se construye en modo árbol de forma que se pueden agrupar los componentes en carpetas. La configuración depende de los permisos que tenga el usuario y por lo tanto del rol con el que haya hecho login.</p>
+<p>Existe dos manera de navegar a través del menú:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Haciendo doble click con el botón de mouse en las carpetas, y con un solo click para que se abra la ventana, procesos o informe a los que se quiera acceder.</li>
+<li>La aplicación cuenta con una búsqueda sobre el menú, abajo a la derecha existe un campo de texto que nos permite ingresar el nombre de la utilidad que deseamos utilizar (Ventana, proceso o informe). Cuando se presiona la tecla Intro va a buscar la palabra ingresada, si existe mas de una palabra presionando de nuevo return salta a la siguiente opción. Una vez encontrada la funcionalidad con la tecla Ctrl + Intro se puede acceder a la funcionalidad.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="iconos-del-menu">
+<h2>Iconos del menú<a class="headerlink" href="#iconos-del-menu" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En el árbol que forma el menú podemos encontrar cinco clases de iconos:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Carpetas:</strong> Cada carpeta contiene más elementos, ya sea ventanas de trabajo , procesos o informes. Cada carpeta contempla una temática del sistema, así es como podemos encontrar carpetas denominadas VENTAS, ALMACEN, COMPRAS, etc. Para ver el contenido de una carpeta, haga click con el botón izquierdo del mouse sobre el botón que se encuentra justo a la izquierda de la carpeta a expandir.</li>
+<li><strong>Ventanas:</strong> Permite la introducción, consulta y modificación de datos, y desde ella se realizan la mayoría de actividades de interacción del usuario y la aplicación.</li>
+<li><strong>Procesos:</strong> Partiendo de los parámetros, datos o condiciones que asigne e introduzca el usuario, la aplicación realizara operaciones automáticas como la generación de albaranes o facturas, procesos de pedidos, etc.</li>
+<li><strong>Informes:</strong> Permite visualizar e imprimir la información de la aplicación según las condiciones definidas por el usuario. Por ejemplo permite visualizar los vencimientos, los últimos movimientos de stock, etc. Cualquier documento salida del sistema de gestión es factible de ser procesado como un informe.</li>
+<li><strong>Flujo de trabajo:</strong> Muestra una serie de actividades relacionadas entre si, que deben de irse completando en un orden dado, a fin de alimentar de datos de las actividades siguientes y obtener un resultado determinado. Ejemplos típicos son la configuración de artículos y entidades comerciales, o todos los sucesivos pasos de un proceso de negocio. Los flujos de trabajo se utilizaran, típicamente, por los usuarios encargados de la carga inicial de datos y mantenimiento de la aplicación con el fin de seguir un protocolo o procedimiento común en todos los casos que normalice un determinado proceso de negocio complejo.</li>
+</ol>
+</div></blockquote>
+<p>Adicionalmente, se dispone de la barra de acceso rápido situada a todo lo largo de la parte izquierda del menú. Para añadir ventanas o procesos a dicha barra, solo hay que hacer click con el botón derecho sobre el elemento para que se visualice la opción de Añadir a barra, y confirmar dicho mensaje con un click del botón izquierdo del ratón.</p>
+</div>
+<div class="section" id="estructura-de-una-ventana">
+<h2>Estructura de una ventana<a class="headerlink" href="#estructura-de-una-ventana" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En algunas de las ventanas, debido a la alta cantidad de registros que contiene, aparecerá una ventana inicial de selección o de búsqueda similar a la que muestra la figura siguiente:</p>
+<div class="align-center figure" id="id2">
+<img alt="Ventana de búsqueda de registros" src="_images/ly_busqueda.png" />
+<p class="caption"><span class="caption-text">Imagen 4: Ventana de búsqueda de registros</span></p>
+</div>
+<p>En función de los parámetros ingresados el sistema filtra los resultados que aparecen en una ventana con la siguiente estructura:</p>
+<div class="align-center figure" id="id3">
+<img alt="Estructura de Ventanas" src="_images/ly_banco.png" />
+<p class="caption"><span class="caption-text">Imagen 5: Estructura de Ventanas</span></p>
+</div>
+<p>Una ventana se organiza segmentando la información en Pestañas, para este caso como un banco puede tener varias cuentas tendremos esa relación representada en Pestañas anidadas, como puede verse a continuación:</p>
+<div class="align-center figure" id="id4">
+<img alt="Estructura de Ventanas - Pestaña" src="_images/ly_cuenta.png" />
+<p class="caption"><span class="caption-text">Imagen 6: Estructura de Ventanas - Pestaña</span></p>
+</div>
+<p>En todas las ventanas de la aplicación se encontrara una estructura común en la parte superior. Por una parte, tenemos el menú compuesto por una serie de ventanas desplegables (Archivo, Edición, Ver, Ir, Herramientas, Ayuda).</p>
+<p>Como ejemplo, dentro de Herramientas aparece la opción <strong>Preferencias</strong>. Las preferencias de usuario permite determinar la pantalla del cliente y como reaccionará ante específicas acciones de usuario. Sus opciones son las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Interfaz de Usuario:</strong> El botón de interfaz de usuario permite la selección de la apariencia y estilo de Libertya. Se puede seleccionar diferentes estilos y colores y tener una vista previa de su selección antes de guardarla.</li>
+<li><strong>Guardado Automático:</strong> Si se selecciona Guardado Automático, los cambios se guardaran automáticamente cuando se navegue por una única pestaña. Cuando se cambien pestañas debe confirmar la acción independientemente de la opción.</li>
+<li><strong>Acceso Automático:</strong> Si se selecciona la casilla de verificación Acceso Automático, la ventana de Acceso no se mostrara cuando se inicie Libertya. Se usara el nombre de usuario, contraseña, perfil, cliente y organización de la sesión anterior. Si se quiere cambiar algún parámetro de estos debe bloquearse, quitando la selección de este check box y salir de Libertya. La próxima vez que se ingrese en la aplicación se mostrara la ventana de acceso y se podrá insertar los valores que se desee. Esta opción puede desactivarse para sistemas que requieran alta seguridad.</li>
+<li><strong>Contraseña Almacenado:</strong> Si se selecciona la casilla de verificación Recordar Contraseña, Libertya recordará el usuario y la contraseña con el que se accedió en la anterior sesión. Estos valores pueden ser sobrescritos fuera necesario.</li>
+<li><strong>Mostrar Pestañas Contables / Mostrar Pestañas de Traducción:</strong> Si se selecciona la casilla de verificación Mostrar Pestañas Contables / Mostrar Pestaña de Traducción, Libertya mostrará las pestañas contables y de traducción en aquellas ventana que contengan este tipo de pestañas.</li>
+<li><strong>Traducción:</strong> Las pestañas de traducción solo debería estar disponibles para los administradores de sistema, y las contables para el departamento de contabilidad o los usuarios debidamente cualificados para la parametrización de cuentas contables de la aplicación. Por esto, lo común será que los usuarios normales tengan estas dos casillas desactivadas y en modo de lectura solamente.</li>
+<li><strong>Crear Objetos en el Servidor:</strong> Se selecciona la casilla de verificación Crear Objetos en el Servidor solo si esta trabajando remotamente y se quiere reducir el tráfico de red. La contrapartida es que los objetos que son creados en el servidor requieren más recurso de servidor, por lo que puede ser necesario una mayor cantidad de memoria y de espacio de disco.</li>
+<li><strong>Imprimir Siempre Vista Previa:</strong> Si se selecciona esta casilla de verificación, Libertya mostrará una pantalla de Vista Previa antes de imprimir cualquier documento, informe o pantalla. Una vez visualizado, aprobado y validado dicho documento o informe se puede imprimir directamente.</li>
+<li><strong>Nivel de Mensajes de Logs:</strong> El nivel de depuración indica el nivel de detalle de los mensajes de la bitácora de errores, información e incidencias que genera Libertya en tiempo real. Se puede querer modificar esta opción cuando requiera soporte para un problema específico y el servicio de soporte solicite la información que esta opción proporciona. Esta utilidad no obstante, solo debería ser modificada por los administradores del sistema o usuarios profesionales debidamente cualificados que entiendan lo que están haciendo.</li>
+<li><strong>Impresora:</strong> Los campos de Impresión permiten seleccionar la impresora que será usada para los documentos e informes. Sobrescribirá el valor introducido o tomado por defecto cuando se inicio sesión en Libertya.</li>
+<li><strong>Fecha:</strong> El campo fecha permite seleccionar la fecha que será usada en los documentos. Sobrescribirá el valor entrado o tomado por defecto al iniciar la sesión de Libertya.</li>
+</ol>
+</div></blockquote>
+<p>Justo debajo se encuentra la barra de herramientas (botonera), con una serie de iconos comunes a todas las ventanas (crear, guardar, eliminar, buscar, imprimir, ver como grilla, etc). A continuación, en la ventana se encuentran los campos de la ventana, que permite visualizar y/o introducir nuevos datos dependiendo de la configuración en cada momento. Los campos en rojo deben contener obligatoriamente algún dato para poder guardar el registro. Para pasar de un campo a otro se realiza con el ratón o bien con la tecla Tab.</p>
+<div class="align-center figure" id="id5">
+<img alt="Barra de Herramientas" src="_images/ly_barra.png" />
+<p class="caption"><span class="caption-text">Imagen 7: Barra de Herramientas</span></p>
+</div>
+<p>De izquierda a derecha:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Deshacer cambios</li>
+<li>Nuevo registro</li>
+<li>Eliminar registro</li>
+<li>Guardar registro</li>
+<li>Actualizar registro</li>
+<li>Buscar registros</li>
+<li>Adjuntos: permite adjuntar documentos a un registro de la ventana.</li>
+<li>Vista:  formulario (ingreso de datos) y grilla (vista tipo tabla).</li>
+<li>Historial de registros: en el caso de algunas ventanas los registros quedan ocultos tras un cierto tiempo de antigüedad para facilitar la navegación por la ventana. Con este botón se puede seleccionar la antigüedad de los registros que se muestran, pero solo en ese acceso a la ventana, cuando se vuelva a iniciar la ventana volverá a la vista original. Si siempre se desea ingresar con otro periodo de antigüedad, solo el administrador del sistema podrá configurarlo.</li>
+<li>Inicio</li>
+<li>Pestaña anterior</li>
+<li>Pestaña siguiente</li>
+<li>Primer registro</li>
+<li>Registro anterior</li>
+<li>Registro siguiente</li>
+<li>Último registro</li>
+<li>Imprimir (en los casos que la ventana lo permite)</li>
+<li>Flujos de trabajo activos (en los contextos que tiene sentido)</li>
+<li>Exportar</li>
+<li>Conversación</li>
+<li>Salir</li>
+</ol>
+</div></blockquote>
+</div>
 </div>
 
 
@@ -150,7 +256,7 @@
         <a href="maestros.html" class="btn btn-neutral float-right" title="Principales Maestros de la Aplicación" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="acceso.html" class="btn btn-neutral" title="Acceso al Sistema" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="acceso.html" class="btn btn-neutral" title="Primeros Pasos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
