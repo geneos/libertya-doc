@@ -1,6 +1,6 @@
-**********************************
-Datos de Planificación de producto
-**********************************
+************************************************
+Manufactura - Datos de Planificación de producto
+************************************************
  
 Para calcular el Plan de Materiales, primero debemos configurar los **Datos de Planeamiento de los Productos** que intervienen en el proceso productivo.
 
