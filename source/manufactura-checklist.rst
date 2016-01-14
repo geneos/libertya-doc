@@ -14,7 +14,7 @@ Consideraciones Generales
 Si el componente es comprado
 ----------------------------
 
-    * En la ventana **Artículo**, pestaña **Artículo**, desmarcar el check **Es Manufacturado** y marcar el check **Comprado**.
+    * En la ventana **Artículo**, pestaña **Artículo**, desmarcar el casilla de verificación **Es Manufacturado** y marcar el check **Comprado**.
     * En la ventana **Artículo**, pestaña **Compras**, cargar un registro con un proveedor asociado por defecto.
     * En la ventana **Datos de Planificación del Producto**, pestaña **Datos de Planificación**, cargar datos que correspondan:
         * Recurso (la Planta donde se va a producir).
@@ -28,7 +28,7 @@ Si el componente es comprado
 Si el componente es fabricado
 -----------------------------
 
-    * En la ventana **Artículo**, pestaña **Artículo**, marcar el check **Es Manufacturado** y desmarcar el check **Comprado**..
+    * En la ventana **Artículo**, pestaña **Artículo**, marcar el casilla de verificación **Es Manufacturado** y desmarcar el casilla de verificación **Comprado**..
     * En la ventana **Datos de Planificación del Producto**, pestaña **Datos de Planificación**, cargar datos que correspondan:
         * Recurso (la Planta donde se va a producir).
         * Almacén.
@@ -37,4 +37,4 @@ Si el componente es fabricado
         * Política de Ordenamiento.
         * Tiempos (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).
         * Cantidades (no es mandatorio, dependen de cada producto y de la Política de Ordenamiento).
-        * Marcar el check Crear Plan.
+        * Marcar el casilla de verificación Crear Plan.
