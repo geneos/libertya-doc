@@ -6,7 +6,7 @@
 Documentación de Libertya ERP/MRP
 =================================
 
-Contenidos:
+Indice de contenidos:
 
 .. toctree::
    :maxdepth: 2
