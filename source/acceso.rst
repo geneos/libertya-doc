@@ -10,8 +10,7 @@ En la ventana de **Entrada al Sistema**, en la pestaña **Conexión**, se debe c
 	1. **Servidor:** Esta dato ya está configurado por el administrador del sistema y no debe ser modificado por el usuario. 
 	2. **Usuario:** ingrese su usuario de acceso al sistema. Tenga en cuenta que el sistema es key sensitive, es decir, discrimina mayúsculas y minúsculas en el tipeo. Así entonces, a modo de ejemplo: el usuario Juan no es el mismo que el usuario JUAN. 
 	3. **Contraseña:** ingrese su usuario de acceso al sistema.
-	4. **Lenguaje:** Ud. debe seleccionar el lenguaje que corresponda. Para la localización Argentina, Español (Argentina). 
-
+	4. **Lenguaje:** Ud. debe seleccionar el lenguaje que corresponda. Para la localización Argentina, Español (Argentina).
 
 .. figure:: _static/images/ly_login.png
     :alt: Ingreso al Sistema Pantalla 1

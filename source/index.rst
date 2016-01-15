@@ -6,7 +6,7 @@
 Documentación de Libertya ERP/MRP
 =================================
 
-Indice de contenidos:
+Índice de contenidos:
 
 .. toctree::
    :maxdepth: 2
@@ -21,9 +21,3 @@ Indice de contenidos:
    contabilidad
    stock
    manufactura
-
-
-
-
-
-

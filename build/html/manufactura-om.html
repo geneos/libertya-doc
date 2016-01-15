@@ -32,8 +32,8 @@
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
-        <link rel="next" title="Revisión a detalle" href="manufactura-revision.html"/>
-        <link rel="prev" title="Ejecución del MRP" href="manufactura-proceso.html"/> 
+        <link rel="next" title="Manufactura - Revisión a detalle" href="manufactura-revision.html"/>
+        <link rel="prev" title="Manufactura - Ejecución del MRP" href="manufactura-proceso.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,7 +83,7 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
@@ -97,14 +97,13 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Ejecución del MRP</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html#revisar-y-confirmar-la-produccion"><strong>Revisar y confirmar la producción</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Orden de Manufactura</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Revisión a detalle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 </ul>
 </li>
 </ul>
@@ -155,31 +154,89 @@
             
   <div class="section" id="manufactura-orden-de-manufactura">
 <h1>Manufactura - Orden de Manufactura<a class="headerlink" href="#manufactura-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Una Orden de Manufactura es un documento que indica a la planta el compromiso de
-fabricar un producto en una cantidad establecida y en una fecha específica.
-Para  generar  o  modificar  manualmente  una  Orden  de  Manufactura  debemos ir a:
-Manufactura -&gt; Control de Producción -&gt; Manufactura Discreta -&gt; Orden de Manufactura.</p>
-<p>La Orden de Manufactura integra componentes de la lista de materiales, del flujo de
-trabajo y de los datos de planeación.</p>
-<p><strong>Fecha de última Entrega</strong>:Es la fecha de la última vez que el material de esta orden
-fue entregado al almacén.</p>
-<p><strong>Fecha de Inicio programada</strong>: Es la fecha en que el MRP establece que la orden
-debe ser surtida a la planta.</p>
-<p><strong>Fecha de Terminación Programada</strong>: Es la fecha en que el MRP establece que la
-orden debe ser entregada al almacén.</p>
-<p><strong>Fecha de Inicio Real</strong>: Es la fecha en que la orden es liberada a la planta para ser
-producida.</p>
-<p><strong>Fecha de Terminación Real</strong>: Es la fecha en que se elabora el cierre de la orden.</p>
-<p><strong>Flotación Anterior</strong> – Se utilizará posteriormente para el proceso de balanceo de la
-carga de Recursos.</p>
-<p><strong>Flotación Posterior</strong> – Se utilizará posteriormente para el balanceo de la carga de
-Recursos.</p>
-<p>En el <strong>Grupo Cantidades</strong> se introduce la cantidad de producto a fabricar con  la Orden de Manufactura y su Unidad de Medida.</p>
-<p>La <strong>Cantidad del Lote</strong> y la <strong>Cantidad del Tamaño del lote</strong> nos indica cuantos lotes de producción integran la OM y de que tamaño serán. Estos datos son tomados del Flujo de Trabajo de la OM.</p>
-<p>En el campo <strong>Cantidad Entregada</strong> se muestra la cantidad que ha sido entregada al almacén de producto terminado hasta el momento.</p>
-<p>La <strong>cantidad Rechazada</strong>: en este campo se muestra la cantidad que no ha cubierto las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.</p>
-<p>En  el  campo <strong>Rendimiento</strong> se  despliega  la  cantidad  de  producto  que  reúne  las especificaciones de calidad dividida entre la cantidad total de la orden a producir.</p>
-<p><strong>Proyecto y Campaña</strong> se refieren a las dimensiones estándar de Libertya.</p>
+<p>Una <strong>Orden de Manufactura</strong> es un documento que indica a la planta el compromiso de fabricar un producto en una cantidad establecida y en una fecha específica.</p>
+<p>Si bien las Ordenes de anufactura sn generadas de formaq automática por el MRP, también pueden ser modificadas y/o creadas manualmente.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Orden de Manufactura</strong>. El sistema presenta una ventana como lo muestra la Imagen 43.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Compañía:</strong> Compañía o empresa que utiliza ésta instalación. Compañía, empresa o entidad legal. No se puede compartir datos entre compañías.</li>
+<li><strong>Organización:</strong> Entidad organizacional dentro de la compañía. Una organización es una unidad de la compañía o entidad legal - Ej. Tiendas y departamentos.</li>
+<li><strong>Nro. Del Documento:</strong> Número identificador de la Orden de Manufactura. Es usualmente generado automáticamente por el sistema y determinado por el tipo del documento.</li>
+<li><strong>Tipo Documento Destino:</strong> Debe ser Orden de Manufactura.</li>
+<li><strong>Activo:</strong> El registro está activo en el sistema. Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para reportes.</li>
+<li><strong>Descripción:</strong> Descripción corta opcional del registro. Una descripción esta limitada a 255 caracteres.</li>
+<li><strong>Artículo:</strong> Artículo objeto de la producción asociada a esta Orden de Manufactura.</li>
+<li><strong>Lista de Materiales:</strong> Lista de Materiales asociada al artículo objeto de la producción asociada a esta Orden de Manufactura.</li>
+<li><strong>Recurso:</strong> Planta donde se realiza la producción.</li>
+<li><strong>Flujo de Trabajo:</strong> Flujo de trabajo o combinación de tareas, asociado al artículo objeto de la producción asociada a esta Orden de Manufactura.</li>
+<li><strong>Almacén:</strong> Almacén asociado al artículo objeto de la producción asociada a esta Orden de Manufactura.</li>
+<li><strong>Prioridad:</strong> Prioridad de un documento. La prioridad indica la importancia (alta; media; baja) de este documento.</li>
+<li><strong>Fecha de la Orden</strong></li>
+<li><strong>Fecha Prometida:</strong> Indica la fecha en la que se espera la Orden de Manufactura este finalizada. Indica la fechaen que la orden fue prometida al cliente.</li>
+<li><strong>Fecha de Confirmación</strong></li>
+<li><strong>Fecha de la Entrega</strong></li>
+<li><strong>Fecha Inicio programada:</strong> Fecha Inicio Programada para la OM.</li>
+<li><strong>Fecha Final Programada:</strong> Fecha Final Programada para la OM.</li>
+<li><strong>Fecha de Inicio:</strong> Es la fecha cuando el primer movimiento de la orden de manufactura fue reportado, este movimiento puede ser un inventario o movimiento de labor.</li>
+<li><strong>Fecha de Terminación:</strong> La fecha final se usa para indicar cuando se espera que el proyecto se complete o cuando ha sido completado.</li>
+<li><a href="#id1"><span class="problematic" id="id2">**</span></a>Flotante Antes</li>
+<li><a href="#id3"><span class="problematic" id="id4">**</span></a>Flotante Despues</li>
+<li><strong>Cantidad:</strong> Cantidad de la Orden de Manufactura.</li>
+<li><strong>UM:</strong> Unidad de Medida del Producto de la Orden de Manufactura.</li>
+<li><strong>CantidadLotes</strong></li>
+<li><strong>Tamaño Cantidad Lote</strong></li>
+<li><strong>Cantidad Entregada:</strong> La Cantidad Entregada indica la cantidad de un producto que ha sido entregada.</li>
+<li><strong>Cantidad Rechazada:</strong> La Cantidad Rechazada indica la cantidad de un producto que ha sido rechazada.</li>
+<li><strong>% de Rendimiento</strong></li>
+<li><a href="#id5"><span class="problematic" id="id6">**</span></a>Cantidad Desperdicio</li>
+<li><strong>Proyecto:</strong> Identifica un proyecto único. La ID de un proyecto es un identificador definido por el usuario para un proyecto.</li>
+<li><strong>Estado del Documento:</strong> El Estado del Documento indica el estado del documento en este momento. Si usted quiere cambiar el Estado del Documento; use el campo Acción del Documento.</li>
+<li><strong>Acción en el Documento:</strong> El estado destino del documento .</li>
+<li><strong>Tipo de Documento:</strong> Tipo de documento o reglas. El tipo de documento determina la secuencia del documento y las reglas de proceso.</li>
+<li><strong>Copiar Desde</strong></li>
+<li><strong>Estado Contable</strong></li>
+<li><strong>Impreso</strong></li>
+<li><strong>Procesado</strong></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Guardar</p>
+</li>
+</ol>
+<div class="align-center figure" id="id7">
+<img alt="Orden de Manufactura" src="_images/ly_om_1.png" />
+<p class="caption"><span class="caption-text">Imagen 44: Orden de Manufactura</span></p>
+</div>
+<p>De forma automática, el sistema carga los datos referidos a la fórmula y flujo de trabajo definidos como se muestra en las pestañas de la ventana:</p>
+<p>Pestaña de Fórmula</p>
+<div class="align-center figure" id="id8">
+<img alt="Fórmula" src="_images/ly_om_2.png" />
+<p class="caption"><span class="caption-text">Imagen 45: Fórmula</span></p>
+</div>
+<p>Pestaña de Componentes de la Fórmula</p>
+<div class="align-center figure" id="id9">
+<img alt="Componentes de la Fórmula" src="_images/ly_om_3.png" />
+<p class="caption"><span class="caption-text">Imagen 46: Componentes de la Fórmula</span></p>
+</div>
+<p>Pestaña de Flujo de Trabajo</p>
+<div class="align-center figure" id="id10">
+<img alt="Flujo de Trabajo" src="_images/ly_om_4.png" />
+<p class="caption"><span class="caption-text">Imagen 47: Flujo de Trabajo</span></p>
+</div>
+<p>Pestaña de Actividades o Nodos del Flujo de Trabajo</p>
+<div class="align-center figure" id="id11">
+<img alt="Actividades o Nodos del Flujo de Trabajo" src="_images/ly_om_5.png" />
+<p class="caption"><span class="caption-text">Imagen 48: Actividades o Nodos del Flujo de Trabajo</span></p>
+</div>
+<p>Pestaña de Costos asociados (se generan cuando se procesa la orden y se calculan al cerrar la orden).</p>
+<div class="align-center figure" id="id12">
+<img alt="Costos" src="_images/ly_om_6.png" />
+<p class="caption"><span class="caption-text">Imagen 49: Costos</span></p>
+</div>
 </div>
 
 
@@ -189,10 +246,10 @@ Recursos.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manufactura-revision.html" class="btn btn-neutral float-right" title="Revisión a detalle" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manufactura-revision.html" class="btn btn-neutral float-right" title="Manufactura - Revisión a detalle" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-proceso.html" class="btn btn-neutral" title="Ejecución del MRP" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-proceso.html" class="btn btn-neutral" title="Manufactura - Ejecución del MRP" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

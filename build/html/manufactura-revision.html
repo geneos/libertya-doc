@@ -83,7 +83,7 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
@@ -97,13 +97,13 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 </ul>
 </li>
 </ul>
@@ -154,18 +154,28 @@
             
   <div class="section" id="manufactura-revision-a-detalle">
 <h1>Manufactura - Revisión a detalle<a class="headerlink" href="#manufactura-revision-a-detalle" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Se puede verificar el detalle del cálculo en la opción de menú Gestión de Planificación &gt; MRP &gt; Revisión a detalle</p>
-<p>En el encabezado se debe seleccionar el Artículo, planta y Almacén y el período de tiempo para el que se quiere analizar las demandas y los suministros. Alguno de estos parámetros pueden ser dejados en blanco.
-Al presionar el botón verde para actualizar, se visualizan la información relacionada con el Recurso de Manufactura donde el producto va a ser manufacturado, los almacenes de demanda y suministro, las fechas, las cantidades y si corresponden a demanda o a suministro.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción del menú <strong>Gestión de Planificación →  MRP → Revisión a detalle</strong>. El sistema presenta una ventana como lo muestra la Imagen 50.</li>
+</ol>
+<div class="align-center figure" id="id1">
+<img alt="Revisión a detalle" src="_images/ly_revision.png" />
+<p class="caption"><span class="caption-text">Imagen 49: Revisión a detalle</span></p>
+</div>
+<p>En el encabezado se debe seleccionar el Artículo, planta y Almacén y el período de tiempo para el que se quiere analizar las demandas y los suministros. Alguno de estos parámetros pueden ser dejados en blanco.</p>
+<p>Al presionar el botón para actualizar (verde en la parte inferior izquierda), se visualizan la información relacionada con el Recurso de Manufactura donde el producto va a ser manufacturado, los almacenes de demanda y suministro, las fechas, las cantidades y si corresponden a demanda o a suministro.</p>
 <p><strong>Los campos detallados son:</strong></p>
-<p><strong>Cantidad de la demanda.</strong> El origen de la demanda puede ser tanto demanda independiente, cómo componentes requeridos por una orden de manufactura.</p>
-<p><strong>Fecha prometida:</strong> es la fecha establecida para la demanda o el suministro.
-Emitido en firme: muestra las cantidades de las órdenes de suministro que serán recibidas en la fecha prometida. El origen de esta recepción puede ser una orden de compra abierta, una requisición, una orden de manufactura abierta o una orden planeada.</p>
-<p><strong>Stock proyectado:</strong> se calcula a partir de la cantidad inicial del stock disponible con el agregado de suministros y retiros. Las cantidades negativas indican que es necesaria generar una orden de planeamiento para satisfacer la demanda, de forma tal que al finalizar el proceso de producción el Stock Proyectado sea igual a cero.</p>
-<p>La columna <strong>Demanda/Suministro</strong> tiene dos posibles valores: Demanda para si el producto es un componente alcanzado por una OM o suministro si se trata de un producto terminado o una requisición.</p>
-<p>El <strong>Tipo de Documento</strong> indica el tipo de demanda: Orden de venta, Orden de compra abierta, Orden de Manufactura.</p>
-<p>La columna <strong>Nro. de documento</strong> muestra el número del documento relacionado.</p>
-<p>Los posibles <strong>Estados del documento</strong> son: Borrador, No aprobado, En proceso o Completo.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Cantidad de la demanda:</strong> El origen de la demanda puede ser tanto demanda independiente, cómo componentes requeridos por una orden de manufactura.</li>
+<li><strong>Fecha prometida:</strong> Es la fecha establecida para la demanda o el suministro.</li>
+<li><strong>Emitido en firme:</strong> Muestra las cantidades de las órdenes de suministro que serán recibidas en la fecha prometida. El origen de esta recepción puede ser una orden de compra abierta, una requisición, una orden de manufactura abierta o una orden planeada.</li>
+<li><strong>Stock proyectado:</strong> Se calcula a partir de la cantidad inicial del stock disponible con el agregado de suministros y retiros. Las cantidades negativas indican que es necesaria generar una orden de planeamiento para satisfacer la demanda, de forma tal que al finalizar el proceso de producción el Stock Proyectado sea igual a cero.</li>
+<li><strong>Demanda/Suministro:</strong> Tiene dos posibles valores: Demanda para si el producto es un componente alcanzado por una OM o suministro si se trata de un producto terminado o una requisición.</li>
+<li><strong>Tipo de Documento:</strong> Indica el tipo de demanda: Orden de venta, Orden de compra abierta, Orden de Manufactura.</li>
+<li><strong>Nro. de documento:</strong> Muestra el número del documento relacionado.</li>
+<li><strong>Estados del documento:</strong> Muestra el estado del documento relacionado.</li>
+</ul>
+</div></blockquote>
 </div>
 
 
