@@ -83,8 +83,8 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
@@ -97,8 +97,10 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="manufactura-costos.html#conceptos-preliminares-de-costos">Conceptos preliminares de costos</a></li>
@@ -181,29 +183,41 @@
 <p>Para poder sacar el costo de una Orden de Manufactura de <strong>P1</strong>, necesitamos previamente, configurar los elementos de costos de los componentes de la fórmula de <strong>P1</strong>, y de los recursos del flujo de trabajo de <strong>P1</strong>.</p>
 <p><strong>Pasos a Paso</strong></p>
 <ol class="arabic">
-<li><p class="first">Configurar para cada <strong>Artículo</strong> de la fórmula (P2, P3 y P4) un registro de Coste de Artículo, definiendo la asociación entre:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Esquema Contable.</li>
-<li>Almacén.</li>
-<li>Tipo de Coste.</li>
-<li>Elemento de Coste.</li>
-</ul>
-</div></blockquote>
+<li><p class="first">Configurar los <strong>Tipo de Coste</strong> a ser utilizados.</p>
 </li>
-<li><p class="first">Configurar para cada <strong>Recurso</strong> (representado por una Artículo) del flujo de trabajo (R1 y R2) un registro de Coste de Artículo, definiendo la asociación entre:</p>
-<blockquote>
-<div><ul class="simple">
+<li><p class="first">Configurar los <strong>Elemento de Coste</strong> a ser utilizados.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Configurar para cada <strong>Artículo</strong> de la fórmula (P2, P3 y P4) un registro de Coste de Artículo, definiendo la asociación entre:</dt>
+<dd><ul class="first last simple">
 <li>Esquema Contable.</li>
 <li>Almacén.</li>
 <li>Tipo de Coste.</li>
 <li>Elemento de Coste.</li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Configurar para cada <strong>Recurso</strong> (representado por una Artículo) del flujo de trabajo (R1 y R2) un registro de Coste de Artículo, definiendo la asociación entre:</dt>
+<dd><ul class="first last simple">
+<li>Esquema Contable.</li>
+<li>Almacén.</li>
+<li>Tipo de Coste.</li>
+<li>Elemento de Coste.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Configurar en la pestaña de <strong>Contabilidad</strong>, de la ventana <strong>Subfamilia</strong> del Artículo (lo mismo vale para los Recursos), el <strong>Tipo de Coste</strong> que va a tomar el sistema para el cálculo, que debe coincidir con el configurado en Coste de Artículo. para cada producto de la fórmula (P2, P3 y P4). Esto permite que cada Subfamilia, pueda tomar un método de costeo diferente. En caso de querer un único método de costeo, hacer esta configuración a nivel de <strong>Esquema Contable</strong>. Este último tipo de configuración, se usaría por ejemplo en caso de usar como método de costeo único <strong>Costo Estándar</strong>.</p>
+</li>
+<li><p class="first">Cuando de procesa una orden (proceos Imprimir y Liberar Orden), se crean los registros de costos en función de lo configurado en los pasos 3 y 4.</p>
+</li>
+<li><p class="first">Agregar los costos manuales vinculados a la Orden de Manufactura (principalmente <strong>Costos Indirectos</strong>).</p>
+</li>
+<li><p class="first">Ejecutar el proceso de <strong>Cerrar la Orden de Manufactura</strong>, esto entre otras cosas procesa el cálculo de costos directos asociados a la Orden de Manufactura.</p>
 </li>
 </ol>
-<p>3 - Configurar en la pestaña de <strong>Contabilidad</strong>, de la ventana <strong>Subfamilia</strong> del Artículo (lo mismo vale para los Recursos), el <strong>Tipo de Coste</strong> que va a tomar el sistema para el cálculo, que debe coincidir con el configurado en Coste de Artículo. para cada producto de la fórmula (P2, P3 y P4).</p>
-<p>Esto permite que cada Subfamilia, pueda tomar un método de costeo diferente. En caso de querer un único método de costeo, hacer esta configuración a nivel de <strong>Esquema Contable</strong>. Este último tipo de configuración se usaría por ejemplo en caso de usar como método de costeo único &#8220;Costo Estándar&#8221;.</p>
 </div>
 
 

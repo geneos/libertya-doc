@@ -30,6 +30,7 @@ Un Elemento de Costo, define la característica del costo de un producto:
 	* Carga: el costo es cargado de forma manual.
 
 1. Acceder a la ventana que se encuentra en el menú Costes → **Elemento de Coste**.
+1. Acceder a la opción del menú **Costes → Elemento de Coste**. El sistema presenta una ventana como lo muestra la Imagen 57.
 2. Campos a ingresar:
 
 	* Compañía: Cliente para esta instalación compañía o entidad legal 
@@ -42,6 +43,14 @@ Un Elemento de Costo, define la característica del costo de un producto:
 	* Predeterminado: determina si es el elemento por defecto.
 
 
+.. figure:: _static/images/ly_elemcosto.png
+    :alt: Elementos de Costos
+    :align: center
+    :figclass: align-center
+
+    Imagen 57: Elementos de Costos
+
+
 **Tipos de Costos**
 
 Un Tipo de Costo, define el método de costeo de un producto:
@@ -52,7 +61,7 @@ Un Tipo de Costo, define el método de costeo de un producto:
 	* Promedio de Orden de Compra: obtiene e precio unitario, como un promedio de todas las ordenes de compras del producto. 
 	* Costo Estándar: obtiene e precio unitario, del procio configurado en la ventana Costes de Artículo en el campo Precio de Coste Actual.
 
-1. Acceder a la ventana que se encuentra en el menú Costes → **Tipo de Coste**.
+1. Acceder a la opción del menú **Costes → Tipo de Coste**. El sistema presenta una ventana como lo muestra la Imagen 58.
 2. Campos a ingresar:
 
 	* Compañía: Cliente para esta instalación compañía o entidad legal 
@@ -63,13 +72,22 @@ Un Tipo de Costo, define el método de costeo de un producto:
 	* Método de Costeo: define la forma en la que se hace el cálculo de costo: Último Precio de Factura, Promedio Facturación, Último Precio de Orden de Compra, Promedio de Orden de Compra, Costo Estándar.
 
 
+.. figure:: _static/images/ly_tipocosto.png
+    :alt: Tipos de Costos
+    :align: center
+    :figclass: align-center
+
+    Imagen 58: Tipos de Costos
+
+
+
 **Costos de Producto**
 
 Es la ventana que permite configurar una combinación de parámetros que definen el cálculo de costos para un producto.
 
-1. Acceder a la ventana que se encuentra en el menú Costes → **Coste de Producto**.
+1. Acceder a la opción del menú **Costes → Coste de Producto**. El sistema presenta una ventana como lo muestra la Imagen 59.
 2. La primera pestaña, **Seleccionar Artículo** permite ubicar el artículo a configurar, es de solo lectura.
-3. Para cargar los datos accedemos a la pestaña, **Costes de Artículo**.
+3. Para cargar los datos accedemos a la pestaña, **Costes de Artículo**. El sistema presenta una ventana como lo muestra la Imagen 60.
 4. Campos a ingresar:
 
 	* Compañía: Cliente para esta instalación compañía o entidad legal 
@@ -82,11 +100,27 @@ Es la ventana que permite configurar una combinación de parámetros que definen
 	* Nota: el resto de los campos no aplican en la funcionalidad de esta versión.
 
 
+.. figure:: _static/images/ly_costeart_1.png
+    :alt: Artículo
+    :align: center
+    :figclass: align-center
+
+    Imagen 59: Artículo
+
+.. figure:: _static/images/ly_costeart_2.png
+    :alt: Costes de Artículo
+    :align: center
+    :figclass: align-center
+
+    Imagen 60: Costes de Artículo
+
+
+
 **Asignación de Costos Manuales**
 
 Este proceso, permite la asignación de costos manuales a la Orden de Manufactura. Su principal uso, está relacionado a la asignación de costos indirectos, pudiendo asignar los costos asociados a facturas de compra.
 
-1. Acceder al proceso que se encuentra en el menú Costes → **Asignar Costos Manuales**.
+1. Acceder a la opción del menú **Costes → Asignar Costos Manuales**. El sistema presenta una ventana como lo muestra la Imagen 61.
 2. Parámetros a ingresar:
 
 	* **Esquema Contable:** Permite definir el Esquema Contable asociado a la asignación del costo manual. 
@@ -96,6 +130,16 @@ Este proceso, permite la asignación de costos manuales a la Orden de Manufactur
 	* **Orden de Manufactura:** Permite definir la Orden de Manufactura a la que se aplicará el costo.
 	* Factura de Gastos: Permite definir una factura desde la que se tomará el monto de la aplicación del costo.
 	* Valor del Costo: Permite definir de forma manual el monto de la aplicación del costo.
+
+
+.. figure:: _static/images/ly_costemanual.png
+    :alt: Asignación de Costos Manuales
+    :align: center
+    :figclass: align-center
+
+    Imagen 61: Asignación de Costos Manuales
+
+
 
 Ejemplo de configuración de costos
 ----------------------------------

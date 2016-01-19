@@ -2,13 +2,13 @@
 Principales Maestros de la Aplicación
 *************************************
 
-*. Entidades Comerciales
-	*. Clientes
-	*. Proveedores
-	*. Empleados
-*. Artículos
-*. Conjuntos de Atributos
-*. Lista de Precios
+* Entidades Comerciales
+	* Clientes
+	* Proveedores
+	* Empleados
+* Artículos
+* Conjuntos de Atributos
+* Lista de Precios
 
 
 Entidades Comerciales

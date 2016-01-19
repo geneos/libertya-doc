@@ -32,8 +32,8 @@
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
         <link rel="up" title="Módulo de Manufactura" href="manufactura.html"/>
-        <link rel="next" title="Manufactura - Informes" href="manufactura-informes.html"/>
-        <link rel="prev" title="Manufactura - Orden de Manufactura" href="manufactura-om.html"/> 
+        <link rel="next" title="Manufactura - Costos" href="manufactura-costos.html"/>
+        <link rel="prev" title="Manufactura - Revisión a detalle" href="manufactura-revision.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,22 +83,33 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Lista de Materiales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Planeamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Proceso MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-om.html">Manufactura - Orden de Manufactura</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Operaciones con Ordenes de Manufactura</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#imprimir-y-liberar-orden">Imprimir y Liberar Orden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#entrega-de-materiales-para-produccion">Entrega de Materiales para Producción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#devolucion-de-materiales-de-produccion">Devolución de Materiales de Producción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recepcion-de-producto-terminado">Recepción de Producto Terminado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cierre-de-la-orden-de-manufactura">Cierre de la Orden de Manufactura</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-informes.html">Manufactura - Informes</a></li>
 </ul>
 </li>
@@ -150,6 +161,198 @@
             
   <div class="section" id="manufactura-operaciones-con-ordenes-de-manufactura">
 <h1>Manufactura - Operaciones con Ordenes de Manufactura<a class="headerlink" href="#manufactura-operaciones-con-ordenes-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las operaciones con Ordenes de Manufactura son:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Imprimir y Liberar Orden:</strong> procesa la Orden de Manufactura y si existe stock disponible para los componentes críticos, genera la reserva de stock de los componentes de la fórmula y para a Completo el documento permitiendo operaciones de surtimiento y devoluciones de materiales, recepción de productos terminados y cierre de la orden.</li>
+<li><strong>Entrega de Materiales para Producción:</strong> permite hacer el surtimiento de materiales para la Orden de Manufactura.</li>
+<li><strong>Devolución de Materiales de Producción:</strong> permite hacer la devolución de los materiales sobrates en el proceso de la Orden de Manufactura.</li>
+<li><strong>Recepción de Producto Terminado:</strong> permite registrar el rendimiento final de la Orden de Manufactura.</li>
+<li><strong>Cierre de la Orden de Manufactura:</strong> permite liberar los materiales reservados, que ya no van a utilizarse y realizar los cálculos de costos asociados a la Orden de Manufactura, finalizando así las transacciones.</li>
+</ol>
+</div></blockquote>
+<div class="section" id="imprimir-y-liberar-orden">
+<h2>Imprimir y Liberar Orden<a class="headerlink" href="#imprimir-y-liberar-orden" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Imprimir y Liberar Orden</strong>. El sistema presenta una ventana como lo muestra la Imagen 50.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Orden de Manufactura:</strong> Documento a procesar.</li>
+<li><strong>Imprime Lista de Utilización:</strong> Imprime el documento asociado.</li>
+<li><strong>Imprime Flujo de Trabajo:</strong> Imprime el documento asociado.</li>
+<li><strong>Imprime Lista de Empaque y Herramientas:</strong> Imprime el documento asociado.</li>
+<li><strong>Completar:</strong> Procesa el documento, caso contrario funciona como prueba.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<p>Finalizado el proceso puede verificarse la reserva de materiales en los componentes de la fórmula explotada en la ventana de la Orden de Manufactura.</p>
+<div class="align-center figure" id="id1">
+<img alt="Imprimir y Liberar Orden" src="_images/ly_imp&amp;lib.png" />
+<p class="caption"><span class="caption-text">Imagen 50: Imprimir y Liberar Orden</span></p>
+</div>
+</div>
+<div class="section" id="entrega-de-materiales-para-produccion">
+<h2>Entrega de Materiales para Producción<a class="headerlink" href="#entrega-de-materiales-para-produccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Permite realizar el surtimiento de materiales afectados a la producción. Detalla el stock disponible en el almacen de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la entrega, dependiendo si el producto tiene o no control de lotes asociado.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Recibo Orden y Salida de Componentes</strong>.</p>
+</li>
+<li><p class="first">Seleccionar la <strong>Orden de Manufactura</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>El sistema presenta información de los siguientes datos:</dt>
+<dd><ul class="first last simple">
+<li><strong>Recurso</strong>.</li>
+<li><strong>Almacén</strong>.</li>
+<li><strong>Artículo</strong>.</li>
+<li><strong>UM</strong>.</li>
+<li><strong>Cantidad Ordenada</strong>.</li>
+<li><strong>Cantidad Entregada</strong>.</li>
+<li><strong>Pendiente de Recibir</strong>.</li>
+<li><strong>Cantidad de Lotes</strong>.</li>
+<li><strong>Tamaño Cantidad de Lote</strong>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Seleccionar la <strong>Regla de Entrega → Es Entrega</strong>, El sistema presenta una ventana como lo muestra la Imagen 51. Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Fecha del Movimiento</strong>:.</li>
+<li><strong>Selección de Productos y/o Lotes:</strong> Seleccionando el check disponible en la primera columna, determinamos desde que productos y/o que lotes de cada producto (para productos que tengan conjunto de atributos) entregar para producción.</li>
+<li><strong>Cantidad a Entregar</strong>: Determinar que cantidad se va a entregar.</li>
+<li><strong>Cantidad Desperdicio</strong>: Determinar que cantidad se desperdicia en el proceso.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Confirmar la operación con <strong>Aceptar</strong>.</p>
+</li>
+<li><p class="first">Confirmar resumen de operación en la ventana como la que muestra la Imagen 52.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="Entrega de Materiales para Producción" src="_images/ly_entrega.png" />
+<p class="caption"><span class="caption-text">Imagen 51: Entrega de Materiales para Producción</span></p>
+</div>
+<div class="align-center figure" id="id3">
+<img alt="Confirmar Operación de Entrega o Recibo." src="_images/ly_entrega_confirmar.png" />
+<p class="caption"><span class="caption-text">Imagen 52: Confirmar Operación de Entrega o Recibo.</span></p>
+</div>
+</div>
+<div class="section" id="devolucion-de-materiales-de-produccion">
+<h2>Devolución de Materiales de Producción<a class="headerlink" href="#devolucion-de-materiales-de-produccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Permite realizar la devolución de materiales afectados a la producción. Detalla el stock disponible en el almacen de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la devolución, dependiendo si el producto tiene o no control de lotes asociado.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura → Gestión de la Producción → Recibo Orden y Salida de Componentes</strong>.</p>
+</li>
+<li><p class="first">Seleccionar la <strong>Orden de Manufactura</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>El sistema presenta información de los siguientes datos:</dt>
+<dd><ul class="first last simple">
+<li><strong>Recurso</strong>.</li>
+<li><strong>Almacén</strong>.</li>
+<li><strong>Artículo</strong>.</li>
+<li><strong>UM</strong>.</li>
+<li><strong>Cantidad Ordenada</strong>.</li>
+<li><strong>Cantidad Entregada</strong>.</li>
+<li><strong>Pendiente de Recibir</strong>.</li>
+<li><strong>Cantidad de Lotes</strong>.</li>
+<li><strong>Tamaño Cantidad de Lote</strong>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Seleccionar la <strong>Regla de Entrega → Es Devolución</strong>, El sistema presenta una ventana como lo muestra la Imagen 53. Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Fecha del Movimiento</strong>:.</li>
+<li><strong>Selección de Productos y/o Lotes:</strong> Seleccionando el check disponible en la primera columna, determinamos desde que productos y/o que lotes de cada producto (para productos que tengan conjunto de atributos) hacer la devolución.</li>
+<li><strong>Cantidad a Entregar</strong>: Determinar que cantidad se va a entregar.</li>
+<li><strong>Cantidad Desperdicio</strong>: Determinar que cantidad se desperdicia en el proceso.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Confirmar la operación con <strong>Aceptar</strong>.</p>
+</li>
+<li><p class="first">Confirmar resumen de operación en la ventana como la que muestra la Imagen 52.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id4">
+<img alt="Devolución de Materiales para Producción" src="_images/ly_devolucion.png" />
+<p class="caption"><span class="caption-text">Imagen 53: Devolución de Materiales para Producción</span></p>
+</div>
+</div>
+<div class="section" id="recepcion-de-producto-terminado">
+<h2>Recepción de Producto Terminado<a class="headerlink" href="#recepcion-de-producto-terminado" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Permite realizar el ingreso de materiales de la orden como resultado de la producción.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura → Gestión de la Producción → Recibo Orden y Salida de Componentes</strong>.</p>
+</li>
+<li><p class="first">Seleccionar la <strong>Orden de Manufactura</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>El sistema presenta información de los siguientes datos:</dt>
+<dd><ul class="first last simple">
+<li><strong>Recurso</strong>.</li>
+<li><strong>Almacén</strong>.</li>
+<li><strong>Artículo</strong>.</li>
+<li><strong>UM</strong>.</li>
+<li><strong>Cantidad Ordenada</strong>.</li>
+<li><strong>Cantidad Entregada</strong>.</li>
+<li><strong>Pendiente de Recibir</strong>.</li>
+<li><strong>Cantidad de Lotes</strong>.</li>
+<li><strong>Tamaño Cantidad de Lote</strong>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Seleccionar la <strong>Regla de Entrega → Es Recibo</strong>. El sistema presenta una ventana como lo muestra la Imagen 54. Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Fecha del Movimiento</strong>:.</li>
+<li><strong>Instancia de Conjunto de Atributos:</strong> Permite seleccionar a que lote corresponde el recibo de la Orden de Manufactura.</li>
+<li><strong>Ubicación</strong>: Determinar en que ubicación ingresa el stock resultante.</li>
+<li><strong>Cantidad a Entregar</strong>: Cantidad de la Entrega.</li>
+<li><strong>Cantidad Desperdicio</strong>: Cantidad desperdiciada si la hubiera.</li>
+<li><strong>Cantidad Rechazada</strong>: Cantidad rechazada si la hubiera.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Confirmar la operación con <strong>Aceptar</strong>.</p>
+</li>
+<li><p class="first">Confirmar resumen de operación en la ventana como la que muestra la Imagen 52.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id5">
+<img alt="Recepción de Producto Terminado" src="_images/ly_recepcion.png" />
+<p class="caption"><span class="caption-text">Imagen 54: Recepción de Producto Terminado</span></p>
+</div>
+</div>
+<div class="section" id="cierre-de-la-orden-de-manufactura">
+<h2>Cierre de la Orden de Manufactura<a class="headerlink" href="#cierre-de-la-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El cierre de la Orden de Manufactura, completa el circuito de operación de la misma. Libera el reservado de los componentes de la fórmula y realiza el cálculo de los costos.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Orden de Manufactura</strong>. El sistema presenta una ventana como lo muestra la Imagen 55.</li>
+<li>Buscar la Orden de Manufactura.</li>
+<li>Cerrar la Orden de Manufactura con el botón <strong>Cerrar</strong>, como se muestra en la Imagen 56.</li>
+</ol>
+<div class="align-center figure" id="id6">
+<img alt="Orden de Manufactura" src="_images/ly_om_1.png" />
+<p class="caption"><span class="caption-text">Imagen 55: Orden de Manufactura</span></p>
+</div>
+<div class="align-center figure" id="id7">
+<img alt="Cierre de Orden de Manufactura" src="_images/ly_om_cierre.png" />
+<p class="caption"><span class="caption-text">Imagen 56: Cierre de Orden de Manufactura</span></p>
+</div>
+</div>
 </div>
 
 
@@ -159,10 +362,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manufactura-informes.html" class="btn btn-neutral float-right" title="Manufactura - Informes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manufactura-costos.html" class="btn btn-neutral float-right" title="Manufactura - Costos" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manufactura-om.html" class="btn btn-neutral" title="Manufactura - Orden de Manufactura" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manufactura-revision.html" class="btn btn-neutral" title="Manufactura - Revisión a detalle" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
