@@ -96,6 +96,35 @@ Permite registrar el cobro a un cliente.
     Imagen 22: Cobranzas – Ingreso de medios de cobro
 
 
+Informes
+--------
+
+**Cuenta Corriente**
+
+Permite ver la información consolidada, de la cuenta corriente de un Cliente.
+
+1. Acceder con el perfil "Administración" a la opción del menú, menú Informes de Cobros y Pagos →  Informe de Cuenta Corriente, el sistema presenta una ventana como lo muestra la Imagen 23.
+2. Parámetros del informe (Imagen 23) → Campos a ingresar:
+    - Entidad Comercial
+    - Organización (por defecto lo que viene)
+    - Rango de Fechas
+    - Tipo de Documentos
+    - Tipo de Reporte (Cliente / Proveedor)
+3. Emitir informe (Imagen 24) con el botón verde.
+    
+.. figure:: _static/images/ly_informe_23.png
+    :alt: TPV
+    :align: center
+    :figclass: align-center
+
+    Imagen 23: Informe de Cta. Cte. - Parámetros
+
+.. figure:: _static/images/ly_informe_24.png
+    :alt: TPV
+    :align: center
+    :figclass: align-center
+
+    Imagen 24: Informe de Cta. Cte. - Resultados
 
 
     
