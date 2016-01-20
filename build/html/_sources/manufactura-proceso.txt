@@ -4,21 +4,21 @@ Manufactura - Ejecución del MRP
 
 La ejecución del Proceso de MRP debe completarse siguiendo los paso detallados a continuación:
 
-Paso 1: Calular Niveles Inferiores
+Paso 1: Calcular Niveles Inferiores
 ----------------------------------
 
 Este proceso calcula y registra el nivel menor de un producto dentro de una LDM. Es usado en los cálculos del MRP y debe ser ejecutado cuando ingresa una nueva LDM.
 
-1. Acceder a la opción de menú **Gestión de Manufactura → Gestión de Planificación → MRP → Calular Niveles Inferiores**. El sistema presenta una ventana como lo muestra la Imagen 40.
+1. Acceder a la opción de menú **Gestión de Manufactura → Gestión de Planificación → MRP → Calcular Niveles Inferiores**. El sistema presenta una ventana como lo muestra la Imagen 40.
 2. Ejecutar Proceso.
 
 
 .. figure:: _static/images/ly_mrp_niveles.png
-    :alt: Calular Niveles Inferiores
+    :alt: Calcular Niveles Inferiores
     :align: center
     :figclass: align-center
 
-    Imagen 40: Calular Niveles Inferiores
+    Imagen 40: Calcular Niveles Inferiores
 
 
 
@@ -86,7 +86,7 @@ Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario qu
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |   MRP-030  | Indica que un pedido de aprovisionamiento va ser procesado antes de ser necesitado y debería de ser retrasado, o bien reprogramado a un estado anterior.                                                                                                                        |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|   MRP-040  | Indica que un pedido de aprovisionamiento programado será entregado con mucha posterioridad a ser necesario y que debería de ser reprogramado a una fecha anterior o reprocesador a un estado posterior.                                                                        |
+|   MRP-040  | Indica que un pedido de aprovisionamiento programado será entregado con mucha posterioridad a ser necesario y que debería de ser reprogramado a una fecha anterior o reprocesado a un estado posterior.                                                                        |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |   MRP-050  | Indica que un pedido de aprovisionamiento ya no es necesario y debería de ser borrado.                                                                                                                                                                                          |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -94,7 +94,7 @@ Contiene un grupo de mensajes generados por el proceso MRP. Indica al usuario qu
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |   MRP-070  | Lanzar pedido retrasado. Indica que un pedido de aprovisionamiento no fue lanzado cuando debía, y debe de ser lanzado o aprovisionado ahora, o la demanda reprogramada para una fecha posterior.                                                                                |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|   MRP-080  | Cantidad por debajo del minimo. Indica que un pedido de aprovisionamiento fue creado por una cantidad inferior a la cantidad mínima prevista en la planificación de stock del producto.                                                                                         |
+|   MRP-080  | Cantidad por debajo del mínimo. Indica que un pedido de aprovisionamiento fue creado por una cantidad inferior a la cantidad mínima prevista en la planificación de stock del producto.                                                                                         |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |   MRP-090  | Cantidad por encima del máximo. Indica que un pedido de aprovisionamiento fue creado por una cantidad mayor que la cantidad máxima prevista en la planificación de stock del producto.                                                                                          |
 +------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

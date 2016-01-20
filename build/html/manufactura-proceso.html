@@ -95,11 +95,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Ejecución del MRP</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#paso-1-calular-niveles-inferiores">Paso 1: Calular Niveles Inferiores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paso-1-calcular-niveles-inferiores">Paso 1: Calcular Niveles Inferiores</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paso-2-crear-registros-mrp">Paso 2: Crear Registros MRP</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paso-3-calcular-plan-de-materiales">Paso 3: Calcular Plan de Materiales</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#avisos-del-mrp">Avisos del MRP</a></li>
@@ -161,16 +161,16 @@
   <div class="section" id="manufactura-ejecucion-del-mrp">
 <h1>Manufactura - Ejecución del MRP<a class="headerlink" href="#manufactura-ejecucion-del-mrp" title="Enlazar permanentemente con este título">¶</a></h1>
 <p>La ejecución del Proceso de MRP debe completarse siguiendo los paso detallados a continuación:</p>
-<div class="section" id="paso-1-calular-niveles-inferiores">
-<h2>Paso 1: Calular Niveles Inferiores<a class="headerlink" href="#paso-1-calular-niveles-inferiores" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="paso-1-calcular-niveles-inferiores">
+<h2>Paso 1: Calcular Niveles Inferiores<a class="headerlink" href="#paso-1-calcular-niveles-inferiores" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Este proceso calcula y registra el nivel menor de un producto dentro de una LDM. Es usado en los cálculos del MRP y debe ser ejecutado cuando ingresa una nueva LDM.</p>
 <ol class="arabic simple">
-<li>Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Planificación → MRP → Calular Niveles Inferiores</strong>. El sistema presenta una ventana como lo muestra la Imagen 40.</li>
+<li>Acceder a la opción de menú <strong>Gestión de Manufactura → Gestión de Planificación → MRP → Calcular Niveles Inferiores</strong>. El sistema presenta una ventana como lo muestra la Imagen 40.</li>
 <li>Ejecutar Proceso.</li>
 </ol>
 <div class="align-center figure" id="id1">
-<img alt="Calular Niveles Inferiores" src="_images/ly_mrp_niveles.png" />
-<p class="caption"><span class="caption-text">Imagen 40: Calular Niveles Inferiores</span></p>
+<img alt="Calcular Niveles Inferiores" src="_images/ly_mrp_niveles.png" />
+<p class="caption"><span class="caption-text">Imagen 40: Calcular Niveles Inferiores</span></p>
 </div>
 </div>
 <div class="section" id="paso-2-crear-registros-mrp">
@@ -210,50 +210,6 @@
 <p class="caption"><span class="caption-text">Imagen 43: Avisos</span></p>
 </div>
 <p><strong>Referencias</strong></p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="4%" />
-<col width="96%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>MRP-001</td>
-<td>Cantidad Inicial menor que cero. Es negativa.</td>
-</tr>
-<tr class="row-even"><td>MRP-020</td>
-<td>Un pedido de aprovisionamiento debería ser creado para satisfacer un balance negativo proyectado. Este mensaje sólo es generado si &#8220;Crea Plan&#8221; es NO o si aparece un nuevo requerimiento de última hora.</td>
-</tr>
-<tr class="row-odd"><td>MRP-030</td>
-<td>Indica que un pedido de aprovisionamiento va ser procesado antes de ser necesitado y debería de ser retrasado, o bien reprogramado a un estado anterior.</td>
-</tr>
-<tr class="row-even"><td>MRP-040</td>
-<td>Indica que un pedido de aprovisionamiento programado será entregado con mucha posterioridad a ser necesario y que debería de ser reprogramado a una fecha anterior o reprocesador a un estado posterior.</td>
-</tr>
-<tr class="row-odd"><td>MRP-050</td>
-<td>Indica que un pedido de aprovisionamiento ya no es necesario y debería de ser borrado.</td>
-</tr>
-<tr class="row-even"><td>MRP-060</td>
-<td>Indica que un pedido programado debería de ser lanzado.</td>
-</tr>
-<tr class="row-odd"><td>MRP-070</td>
-<td>Lanzar pedido retrasado. Indica que un pedido de aprovisionamiento no fue lanzado cuando debía, y debe de ser lanzado o aprovisionado ahora, o la demanda reprogramada para una fecha posterior.</td>
-</tr>
-<tr class="row-even"><td>MRP-080</td>
-<td>Cantidad por debajo del minimo. Indica que un pedido de aprovisionamiento fue creado por una cantidad inferior a la cantidad mínima prevista en la planificación de stock del producto.</td>
-</tr>
-<tr class="row-odd"><td>MRP-090</td>
-<td>Cantidad por encima del máximo. Indica que un pedido de aprovisionamiento fue creado por una cantidad mayor que la cantidad máxima prevista en la planificación de stock del producto.</td>
-</tr>
-<tr class="row-even"><td>MRP-100</td>
-<td>Indica que hay un requerimiento de material no satisfecho dentro de la planificación de stock para este producto. Debería ser programado manualmente o expedir pedidos de aprovisionamiento para cumplir con la demanda o posponer los requerimientos que crearon dicha demanda.</td>
-</tr>
-<tr class="row-odd"><td>MRP-110</td>
-<td>No existe almacén de demanda. En la planificación del producto no figura la demanda.</td>
-</tr>
-<tr class="row-even"><td>MRP-120</td>
-<td>No existe almacén de suministros. En la planificación del producto no figura los suministros.</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 

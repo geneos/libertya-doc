@@ -82,14 +82,21 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tecnica.html">Documentación técnica de Libertya</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Ventas</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Ventas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tpv">TPV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cobranzas">Cobranzas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#informes">Informes</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -139,12 +146,148 @@
 <h1>Módulo de Ventas<a class="headerlink" href="#modulo-de-ventas" title="Enlazar permanentemente con este título">¶</a></h1>
 <p><strong>Datos previos necesarios</strong></p>
 <ol class="arabic simple">
-<li>Proveedores</li>
+<li>Clientes</li>
 <li>Artículos</li>
-<li>Lista de Precios de Ventas</li>
+<li>Lista de Precios de Compras</li>
 <li>Medios de Cobro</li>
 <li>Configuración de TPV</li>
+<li>Centros de Costos</li>
 </ol>
+<div class="section" id="tpv">
+<h2>TPV<a class="headerlink" href="#tpv" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La terminal de Punto de Venta (TPV) permite el ingreso rápido de las facturas de clientes.</p>
+<div class="align-center figure" id="id1">
+<img alt="TPV" src="_static/images/ly_tpv_19.png" />
+<p class="caption"><span class="caption-text">Imagen 19: TPV – Ingreso de Ítem</span></p>
+</div>
+<p>Acceder con el perfil &#8220;Ventas&#8221; a la opción del menú, menú TPV →  TPV, el sistema presenta una ventana como lo muestra la Imagen 19.</p>
+<p>Las referencias para el ingreso de la información de la compra son las siguientes:</p>
+<ol class="arabic simple">
+<li>Es el área de selección de los productos y cantidades (la tecla Intro sirve para fijar el producto y la cantidad ingresando la línea al pedido).</li>
+<li>Es el área de ingreso del viaje, origen, destino (se mantienen los datos entre diferentes facturas, compartiendo los datos anteriormente registrados, para agilizar la carga de todas las facturas de un viaje) y valor declarado.</li>
+<li>Es el área donde va quedando el detalle de las líneas de facturas, tiene una columna editable para ingresar la información de remitente asociada a cada línea.</li>
+<li>Es el área de funciones:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>F6: para acceder a cambiar información de cantidades y precios de los productos.</li>
+<li>F8: para cambiar a la pantalla de selección de Cliente y Medio de Pago. También puede usarse el botón Cobrar.</li>
+</ol>
+</div></blockquote>
+<p>La segunda parte de la transacción de ventas consiste en seleccionar el cliente y la forma de cobro.</p>
+<ol class="arabic simple">
+<li>Con el botón Cobrar o con F8 accedemos al siguiente paso de la factura que es la selección del Cliente y la Forma de Pago, el sistema presenta una ventana como lo muestra la Imagen 20.</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="TPV" src="_static/images/ly_tpv_20.png" />
+<p class="caption"><span class="caption-text">Imagen 20: TPV – Ingreso de datos de Cobro</span></p>
+</div>
+<p>Las referencias para el ingreso de la información del cliente y la forma de pago son las siguientes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Es el área de selección del cliente. Se ingresa la información en el campo o se accede a la ventana de búsqueda.</li>
+<li>Es el área de ingreso de la forma de cobro, en este caso siempre va a ser Crédito.</li>
+<li>Acceso al botón para confirmar la operación (botón Cobrar o F12).</li>
+</ol>
+</div></blockquote>
+<p>Una vez confirmado el sistema emite el comprobante correspondiente.</p>
+</div>
+<div class="section" id="cobranzas">
+<h2>Cobranzas<a class="headerlink" href="#cobranzas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Permite registrar el cobro a un cliente.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, menú Pagos →  Orden de Pago, el sistema presenta una ventana como lo muestra la Imagen 21.</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Cabecera</strong> → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Entidad Comercial</li>
+<li>Tipo de documento (determina el Nro. Documento)</li>
+<li>Fecha del Recibo</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Selección de Cobro</strong> → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Seleccionar si es Cobro Normal o Cobro Adelantado (sin asignación de facturas)</li>
+<li>Seleccionar Punto de Venta.</li>
+<li>Seleccionar si se muestran todos los documentos o los vencidos a una fecha.</li>
+<li>Indicar si se cobra todo lo pendiente o indicar en la columna a pagar el monto de la las facturas seleccionadas para pagar.</li>
+<li>Con el botón Siguiente o F8 se avanza a la siguiente sección.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Forma de Cobro</strong> (Imagen 22) → Campos a ingresar:</dt>
+<dd><ul class="first simple">
+<li>Moneda</li>
+<li>Tipo de Cobro/Pago</li>
+<li>Datos correspondientes al tipo de cobro.</li>
+<li>Guardar Cambios o F9</li>
+</ul>
+<p class="last">Repetir los últimos dos pasos en casos de cobrar con diferentes medios de cobro.
+Una vez que el Saldo sea 0 completa con el botón <strong>Emitir Recibo</strong> o F8</p>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="TPV" src="_static/images/ly_tpv_21.png" />
+<p class="caption"><span class="caption-text">Imagen 21: Cobranzas – Ingreso de comprobantes a cobrar</span></p>
+<div class="legend">
+<div class="figure">
+<img alt="_static/images/ly_tpv_22.png" src="_static/images/ly_tpv_22.png" />
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">alt:</th><td class="field-body">TPV</td>
+</tr>
+<tr class="field-even field"><th class="field-name">align:</th><td class="field-body">center</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">figclass:</th><td class="field-body">align-center</td>
+</tr>
+</tbody>
+</table>
+<p>Imagen 22: Cobranzas – Ingreso de medios de cobro</p>
+</div>
+</div>
+</div>
+<div class="section" id="informes">
+<h2>Informes<a class="headerlink" href="#informes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Cuenta Corriente</strong></p>
+<p>Permite ver la información consolidada, de la cuenta corriente de un Cliente.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;Administración&#8221; a la opción del menú, menú Informes de Cobros y Pagos →  Informe de Cuenta Corriente, el sistema presenta una ventana como lo muestra la Imagen 23.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Parámetros del informe (Imagen 23) → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Entidad Comercial</li>
+<li>Organización (por defecto lo que viene)</li>
+<li>Rango de Fechas</li>
+<li>Tipo de Documentos</li>
+<li>Tipo de Reporte (Cliente / Proveedor)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Emitir informe (Imagen 24) con el botón verde.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id4">
+<img alt="TPV" src="_static/images/ly_informe_23.png" />
+<p class="caption"><span class="caption-text">Imagen 23: Informe de Cta. Cte. - Parámetros</span></p>
+</div>
+<div class="align-center figure" id="id5">
+<img alt="TPV" src="_static/images/ly_informe_24.png" />
+<p class="caption"><span class="caption-text">Imagen 24: Informe de Cta. Cte. - Resultados</span></p>
+</div>
+</div>
 </div>
 
 

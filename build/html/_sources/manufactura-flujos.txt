@@ -11,9 +11,9 @@ Los **Tipo de Recurso de Manufactura** proveen un agrupamiento mediante una rela
 
 Un primer nivel de agrupamiento será utilizado para definir una tipología de recursos que tengan en común una serie de características.
 
-1. Acceder a la opción del menú **Gestión de Ingenieria →  Recursos de Manufactura → Tipo de Recurso de Manufactura**. El sistema presenta una ventana como lo muestra la Imagen 32.
+1. Acceder a la opción del menú **Gestión de Ingeniería →  Recursos de Manufactura → Tipo de Recurso de Manufactura**. El sistema presenta una ventana como lo muestra la Imagen 32.
 2. Campos a ingresar:
-	* **Compañía:** Cliente para esta instalación Compañía ó entidad legal 
+	* **Compañía:** Cliente para esta instalación Compañía o entidad legal 
 	* **Organización:** Entidad organizacional dentro de la compañía.
 	* **Clave de Búsqueda** Clave de búsqueda para el registro en el formato requerido; debe ser única.
 	* **Nombre:** Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud. 
@@ -43,9 +43,9 @@ Ahora podemos definir todos los Recursos de Manufactura, clasificados mediante l
 
 Un **Recurso de Manufactura** es cualquier cosa requerida como soporte para el proceso de producción. Principalmente responde a la pregunta: ¿En dónde se hace un producto?. Cada recurso de trabajo es único dentro de la organización y puedo definir tantos recursos como sea necesario.
 
-1. Acceder a la opción del menú **Gestión de Ingenieria →  Recursos de Manufactura → Recurso de Manufactura**. El sistema presenta una ventana como lo muestra la Imagen 33.
+1. Acceder a la opción del menú **Gestión de Ingeniería →  Recursos de Manufactura → Recurso de Manufactura**. El sistema presenta una ventana como lo muestra la Imagen 33.
 2. Campos a ingresar:
-	* **Compañía:** Cliente para esta instalación Compañía ó entidad legal 
+	* **Compañía:** Cliente para esta instalación Compañía o entidad legal 
 	* **Organización:** Entidad organizacional dentro de la compañía.
 	* **Tipo de Recurso: ** Es el Tipo de Recurso de Manufactura registrado en el paso anterior.	
 	* **Clave de Búsqueda** Clave de búsqueda para el registro en el formato requerido; debe ser única.
@@ -56,7 +56,7 @@ Un **Recurso de Manufactura** es cualquier cosa requerida como soporte para el p
 	* **Usuario:** Indica un usuario de referencia o contacto.
 	* **Disponible:** Indica si el recurso está disponible.
 	* **Es Recurso Manufactura:** Indica si el recurso es requerido para la producción. Este campo debe estar seleccionado.
-	* **Tipo de Recurso Manufactura:** Es el Tipo de Recurso Manufactura Genéral, al menos uno de los Recursos debe ser del tipo **Planta** y deberá configurarse en el Flujo de Trabajo de Manufactura. 
+	* **Tipo de Recurso Manufactura:** Es el Tipo de Recurso Manufactura General, al menos uno de los Recursos debe ser del tipo **Planta** y deberá configurarse en el Flujo de Trabajo de Manufactura. 
 	* **Tiempo Encolado:** Es una referencia donde se ingresa el tiempo total de encolado del recurso.
 	* **Tiempo de espera:** El tiempo de preparación es el requerido para ejecutar las actividades necesarias para preparar el recurso de manufactura hasta que esté listo para comenzar con el proceso de fabricación.
 3. Guardar.

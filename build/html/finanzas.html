@@ -82,14 +82,21 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tecnica.html">Documentación técnica de Libertya</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Finanzas</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Finanzas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bancos">Bancos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operaciones-con-bancos">Operaciones con Bancos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operaciones-con-cajas">Operaciones con Cajas</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="contabilidad.html">Módulo de Contabilidad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -137,11 +144,255 @@
             
   <div class="section" id="modulo-de-finanzas">
 <h1>Módulo de Finanzas<a class="headerlink" href="#modulo-de-finanzas" title="Enlazar permanentemente con este título">¶</a></h1>
-<p><strong>Datos previos necesarios</strong></p>
-<ol class="arabic simple">
-<li>Bancos - Cuentas Bancarias</li>
-<li>Cajas</li>
+<div class="section" id="bancos">
+<h2>Bancos<a class="headerlink" href="#bancos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Desde esta ventana se configuran todas las cuentas bancarias con las que vaya a trabajar la compañía. En la primera pestaña se definirán los datos generales de la cuenta bancaria, su nombre, dirección, etc.</p>
+<p>Adicionalmente se se activa la selección de Banco Propio, se podrá utilizar para las operaciones bancarias de cobros y pagos de la propia compañía. Donde podemos operar con varios bancos y cuentas a la vez.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;Administración&#8221; a la opción del menú, <strong>Banco</strong> →  <strong>Banco</strong>, el sistema presenta una ventana como lo muestra la Imagen 25.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Nombre</li>
+<li>Descripción</li>
+<li>Dirección</li>
+<li>Identificador</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ol>
+<div class="align-center figure" id="id1">
+<img alt="Fórmula" src="_static/images/ly_bancos_25.png" />
+<p class="caption"><span class="caption-text">Imagen 25: Bancos</span></p>
+</div>
+<p><strong>Cuenta</strong></p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña Cuenta, el sistema presenta una ventana como lo muestra la Imagen 26.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Sucursal.</li>
+<li>Nro. Cuenta.</li>
+<li>Moneda.</li>
+<li>Tipo de cuenta bancaria.</li>
+<li>Cuenta de Cheques en Cartera, se habilita si el tipo de cuenta es Cheque, sirve para definir las cuentas que van a funcionar para mantener la cartera de cheques de Terceros.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="Fórmula" src="_static/images/ly_bancos_26.png" />
+<p class="caption"><span class="caption-text">Imagen 26: Cuentas</span></p>
+</div>
+<p><strong>Documentos de Cuenta Bancarias</strong></p>
+<p>Se usan para definir las chequeras en las cuentas de cheques propios.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña <strong>Documento de Cuenta Bancaria</strong>, el sistema presenta una ventana como lo muestra la Imagen 27.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Nombre.</li>
+<li>Forma de Pago.</li>
+<li>Secuencia.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="Fórmula" src="_static/images/ly_bancos_27.png" />
+<p class="caption"><span class="caption-text">Imagen 27: Documento de Cuenta Bancaria</span></p>
+</div>
+</div>
+<div class="section" id="operaciones-con-bancos">
+<h2>Operaciones con Bancos<a class="headerlink" href="#operaciones-con-bancos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Transferencias Bancarias</strong></p>
+<p>Permite realizar transferencias desde cuentas de terceros a cuentas propias, desde cuentas propias a cuentas de terceros y entre cuentas propias.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Banco</strong> →  <strong>Transferencia Bancaria</strong>, el sistema presenta una ventana como lo muestra la Imagen 28.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Fecha.</li>
+<li>Entidad Comercial.</li>
+<li>Cuenta Origen.</li>
+<li>Cuenta Destino.</li>
+<li>Importe.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id4">
+<img alt="Fórmula" src="_static/images/ly_bancos_28.png" />
+<p class="caption"><span class="caption-text">Imagen 28: Transferencia Bancaria</span></p>
+</div>
+<p><strong>Boleta de Depósitos</strong></p>
+<p>Permite hacer el depósito de valores a una cuenta bancaria propia o de terceros. Primero se ingresan los datos generales y luego se ingresan los valores a depositar.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;Administración&#8221; a la opción del menú, Banco →  Boletas de Depósito, el sistema presenta una ventana como lo muestra la Imagen 29.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Nro. de Documento (lo puede dar automático el sistema)</li>
+<li>Entidad Comercial.</li>
+<li>Cuenta Bancaria.</li>
+<li>Fecha de Depósito.</li>
+<li>Fecha de Acreditación.</li>
+<li>Moneda.</li>
+<li>Acción.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id5">
+<img alt="Boleta" src="_static/images/ly_bancos_29.png" />
+<p class="caption"><span class="caption-text">Imagen 29: Boleta de Depósito - Datos generales</span></p>
+</div>
+<p><strong>Valores a Depositar</strong></p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña Valores a Depositar, el sistema presenta una ventana como lo muestra la Imagen 30. El ingreso de los valores actualiza el monto de la cabecera de la boleta.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Cuenta origen.</li>
+<li>Cheque.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id6">
+<img alt="Boleta" src="_static/images/ly_bancos_30.png" />
+<p class="caption"><span class="caption-text">Imagen 30: Boleta de Depósito - Valores a depositar</span></p>
+<div class="legend">
+Cajas</div>
+</div>
+<hr class="docutils" />
+<p><strong>Configuración de Libro de Caja</strong></p>
+<p>Define la estructura general de los tipos de cajas diarias.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Caja</strong> →  <strong>Configuración de Libro de Caja</strong>, el sistema presenta una ventana como lo muestra la Imagen 31.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Nombre.</li>
+<li>Descripción.</li>
+<li>Moneda.</li>
+<li>Predeterminado.</li>
+<li>Tipo de Caja, en esta instancia trabajamos siempre con el tipo Caja General.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id7">
+<img alt="Libros" src="_static/images/ly_cajas_31.png" />
+<p class="caption"><span class="caption-text">Imagen 31: Configuración de Libro de Caja</span></p>
+</div>
+<p><strong>Libro de Caja</strong></p>
+<p>El libro de caja es donde se maneja el efectivo. Aquí se pueden registrar los ingresos y egresos de efectivo, ingresos de cheques y demás. Por ejemplo, si se paga una factura en efectivo, se debe crear una línea con la factura y el importe, para que se registre la cancelación de la misma.</p>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Caja</strong> →  <strong>Libro de Caja</strong>, el sistema presenta una ventana como lo muestra la Imagen 32.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Libro de Caja.</li>
+<li>Nombre, es asignado por el sistema con la referencia del Libro de Caja y la fecha, pero puede modificarse</li>
+<li>Fecha de Estado de Cuenta.</li>
+<li>Fecha de Aplicación CG (Contabilidad General).</li>
+<li>Saldo Inicial, se carga de forma automática con el saldo de la última caja cerrada.</li>
+<li>Completar, es la opción para cerrar el Libro de Caja y completar las transacciones.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id8">
+<img alt="Cajas" src="_static/images/ly_cajas_32.png" />
+<p class="caption"><span class="caption-text">Imagen 32: Libro de Caja</span></p>
+</div>
+<p>Línea de Caja</p>
+<p>Permite el ingreso de transacciones de caja. Los tipos que soporta son:</p>
+<p>Gastos Generales, permite registrar gastos o egresos sin comprobantes.
+Cobros Generales, permite registrar cobros o ingresos sin comprobantes.
+Diferencia de Caja
+Transferencia a Caja, permite transferir fondos desde una cuenta a la caja.
+Transferencia a Cuenta Bancaria, permite transferir fondos desde la caja a una cuenta.
+Factura, permite registrar el pago o la cobranza de facturas en efectivo.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la pestaña Línea de Caja, el sistema presenta una ventana como lo muestra la Imagen 33.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales → Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li>Descripción.</li>
+<li>Entidad Comercial.</li>
+<li>Tipo de Efectivo.</li>
+<li>Importe.</li>
+<li>Completar, es la opción para cerrar el registro en la Línea de Caja y completar la transacción.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id9">
+<img alt="Cajas" src="_static/images/ly_cajas_33.png" />
+<p class="caption"><span class="caption-text">Imagen 33: Línea de Caja</span></p>
+</div>
+</div>
+<div class="section" id="operaciones-con-cajas">
+<h2>Operaciones con Cajas<a class="headerlink" href="#operaciones-con-cajas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Gastos Generales</strong></p>
+<p>Permite registrar gastos o egresos sin comprobantes.</p>
+<div class="align-center figure" id="id10">
+<img alt="Gastos" src="_static/images/ly_cajas_34.png" />
+<p class="caption"><span class="caption-text">Imagen 34: Linea de Caja – Gastos Generales</span></p>
+</div>
+<p><strong>Cobros Generales</strong></p>
+<p>Permite registrar cobros o ingresos sin comprobantes.</p>
+<div class="align-center figure" id="id11">
+<img alt="Gastos" src="_static/images/ly_cajas_35.png" />
+<p class="caption"><span class="caption-text">Imagen 35: Linea de Caja – Cobros Generales</span></p>
+</div>
+<p><strong>Diferencia de Caja</strong></p>
+<p>Permite registrar diferencias de efectivo.</p>
+<div class="align-center figure" id="id12">
+<img alt="Gastos" src="_static/images/ly_cajas_36.png" />
+<p class="caption"><span class="caption-text">Imagen 36: Linea de Caja – Diferencias de Efectivo</span></p>
+</div>
+<p><strong>Transferencia a Caja</strong></p>
+<p>Permite transferir fondos desde un Libro de Caja activo a otro.</p>
+<div class="align-center figure" id="id13">
+<img alt="Gastos" src="_static/images/ly_cajas_37.png" />
+<p class="caption"><span class="caption-text">Imagen 37: Linea de Caja – Transferencias entre Libros de Caja</span></p>
+</div>
+<p><strong>Transferencia a Cuenta Bancaria</strong></p>
+<p>Permite transferir fondos desde o hacia una cuenta bancaria.</p>
+<div class="align-center figure" id="id14">
+<img alt="Transferencia" src="_static/images/ly_cajas_38.png" />
+<p class="caption"><span class="caption-text">Imagen 38: Linea de Caja – Transferencias entre Libros de Caja</span></p>
+</div>
+<p><strong>Factura</strong></p>
+<p>Permite registrar el pago o la cobranza de facturas en efectivo.</p>
+<blockquote>
+<div><div class="align-center figure" id="id15">
+<img alt="Factura" src="_static/images/ly_cajas_39.png" />
+<p class="caption"><span class="caption-text">Imagen 39: Linea de Caja – Cobranzas o Pagos de facturas en efectivo.</span></p>
+</div>
+</div></blockquote>
+</div>
 </div>
 
 

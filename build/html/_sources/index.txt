@@ -12,6 +12,7 @@ Documentación de Libertya ERP/MRP
    :maxdepth: 2
 
    all-about-me
+   tecnica
    acceso
    estructura
    maestros

@@ -31,7 +31,7 @@ Las entidades Comerciales se usan para ingresar al sistema Proveedores, Clientes
 3. Guardar
 4. Seleccionar la pestaña **Proveedor**, el sistema presenta una ventana como lo muestra la Imagen 9.
 5. Campos a ingresar:
-	* Marcar check Proveedor. 
+	* Marcar casilla de verificación Proveedor. 
 	* Seleccionar la Tarifa de Compras que corresponda.
 	* Seleccionar la Forma de Pago que corresponda.
 	* Seleccionar el Esquema de Descuentos que corresponda.
@@ -82,7 +82,7 @@ Las entidades Comerciales se usan para ingresar al sistema Proveedores, Clientes
 3. Guardar.
 4. Seleccionar la pestaña **Cliente**, el sistema presenta una ventana como lo muestra la Imagen 11.
 5. Campos a ingresar:
-	* Marcar check Cliente. 
+	* Marcar casilla de verificación Cliente. 
 	* Seleccionar el Estado de Crédito que corresponda.
 	* Ingresar el Límite de Crédito que corresponda.
 	* Seleccionar el Esquema de Descuentos que corresponda.
@@ -120,7 +120,7 @@ Las entidades Comerciales se usan para ingresar al sistema Proveedores, Clientes
 4. Guardar
 5. Seleccionar la pestaña **Empleado**, el sistema presenta una ventana como lo muestra la Imagen 12.
 6. Campos a ingresar:
-	* Marcar check Empleado. 
+	* Marcar casilla de verificación Empleado. 
 7. Guardar
 
 .. figure:: _static/images/ly_emp.png
@@ -206,7 +206,7 @@ En el contexto del MRP, nos permite gestionar lotes de productos y vencimientos,
 	* Control de Nro de Serie
 	* Clave de relaciones de prod. prefijada
 	* Fecha de Garantía
-	* Fecha de Garantia Obligatoria
+	* Fecha de Garantía Obligatoria
 	* Días de Garantía
 	* Tipo Obligatorio
 	* Caduce

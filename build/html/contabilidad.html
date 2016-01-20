@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="documentación de Documentación de Libertya ERP/MRP - 1.0" href="index.html"/>
-        <link rel="next" title="Módulo de Manufactura" href="manufactura.html"/>
+        <link rel="next" title="Módulo de Stock" href="stock.html"/>
         <link rel="prev" title="Módulo de Finanzas" href="finanzas.html"/> 
 
   
@@ -82,14 +82,25 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Geneos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acceso.html">Acceso al Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tecnica.html">Documentación técnica de Libertya</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compras.html">Módulo de Compras</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ventas.html">Módulo de Ventas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finanzas.html">Módulo de Finanzas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Contabilidad</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Módulo de Contabilidad</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#informacion-general">Información General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#esquema-contable">Esquema Contable</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuracion-de-cuentas-contables-por-defecto">Configuración de cuentas contables por defecto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#elemento-contable">Elemento Contable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#asientos-manuales">Asientos Manuales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stock.html">Módulo de Stock</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a></li>
 </ul>
 
@@ -137,12 +148,127 @@
             
   <div class="section" id="modulo-de-contabilidad">
 <h1>Módulo de Contabilidad<a class="headerlink" href="#modulo-de-contabilidad" title="Enlazar permanentemente con este título">¶</a></h1>
-<p><strong>Datos previos necesarios</strong></p>
-<ol class="arabic simple">
-<li>Esquema Contable - Cuentas por Defecto</li>
-<li>Elementos contables - Plan Contable</li>
-<li>Control automático de asientos</li>
+<div class="section" id="informacion-general">
+<h2>Información General<a class="headerlink" href="#informacion-general" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un Esquema Contable es una combinación de los principios contables estándar nacionales, un método de coste y una moneda.</p>
+<p>No hay que preocuparse acerca de que elementos introducir con cada transacción,  Libertya genera todas las operaciones contables automáticamente ya que las cuentas de derivan de la operación del documento. Para esto, el Esquema Contable define las cuentas por defecto para uso en transacciones generadas por el sistema. Ejemplo contabilidad de las facturas.</p>
+<p>Estas cuentas se usan como valor por defecto para las Entidades Comerciales, Almacenes, Proyectos, Banco, Impuesto y Libro de Caja. Puede ser cambiadas a nivel individual.</p>
+<p>El objetivo es generar todos los registros contables. Consecuentemente, todas las
+cuentas necesarias están predeterminadas. Por ejemplo, si se vende un producto, se usara la cuenta de ventas para este producto. Esto permite definir las cuentas una única vez para ese producto. Entonces definimos una única vez y así no hay que preocuparse con las consecuencias contables cuando se crean nuevos documentos.</p>
+<p>En Libertya el proceso de generar el asiento automático, también denominado procesado de contabilidad, puede ocurrir cuando un documento es procesado o puede hacerse en un modo por lotes cuando el servidor de aplicaciones esta configurado y corriendo, en este caso es automático para el usuario.</p>
+<p>Con la arquitectura única de Libertya se puede también restablecer la contabilidad para toda o parte de su organización para acomodar cambios hechos en una organización. Cuando se genera un asiento en un periodo contable cerrado, causa un fallo en el procesamiento del asiento.</p>
+<p>En la mayor parte de los casos no hay necesidad de realizar asientos manuales. Al contrario de la mayoría de los sistemas Libertya automáticamente genera y asienta las consecuencias contables o asientos en el libro diario para cada documento procesado, no hay necesidad de introducir asientos en el libro diario para las ventas diarias.</p>
+<p>Algunos procedimientos sin embargo requieren de asientos manuales, incluyendo la depreciación de activo fijo, pago de dividendos, etc. en esas situaciones se debe introducir los asientos utilizando la ventan Carga de Asientos Manuales.</p>
+</div>
+<div class="section" id="esquema-contable">
+<h2>Esquema Contable<a class="headerlink" href="#esquema-contable" title="Enlazar permanentemente con este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;Administración&#8221; a la opción del menú, Contabilidad →  Esquema Contable, el sistema presenta una ventana como lo muestra la Imagen 40.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Datos Generales</dt>
+<dd><ul class="first last simple">
+<li>Control de Período Automático, permite controlar la apertura y cierre de períodos de forma manual, permitiendo el ingreso de comprobantes con fechas de meses anteriores.</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ol>
+<div class="align-center figure" id="id1">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_40.png" />
+<p class="caption"><span class="caption-text">Imagen 40: Esquema Contable → Datos Generales</span></p>
+</div>
+<div class="section" id="configuracion-de-cuentas-contables-por-defecto">
+<h3>Configuración de cuentas contables por defecto<a class="headerlink" href="#configuracion-de-cuentas-contables-por-defecto" title="Enlazar permanentemente con este título">¶</a></h3>
+<ol class="arabic simple">
+<li>Acceder a la pestaña <strong>Predeterminados</strong>, el sistema presenta una ventana como lo muestra la Imagen 41.</li>
+<li>En esta pestaña puede modificarse los valores que por defecto el sistema asigna en el alta de entidades.</li>
+</ol>
+<div class="align-center figure" id="id2">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_41.png" />
+<p class="caption"><span class="caption-text">Imagen 41: Esquema Contable → Cuentas por Defecto</span></p>
+</div>
+</div>
+<div class="section" id="elemento-contable">
+<h3>Elemento Contable<a class="headerlink" href="#elemento-contable" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Permite la gestión del Plan de Cuentas de la organización.</p>
+<ol class="arabic simple">
+<li>Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Contabilidad</strong> → <strong>Elemento Contable</strong>, el sistema presenta una ventana como lo muestra la Imagen 42.</li>
+<li>Acceder a la pestaña Valor del Elemento, , el sistema presenta una ventana como lo muestra la Imagen 43. Despliega en forma de árbol el plan de cuentas, permitiendo su gestión, modificando elementos, agregando y reubicando en el árbol y eliminando.</li>
+</ol>
+<div class="align-center figure" id="id3">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_42.png" />
+<p class="caption"><span class="caption-text">Imagen 42: Elemento Contable → Datos Generales</span></p>
+</div>
+<div class="align-center figure" id="id4">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_43.png" />
+<p class="caption"><span class="caption-text">Imagen 43: Elemento Contable → Cuentas Contables</span></p>
+</div>
+<p><strong>Nota</strong>: es necesario respetar las convenciones de nomenclatura de las cuentas contables a la vez que su correcto agrupamiento en el árbol.</p>
+<p><strong>Modificación de Cuentas Contables por defecto en registros</strong></p>
+<p>Para cualquier ítem se debe seguir el mismo procedimiento:</p>
+<ol class="arabic simple">
+<li>Acceder a la pestaña Contabilidad del registro. En nuestro ejemplo de la Cuenta de un Banco, el sistema presenta una ventana como lo muestra la Imagen 44.</li>
+<li>Seleccionar la Organización.</li>
+<li>Seleccionar en el campo Cuenta, la cuenta a cambiar.</li>
+<li>Guardar los cambios.</li>
+<li>Confirmar la operación presionando el botón verde.</li>
+</ol>
+<div class="align-center figure" id="id5">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_44.png" />
+<p class="caption"><span class="caption-text">Imagen 44: Cambio de Cuentas Contables</span></p>
+</div>
+</div>
+<div class="section" id="asientos-manuales">
+<h3>Asientos Manuales<a class="headerlink" href="#asientos-manuales" title="Enlazar permanentemente con este título">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Acceder con el perfil &#8220;Administración&#8221; a la opción del menú, Contabilidad → Carga de Asientos Manuales, el sistema presenta una ventana como lo muestra la Imagen 45.</p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Lote</strong>,  el sistema presenta una ventana como lo muestra la Imagen 45:</dt>
+<dd><ul class="first last simple">
+<li>Nro. de Documento, el sistema lo ingresa de forma automática en caso que no se especifique.</li>
+<li>Descripción.</li>
+<li>Tipo de Documento.</li>
+<li>Fecha del Documento.</li>
+<li>Fecha de Aplicación de CG.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<p>Completar, es la opción para procesar el asiento una vez cargados el Diario y Líneas.</p>
+<p>3. <strong>Diario</strong>,  el sistema presenta una ventana como lo muestra la Imagen 46.
+Tipo de Documento.
+Fecha del Documento.
+Fecha de Aplicación de CG.</p>
+<ol class="arabic" start="4">
+<li><dl class="first docutils">
+<dt><strong>Línea</strong>,  el sistema presenta una ventana como lo muestra la Imagen 47.</dt>
+<dd><ul class="first last simple">
+<li>Cuenta Contable</li>
+<li>Descripción.</li>
+<li>Debe.</li>
+<li>Haber.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+<div class="align-center figure" id="id6">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_45.png" />
+<p class="caption"><span class="caption-text">Imagen 45: Carga de Asientos Manuales - Lote</span></p>
+</div>
+<div class="align-center figure" id="id7">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_46.png" />
+<p class="caption"><span class="caption-text">Imagen 46: Carga de Asientos Manuales - Diario</span></p>
+</div>
+<div class="align-center figure" id="id8">
+<img alt="Contabilidad" src="_static/images/ly_contabilidad_47.png" />
+<p class="caption"><span class="caption-text">Imagen 47: Carga de Asientos Manuales - Línea</span></p>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -152,7 +278,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manufactura.html" class="btn btn-neutral float-right" title="Módulo de Manufactura" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stock.html" class="btn btn-neutral float-right" title="Módulo de Stock" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="finanzas.html" class="btn btn-neutral" title="Módulo de Finanzas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
