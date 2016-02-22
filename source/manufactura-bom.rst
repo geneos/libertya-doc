@@ -31,7 +31,7 @@ Lista de materiales y fórmulas
 	* **Artículo:** Identifica un elemento/producto que es parte de una lista de materiales.
 	* **Tipo de componente:**
 		* Componente: identifica a una materia prima, ingrediente, parte o subproducto que es utilizado en el ensamblado de un proceso de fabricación superior.
-		* Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción.
+		* Co producto: esta entidad no es un producto programado obtenido como consecuencia de otro proceso de producción. Permite el ingreso a stock de subproductos derivados de la producción.
 		* Empaque: este producto no será tenido en cuenta para calcular la cantidad total de componentes cuando la opción “Es Porcentaje Cantidad” se encuentre seleccionado.
 		* Fantasma: indica que el producto es un ensamble ficticio, esto es, un conjunto de componentes que se agrupan sólo para hacer más fácil el análisis de forma separada del resto de la LDM. Cuando el MRP genera un requerimiento del fantasma y lo proyectado no está disponible, el proceso va al nivel mínimo y comienza un nuevo ciclo de MRP pero sin crear órdenes del producto fantasma.
 		* Nota: Define el comportamiento del producto en la fórmula.

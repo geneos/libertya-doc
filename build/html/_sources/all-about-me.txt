@@ -19,6 +19,12 @@ Libertya es un poderoso ERP con toda su funcionalidad desarrollada y distribuida
 
 Libertya ERP es un Software de Gestión Libre regulado por la licencia LPLB 1.0 (Licencia Pública Libertya versión 1.0) mediante la cual el producto puede ser utilizado sin costo de licencias con el 100% de la funcionalidad disponible.
 
+Por detalles de la licencia ver:
+
+.. toctree::
+   :maxdepth: 2
+
+   licencia
 
 **Código abierto**
 
@@ -29,7 +35,10 @@ Proyecto de Documentación
 
 Este proyecto busca dotar al sistema, de un paquete de documentación completa. Esta documentación, busca desarrollarse de manera colaborativa.
 
-**Como Colaborar**
+.. toctree::
+   :maxdepth: 2
+
+   gestion-proyecto
 
 Colaboradores
 -------------

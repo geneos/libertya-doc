@@ -81,15 +81,15 @@ Permite registrar el cobro a un cliente.
     Repetir los últimos dos pasos en casos de cobrar con diferentes medios de cobro.
     Una vez que el Saldo sea 0 completa con el botón **Emitir Recibo** o F8
 
-.. figure:: _static/images/ly_tpv_21.png
-    :alt: TPV
+.. figure:: _static/images/ly_ventas21.png
+    :alt: Cobranzas – Ingreso de comprobantes a cobrar
     :align: center
     :figclass: align-center
 
     Imagen 21: Cobranzas – Ingreso de comprobantes a cobrar
 
-    .. figure:: _static/images/ly_tpv_22.png
-    :alt: TPV
+.. figure:: _static/images/ly_ventas22.png
+    :alt: Cobranzas – Ingreso de medios de cobro
     :align: center
     :figclass: align-center
 

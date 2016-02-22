@@ -9,6 +9,8 @@ Desde esta ventana se configuran todas las cuentas bancarias con las que vaya a 
 
 Adicionalmente se se activa la selección de Banco Propio, se podrá utilizar para las operaciones bancarias de cobros y pagos de la propia compañía. Donde podemos operar con varios bancos y cuentas a la vez. 
 
+**Banco**
+
 1. Acceder con el perfil "Administración" a la opción del menú, **Banco** →  **Banco**, el sistema presenta una ventana como lo muestra la Imagen 25.
 2. Datos Generales → Campos a ingresar:
     - Nombre
@@ -23,7 +25,7 @@ Adicionalmente se se activa la selección de Banco Propio, se podrá utilizar pa
 
     Imagen 25: Bancos
 
-**Cuenta** 
+**Cuenta Bancaria** 
 
 1. Acceder a la pestaña Cuenta, el sistema presenta una ventana como lo muestra la Imagen 26.
 2. Datos Generales → Campos a ingresar:
@@ -40,7 +42,7 @@ Adicionalmente se se activa la selección de Banco Propio, se podrá utilizar pa
 
     Imagen 26: Cuentas
 
-**Documentos de Cuenta Bancarias**
+**Documentos de Cuenta Bancaria**
 
 Se usan para definir las chequeras en las cuentas de cheques propios.
 
@@ -114,7 +116,8 @@ Permite hacer el depósito de valores a una cuenta bancaria propia o de terceros
 
     Imagen 30: Boleta de Depósito - Valores a depositar
 
-    Cajas
+
+Cajas
 -----
 
 **Configuración de Libro de Caja**
@@ -156,16 +159,16 @@ El libro de caja es donde se maneja el efectivo. Aquí se pueden registrar los i
 
     Imagen 32: Libro de Caja
 
-Línea de Caja
+**Línea de Caja**
 
 Permite el ingreso de transacciones de caja. Los tipos que soporta son:
 
-Gastos Generales, permite registrar gastos o egresos sin comprobantes.
-Cobros Generales, permite registrar cobros o ingresos sin comprobantes.
-Diferencia de Caja
-Transferencia a Caja, permite transferir fondos desde una cuenta a la caja.
-Transferencia a Cuenta Bancaria, permite transferir fondos desde la caja a una cuenta.
-Factura, permite registrar el pago o la cobranza de facturas en efectivo.
+- Gastos Generales, permite registrar gastos o egresos sin comprobantes.
+- Cobros Generales, permite registrar cobros o ingresos sin comprobantes.
+- Diferencia de Caja
+- Transferencia a Caja, permite transferir fondos desde una cuenta a la caja.
+- Transferencia a Cuenta Bancaria, permite transferir fondos desde la caja a una cuenta.
+- Factura, permite registrar el pago o la cobranza de facturas en efectivo.
 
 
 1. Acceder a la pestaña Línea de Caja, el sistema presenta una ventana como lo muestra la Imagen 33.
@@ -233,7 +236,9 @@ Permite transferir fondos desde un Libro de Caja activo a otro.
 
 **Transferencia a Cuenta Bancaria**
 
-Permite transferir fondos desde o hacia una cuenta bancaria.
+Permite transferir fondos desde o hacia una cuenta bancaria. Dependiendo del signo, es la naturaleza de la transacción:
+    - Signo positivo: Banco a Caja.
+    - Signo negativo: Caja a Banco
 
 
 .. figure:: _static/images/ly_cajas_38.png
@@ -242,6 +247,8 @@ Permite transferir fondos desde o hacia una cuenta bancaria.
     :figclass: align-center
 
     Imagen 38: Linea de Caja – Transferencias entre Libros de Caja
+
+Nota: dependiendo del signo, se afectan diferentes cuentas contables asociadas a la cuenta bancaria.
 
 **Factura**
 
@@ -252,5 +259,19 @@ Permite registrar el pago o la cobranza de facturas en efectivo.
         :align: center
         :figclass: align-center
     
-        Imagen 39: Linea de Caja – Cobranzas o Pagos de facturas en efectivo.
+        Imagen 39: Linea de Caja – Cobranzas o Pagos de Facturas en efectivo.
 
+**Cargos**
+
+Permite registrar el pago o la cobranza en efectivo afectados a Cargos. Dependiendo del signo, es la naturaleza de la transacción:
+    - Signo positivo: Cargo a Caja.
+    - Signo negativo: Caja a Cargo.
+    
+    .. figure:: _static/images/ly_caja_lin_10.png
+        :alt: Cargos
+        :align: center
+        :figclass: align-center
+    
+        Imagen 40: Linea de Caja – Cobranzas o Pagos de Cargos en efectivo.
+
+Nota: dependiendo del signo, se afectan diferentes cuentas contables asociadas al cargo.

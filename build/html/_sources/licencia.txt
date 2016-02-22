@@ -2,14 +2,13 @@
 Licencia Pública Libertya (LPLY) Versión 1.0
 ********************************************
 
-0. PRÓLOGO
-----------
+**0. PRÓLOGO**
 
 La Licencia Pública de Libertya (LPLY) está derivada literalmente de la traducción al español de la licencia pública CDDL, aprobada por la OSI (Open Source Iniciative) el 14 de Enero del 2.005 derivada a su vez de la licencia pública MPL 1.1.
 
 
-1. DEFINICIONES
----------------
+**1. DEFINICIONES**
+
 
 **1.1 "COLABORADOR"**
 
@@ -99,8 +98,7 @@ Señala a un individuo o entidad legal que ejerce sus derechos, bajo, y siempre 
     la propiedad de mas del cincuenta por ciento (50%) de las acciones actuales, participaciones, o la propiedad de plusvalías de dicha entidad.
 
 
-2. GARANTÍAS DE LA LICENCIA
----------------------------
+**2. GARANTÍAS DE LA LICENCIA**
 
 **2.1 GARANTÍA DEL DESARROLLADOR INICIAL**
 
@@ -156,8 +154,7 @@ Condicionado al cumplimiento de la sección 3.1 posterior, y sujeta a las reclam
 
 
 
-3. OBLIGACIONES DE DISTRIBUCIÓN
--------------------------------
+**3. OBLIGACIONES DE DISTRIBUCIÓN**
 
 
 **3.1. DISPONIBILIDAD DEL CÓDIGO FUENTE.**
@@ -171,6 +168,7 @@ Adicionalmente, usted debe informar a los destinatarios de dicho código amparad
 **3.2. MODIFICACIONES**
 
 Las modificaciones que usted cree, o con las que usted contribuya están regidas bajo los términos de esta licencia. Usted afirma de buena fe que considera que sus modificaciones son sus creaciones originales y/o que usted ostenta derechos suficientes para garantizar los derechos contenidos y detallados en esta licencia.
+
 
 **3.3. AVISOS REQUERIDOS**
 
@@ -193,8 +191,7 @@ Usted puede crear un producto extendido combinando código amparado con código 
 
 
 
-4. VERSIONES DE LA LICENCIA
----------------------------
+**4. VERSIONES DE LA LICENCIA**
 
 
 **4.1. NUEVAS VERSIONES Y CUSTODIO INICIAL**
@@ -223,15 +220,13 @@ Cuando usted sea el desarrollador inicial de un producto nuevo o de un producto 
 
 
 
-5. AUSENCIA DE GARANTÍA
------------------------
+**5. AUSENCIA DE GARANTÍA **
 
 EL CÓDIGO AMPARADO SE OFRECE BAJO ESTA LICENCIA "TAL CUAL", SIN GARANTÍA DE NINGUNA CLASE, NI EXPRESA NI IMPLÍCITA, INCLUYENDO, SIN LIMITACIÓN, GARANTÍAS DE QUE EL CÓDIGO AMPARADO ESTÁ LIBRE DE FALLOS, ES SUSCEPTIBLE DE SER VENDIDO, ESTA DISEÑADO PARA UN PROPÓSITO CONCRETO O LIBRE DE INFRACCIONES. CUALQUIER TIPO DE RIESGO SOBRE LA CALIDAD Y EL FUNCIONAMIENTO DEL CÓDIGO AMPARADO ES ASUMIDO ÚNICAMENTE POR USTED. EN CASO DE QUE EL CÓDIGO AMPARADO PUDIERA SER DEFECTUOSO EN CUALQUIER EXTREMO, USTED (Y NUNCA EL DESARROLLADOR INICIAL O CUALQUIER OTRO COLABORADOR) ASUMIRÁ EL COSTE DE CUALQUIER SERVICIO NECESARIO, REPARACIÓN O CORRECCIÓN. ESTE AVISO DE AUSENCIA DE GARANTÍA CONSTITUYE UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE PERMITE NINGÚN TIPO DE USO DEL CÓDIGO AMPARADO EN LO SUCESIVO SI NO ES BAJO ESTE AVISO.
 
 
 
-6. TERMINACIÓN
---------------
+**6. TERMINACIÓN**
 
 **6.1.** Esta licencia y los derechos garantizados por la misma terminarán automáticamente si usted no cumple los términos de esta licencia o no pasa a cumplirlos treinta días después de comprobar la falta de cumplimiento de la misma. Aquellas disposiciones que por su naturaleza deban permanecer efectivas tras la terminación de la licencia seguirán en vigor tras la terminación.
 
@@ -242,8 +237,7 @@ EL CÓDIGO AMPARADO SE OFRECE BAJO ESTA LICENCIA "TAL CUAL", SIN GARANTÍA DE NI
 **6.3.** En el caso de terminación bajo las secciones 6.1 ó 6.2., todas las licencias de usuario final que hayan sido debidamente garantizadas por usted o cualquier distribuidor, con carácter previo a la terminación (excluyendo las licencias garantizadas a usted por cualquier distribuidor) seguirán en vigor tras la terminación.
 
 
-7. LIMITACIÓN DE RESPONSABILIDAD
---------------------------------
+**7. LIMITACIÓN DE RESPONSABILIDAD**
 
 EN NINGÚN CASO, Y BAJO NINGUNA TEORÍA LEGAL, BIEN POR AGRAVIO, (INCLUYENDO NEGLIGENCIA), CONTRATO, O CUALQUIER OTRA FORMA, USTED, EL DESARROLLADOR INICIAL, CUALQUIER OTRO COLABORADOR, O CUALQUIER DISTRIBUIDOR DEL CÓDIGO AMPARADO, O CUALQUIER PROVEEDOR O CUALQUIERA DE DICHAS PARTES, SERÁ RESPONSABLE ANTE NINGÚN SUJETO POR NINGÚN TIPO DE DAÑO INDIRECTO, ESPECIAL, INCIDENTAL O DERIVADO DE NINGUNA CLASE, INCLUYENDO, SIN LIMITACIÓN, DAÑOS POR PERDIDA DE BENEFICIOS, PÉRDIDAS DE FONDO DE COMERCIO, PARO DE LA ACTIVIDAD, FALLO O MALFUNCIONAMIENTO DE DISPOSITIVOS O APARATOS, Y TODOS Y CADA UNO DE LOS DAÑOS O PÉRDIDAS COMERCIALES, INCLUSO SI DICHA PARTE HA SIDO INFORMADA DE LA POSIBILIDAD DE DICHOS DAÑOS. ESTA LIMITACIÓN DE RESPONSABILIDAD NO SE APLICARÁ A LA RESPONSABILIDAD POR FALLECIMIENTO O DAÑO PERSONAL RESULTANTE DE LA NEGLIGENCIA DE DICHA PARTE EN CUANTO LA LEY APLICABLE PROHÍBA DICHA LIMITACIÓN.
 
@@ -251,20 +245,17 @@ EN NINGÚN CASO, Y BAJO NINGUNA TEORÍA LEGAL, BIEN POR AGRAVIO, (INCLUYENDO NEG
 ALGUNAS REGULACIONES LEGALES NO PERMITEN LA EXCLUSIÓN O LIMITACIÓN DE CIERTOS DAÑOS INCIDENTALES O DERIVADOS, POR LO TANTO ESTA EXCLUSIÓN Y LIMITACIÓN PUEDE NO APLICARSELE A USTED.
 
 
-8. VARIOS
----------
+**8. VARIOS**
 
 Ésta licencia representa el acuerdo total en lo que concierne al objeto de este contrato. Si cualquier provisión de esta licencia se demuestra inaplicable, dicha provisión se reformara solo hasta el punto necesario para hacerla aplicable. Esta licencia se regirá por la legislación aplicable en la República Argentina (excepto hasta el punto en que la legislación adicional, si la hubiera, lo disponga de otra manera), excluyendo las provisiones que entren en conflicto con la ley. Con respecto a las disputas en las que al menos una de las partes sea legalmente residente, o una entidad u organización documentada o registrada legalmente en la República Argentina, cualquier litigio relacionado con esta licencia estará bajo jurisdicción de los tribunales ordinarios de la Provincia de Santa Cruz, sin reclamación alguna por otro fuero o jurisdicción que pudiere corresponder, siendo la parte culpable de las costas, incluyendo sin limitación, costas procesales y costes y gastos razonables de abogados y procuradores. La aplicación de la convención de las naciones unidas para los contratos para la venta internacional de bienes esta expresamente excluida. Cualquier ley o disposición que establezca que el idioma de un contrato debe ser interpretado contra el redactor del mismo no se aplicará a esta licencia.
 
 
-9. RESPONSABILIDAD POR RECLAMOS
--------------------------------
+**9. RESPONSABILIDAD POR RECLAMOS**
 
 Como en el caso del desarrollador inicial y los colaboradores, cada parte es responsable de los reclamos y daños que pudieran surgir, directa o indirectamente, por causa de su utilización de derechos bajo esta licencia y usted está de acuerdo en trabajar junto con el desarrollador inicial y los colaboradores para distribuir dicha responsabilidad de manera equitativa. Nada de lo manifestado pretende o está manifestado para constituir admisión de responsabilidad de clase alguna.
 
 
-ADDENDUM A. TÉRMINOS ADICIONALES APLICABLES PARA LIBERTYA
----------------------------------------------------------
+**ADDENDUM A. TÉRMINOS ADICIONALES APLICABLES PARA LIBERTYA**
 
 **A.1.** El desarrollador inicial del software original denominado LIBERTYA SOFTWARE LIBRE DE GESTIÓN es Servicios Digitales S.A., con domicilio en Urquiza 661, Rio Gallegos, Santa Cruz, Argentina. El desarrollador inicial podrá, si así lo considera, transferir los derechos contenidos en esta licencia y todos los demás derechos asociados al software original denominado LIBERTYA SOFTWARE LIBRE DE GESTIÓN, a otra organización, que pueda cuidar, promocionar o mantener el uso del misma y de su comunidad de desarrollo.
 

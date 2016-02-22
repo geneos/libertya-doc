@@ -154,11 +154,7 @@
 <div class="section" id="introduccion">
 <h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><strong>Consideraciones</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li>La presente guía, es desarrollada en el contecto de la instalación de LIbertya ERP sobre la distribución de Linux <strong>Ubuntu</strong>, en otras distribuciones, algunas partes de la guía, pueden requerir alternativas que no serán abordadas.</li>
-</ul>
-</div></blockquote>
+<p>La presente guía, es desarrollada en el contecto de la instalación de LIbertya ERP sobre la distribución de Linux <strong>Ubuntu</strong>, en otras distribuciones, algunas partes de la guía, pueden requerir alternativas que no serán abordadas.</p>
 <p><strong>Pasos</strong></p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -175,18 +171,111 @@
 </div>
 <div class="section" id="instalacion-de-java">
 <h2>Instalación de Java<a class="headerlink" href="#instalacion-de-java" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Oracle JDK es el JDK oficial de Java; como sea, ya no es más porporcionada por Oracle en la instalación por defecto para Ubuntu.</p>
+<p>Aún es posible de instalar usando Apt-Get. Para instalar cualquier versión primero hay que ejecutar los siguientes commandos:</p>
+<div class="highlight-python"><div class="highlight"><pre>1. sudo apt-get install python-software-properties
+2. sudo add-apt-repository ppa:webupd8team/java
+3. sudo apt-get update
+</pre></div>
+</div>
+<p>Después, se deben ejecutar los comandos dependiendo de la versión que deseas instalar, para Libertya en su versión 15.03 se debe instalar Oracle JDK 6:</p>
+<div class="highlight-python"><div class="highlight"><pre>4. sudo apt-get install oracle-java6-installer
+</pre></div>
+</div>
+<p>Otra Opción es descargar e instalar de forma manual desde el link:</p>
+<blockquote>
+<div><a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR/">JDK6u45</a></div></blockquote>
 </div>
 <div class="section" id="instalacion-de-postgres-sql">
 <h2>Instalación de Postgres SQL<a class="headerlink" href="#instalacion-de-postgres-sql" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Libertya funciona actualmente con la versión 8.4 de Postgres SQL.</p>
+<p>Para instalar dicha versión, obtenemos el instalador gráfico desde:</p>
+<blockquote>
+<div><a class="reference external" href="http://www.enterprisedb.com/postgresql-8422-1-installers-linux64?ls=Crossover&amp;type=Crossover">PostgresSQL8.4</a></div></blockquote>
+<p>Luego damos permisos de ejecución y ejecutamos el instalador:</p>
+<div class="highlight-python"><div class="highlight"><pre>1. chmod +x postgresql-8.3.23-3-linux-x64.run
+2. sudo ./postgresql-8.3.23-3-linux-x64.run
+</pre></div>
+</div>
+<p>El sistema presenta el wizard del instalador de Postgres SQL y tenemos que seguir las indicaciones dejando por defecto los valores del puerto e ingresando una clave para el usuario postgres.</p>
+<div class="align-center figure" id="id3">
+<img alt="Instalador de Postgres SQL" src="_images/ly_postgres_installer.png" />
+<p class="caption"><span class="caption-text">Imagen: Instalador de Postgres SQL</span></p>
+</div>
+<p>A continuación se deben ajustar algunos parámetros de la instalación. Dependiendo de si nos encontramos en entornos de pruebas o producción, podrían llevarse adelante configuraciones más complejas. Este ejemplo es para una instalación básica en entorno de prueba.</p>
+<p><strong>Configuración en pg_hba.conf</strong></p>
+<p>Agregar las siguientes líneas para permitir el acceso desde la red local:</p>
+<div class="highlight-python"><div class="highlight"><pre>host all all 192.168.1.0/24 trust
+host all all 192.168.0.0/24 trust
+</pre></div>
+</div>
+<p>Nota: en este caso las posibles redes locales son para IP en los rangos 192.168.1.X o 192.168.0.X, estas direcciones deben configurarse para cada caso particular.</p>
+<p><strong>Configuración en postgres.conf</strong></p>
+<p>Agregar o habilitar en caso que no se encuentre, la línea:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">listen_addresses</span> <span class="o">=</span> <span class="s">&#39;*&#39;</span>
+</pre></div>
+</div>
+<p><strong>Reiniciar Servidor</strong></p>
+<p>Finalmente para que tome los cambios, se debe hacer un restart de postgres:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo /etc/init.d/postgres restart
+</pre></div>
+</div>
 </div>
 <div class="section" id="creacion-de-base-de-datos-para-libertya">
 <h2>Creación de base de datos para Libertya<a class="headerlink" href="#creacion-de-base-de-datos-para-libertya" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Crear el rol libertya (podemos usar cualquier nombre) en postgres con todos los privilegios.</p>
+</li>
+<li><p class="first">Crear el usuario libertya (podemos usar cualquier nombre) en postgres con rol libertya.</p>
+</li>
+<li><p class="first">Crear la base de datos libertya (podemos usar cualquier nombre) asignada al usuario libertya recientemente creado.</p>
+</li>
+<li><p class="first">Descargamos el backup de la base de datos desde <a class="reference external" href="http://sourceforge.net/projects/libertya/files/libertya/release/1503/multi-platform/dump_libertya_1503ar.sql.zip/download">acá</a></p>
+</li>
+<li><p class="first">Restaurar el backup de la base de datos. Podemos hacerlo ingresando por línea de comandos con el usuario postgres (sudo su y su postgres por ejemplo) y corremos el siguiente comando (suponiendo que el script se encuentra en /home/usuario/sql/):</p>
+<div class="highlight-python"><div class="highlight"><pre>psql -U postgres -p 5432 -d libertya -f /home/usuario/sql/dump_libertya_1503ar.sql
+</pre></div>
+</div>
+</li>
+</ol>
+</div></blockquote>
+<p>Nota: para obtener el sistema con la nacionalización en Argentina es importante que el script sea <strong>dump_libertya_1503ar.sql</strong>.</p>
+<p>Nota: dependiendo de la instalación de postgres puede ser necesario crear el lenguaje <strong>plpgsql</strong>, esto se hace con la siguiente sentencia (desde linea de comando o desde pgadmin):</p>
+<div class="highlight-python"><div class="highlight"><pre>CREATE LANGUAGE plpgsql;
+</pre></div>
+</div>
 </div>
 <div class="section" id="instalacion-de-libertya">
 <h2>Instalación de Libertya<a class="headerlink" href="#instalacion-de-libertya" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Descargamos el servidor de Libertya desde <a class="reference external" href="http://sourceforge.net/projects/libertya/files/libertya/release/1503/multi-platform/ServidorOXP_V15.03.zip/download">acá</a></p>
+</li>
+<li><p class="first">Descomprimimos la carpeta ServidorOXP en un directorio, para nuetro ejemplo /home/usuario/apps/ServidorOXP/</p>
+</li>
+<li><p class="first">Asignamos permisos de ejecusión a los script:</p>
+<div class="highlight-python"><div class="highlight"><pre>chmod +x *.sh
+</pre></div>
+</div>
+</li>
+<li><p class="first">Ejecutamos el script de configuración:</p>
+<div class="highlight-python"><div class="highlight"><pre>./Configurar.sh
+</pre></div>
+</div>
+</li>
+<li><p class="first">Cargamos los datos solicitados.</p>
+</li>
+<li><p class="first">Ejecutamos <strong>Comprobar</strong> para validar los datos.</p>
+</li>
+<li><p class="first">Ejecutamos <strong>Guardar</strong> para guardar los cambios.</p>
+</li>
+</ol>
+</div></blockquote>
 </div>
 <div class="section" id="configuracion-de-backups-automaticos">
 <h2>Configuración de backups automáticos<a class="headerlink" href="#configuracion-de-backups-automaticos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Puede verse la forma de configurar los backups automáticos desde <a class="reference external" href="http://geneos.com.ar/liberado/automatizar-backups-de-la-base-de-datos-de-libertya/">acá</a></p>
 </div>
 <div class="section" id="instalacion-de-eclipse">
 <h2>Instalación de Eclipse<a class="headerlink" href="#instalacion-de-eclipse" title="Enlazar permanentemente con este título">¶</a></h2>

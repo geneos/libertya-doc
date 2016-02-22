@@ -22,10 +22,11 @@ En la mayor parte de los casos no hay necesidad de realizar asientos manuales. A
 
 Algunos procedimientos sin embargo requieren de asientos manuales, incluyendo la depreciación de activo fijo, pago de dividendos, etc. en esas situaciones se debe introducir los asientos utilizando la ventan Carga de Asientos Manuales.
 
+
 Esquema Contable
 ----------------
 
-1. Acceder con el perfil "Administración" a la opción del menú, Contabilidad →  Esquema Contable, el sistema presenta una ventana como lo muestra la Imagen 40.
+1. Acceder con el perfil "Administración" a la opción del menú, Contabilidad →  Esquema Contable, el sistema presenta una ventana como lo muestra la Imagen 41-1.
 
 2. Datos Generales
     - Control de Período Automático, permite controlar la apertura y cierre de períodos de forma manual, permitiendo el ingreso de comprobantes con fechas de meses anteriores.
@@ -35,12 +36,13 @@ Esquema Contable
     :align: center
     :figclass: align-center
 
-    Imagen 40: Esquema Contable → Datos Generales
+    Imagen 41-1: Esquema Contable → Datos Generales
+
 
 Configuración de cuentas contables por defecto
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------
 
-1. Acceder a la pestaña **Predeterminados**, el sistema presenta una ventana como lo muestra la Imagen 41.
+1. Acceder a la pestaña **Predeterminados**, el sistema presenta una ventana como lo muestra la Imagen 41-2.
 2. En esta pestaña puede modificarse los valores que por defecto el sistema asigna en el alta de entidades.
 
 .. figure:: _static/images/ly_contabilidad_41.png
@@ -48,10 +50,11 @@ Configuración de cuentas contables por defecto
     :align: center
     :figclass: align-center
 
-    Imagen 41: Esquema Contable → Cuentas por Defecto
+    Imagen 41-2: Esquema Contable → Cuentas por Defecto
+
 
 Elemento Contable
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Permite la gestión del Plan de Cuentas de la organización.
 
@@ -75,7 +78,8 @@ Permite la gestión del Plan de Cuentas de la organización.
 **Nota**: es necesario respetar las convenciones de nomenclatura de las cuentas contables a la vez que su correcto agrupamiento en el árbol.
 
 
-**Modificación de Cuentas Contables por defecto en registros**
+Cuentas Contables por defecto en registros
+------------------------------------------
 
 Para cualquier ítem se debe seguir el mismo procedimiento:
 
@@ -92,8 +96,9 @@ Para cualquier ítem se debe seguir el mismo procedimiento:
 
     Imagen 44: Cambio de Cuentas Contables
 
+
 Asientos Manuales
-^^^^^^^^^^^^^^^^^
+-----------------
 
 1. Acceder con el perfil "Administración" a la opción del menú, Contabilidad → Carga de Asientos Manuales, el sistema presenta una ventana como lo muestra la Imagen 45.
 2. **Lote**,  el sistema presenta una ventana como lo muestra la Imagen 45:

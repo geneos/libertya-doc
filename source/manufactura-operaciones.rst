@@ -143,6 +143,39 @@ Permite realizar el ingreso de materiales de la orden como resultado de la produ
     Imagen 54: Recepción de Producto Terminado
 
 
+Recepción de Co-Producto
+------------------------
+
+Los Co-Productos son productos derivados de una fabricación. Dichos productos pueden ser ingresados al stock a partir de esta operación.
+
+1. Acceder a la opción del menú **Gestión de Manufactura → Gestión de la Producción → Recibo Orden y Salida de Componentes**.
+2. Seleccionar la **Orden de Manufactura**.
+3. El sistema presenta información de los siguientes datos:
+	* **Recurso**.
+	* **Almacén**.
+	* **Artículo**.
+	* **UM**.
+	* **Cantidad Ordenada**.
+	* **Cantidad Entregada**.
+	* **Pendiente de Recibir**.
+	* **Cantidad de Lotes**.
+	* **Tamaño Cantidad de Lote**.
+4. Seleccionar la **Regla de Entrega → Co-Producto**. El sistema presenta una ventana como lo muestra la Imagen 54-2. Campos a ingresar:
+	* **Fecha del Movimiento**:.
+	* **Selección de Productos:** Seleccionando el check disponible en la primera columna, determinamos que Co-Productos van a registrar recepción.
+	* **Cantidad a Entregar**: Determinar que cantidad se va a recibir.
+5. Confirmar la operación con **Aceptar**.
+6. Confirmar resumen de operación en la ventana como la que muestra la Imagen 52.
+
+
+.. figure:: _static/images/ly_coproducto.png
+    :alt: Recepción de Co-Producto
+    :align: center
+    :figclass: align-center
+
+    Imagen 54-2: Recepción de Co-Producto
+
+
 Cierre de la Orden de Manufactura
 ---------------------------------
 
@@ -166,4 +199,21 @@ El cierre de la Orden de Manufactura, completa el circuito de operación de la m
     :figclass: align-center
 
     Imagen 56: Cierre de Orden de Manufactura
+
+Cancelación de la Orden de Manufactura
+---------------------------------
+
+En caso que sea necesaria la cancelación del proceso productivo, se dispone de una opción que vuelve atrás el procesamiento actual de la orden.
+
+1. Acceder a la opción del menú **Gestión de Manufactura →  Gestión de la Producción → Orden de Manufactura**. El sistema presenta una ventana como lo muestra la Imagen 55.
+2. Buscar la Orden de Manufactura.
+3. Cerrar la Orden de Manufactura con el botón **Cancelar**, como se muestra en la Imagen 56-2.
+ 
+
+.. figure:: _static/images/ly_om_cancelar.png
+    :alt: Cancelación de Orden de Manufactura
+    :align: center
+    :figclass: align-center
+
+    Imagen 56-2: Cancelación de Orden de Manufactura
 

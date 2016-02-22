@@ -30,8 +30,10 @@ import shlex
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.ifconfig',
+    'sphinx.ext.ifconfig', 'rst2pdf.pdfbuilder',
 ]
+
+pdf_documents = [('index', u'rst2pdf', u'Documentación de Libertya', u'Cooperativa de Software LIbre Geneos'),]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

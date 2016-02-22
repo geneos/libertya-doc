@@ -84,6 +84,7 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tecnica.html">Documentación técnica de Libertya</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
@@ -95,7 +96,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="manufactura.html">Módulo de Manufactura</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="manufactura-flujos.html">Manufactura - Flujos de Trabajo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-bom.html">Manufactura - Lista de Materiales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Datos de Planificación de producto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufactura-plan.html">Manufactura - Datos de Planificación de producto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
@@ -106,7 +107,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#entrega-de-materiales-para-produccion">Entrega de Materiales para Producción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#devolucion-de-materiales-de-produccion">Devolución de Materiales de Producción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#recepcion-de-producto-terminado">Recepción de Producto Terminado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recepcion-de-co-producto">Recepción de Co-Producto</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cierre-de-la-orden-de-manufactura">Cierre de la Orden de Manufactura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cancelacion-de-la-orden-de-manufactura">Cancelación de la Orden de Manufactura</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
@@ -336,6 +339,50 @@
 <p class="caption"><span class="caption-text">Imagen 54: Recepción de Producto Terminado</span></p>
 </div>
 </div>
+<div class="section" id="recepcion-de-co-producto">
+<h2>Recepción de Co-Producto<a class="headerlink" href="#recepcion-de-co-producto" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los Co-Productos son productos derivados de una fabricación. Dichos productos pueden ser ingresados al stock a partir de esta operación.</p>
+<ol class="arabic">
+<li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura → Gestión de la Producción → Recibo Orden y Salida de Componentes</strong>.</p>
+</li>
+<li><p class="first">Seleccionar la <strong>Orden de Manufactura</strong>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>El sistema presenta información de los siguientes datos:</dt>
+<dd><ul class="first last simple">
+<li><strong>Recurso</strong>.</li>
+<li><strong>Almacén</strong>.</li>
+<li><strong>Artículo</strong>.</li>
+<li><strong>UM</strong>.</li>
+<li><strong>Cantidad Ordenada</strong>.</li>
+<li><strong>Cantidad Entregada</strong>.</li>
+<li><strong>Pendiente de Recibir</strong>.</li>
+<li><strong>Cantidad de Lotes</strong>.</li>
+<li><strong>Tamaño Cantidad de Lote</strong>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Seleccionar la <strong>Regla de Entrega → Co-Producto</strong>. El sistema presenta una ventana como lo muestra la Imagen 54-2. Campos a ingresar:</dt>
+<dd><ul class="first last simple">
+<li><strong>Fecha del Movimiento</strong>:.</li>
+<li><strong>Selección de Productos:</strong> Seleccionando el check disponible en la primera columna, determinamos que Co-Productos van a registrar recepción.</li>
+<li><strong>Cantidad a Entregar</strong>: Determinar que cantidad se va a recibir.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Confirmar la operación con <strong>Aceptar</strong>.</p>
+</li>
+<li><p class="first">Confirmar resumen de operación en la ventana como la que muestra la Imagen 52.</p>
+</li>
+</ol>
+<div class="align-center figure" id="id6">
+<img alt="Recepción de Co-Producto" src="_images/ly_coproducto.png" />
+<p class="caption"><span class="caption-text">Imagen 54-2: Recepción de Co-Producto</span></p>
+</div>
+</div>
 <div class="section" id="cierre-de-la-orden-de-manufactura">
 <h2>Cierre de la Orden de Manufactura<a class="headerlink" href="#cierre-de-la-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>El cierre de la Orden de Manufactura, completa el circuito de operación de la misma. Libera el reservado de los componentes de la fórmula y realiza el cálculo de los costos.</p>
@@ -344,13 +391,26 @@
 <li>Buscar la Orden de Manufactura.</li>
 <li>Cerrar la Orden de Manufactura con el botón <strong>Cerrar</strong>, como se muestra en la Imagen 56.</li>
 </ol>
-<div class="align-center figure" id="id6">
+<div class="align-center figure" id="id7">
 <img alt="Orden de Manufactura" src="_images/ly_om_1.png" />
 <p class="caption"><span class="caption-text">Imagen 55: Orden de Manufactura</span></p>
 </div>
-<div class="align-center figure" id="id7">
+<div class="align-center figure" id="id8">
 <img alt="Cierre de Orden de Manufactura" src="_images/ly_om_cierre.png" />
 <p class="caption"><span class="caption-text">Imagen 56: Cierre de Orden de Manufactura</span></p>
+</div>
+</div>
+<div class="section" id="cancelacion-de-la-orden-de-manufactura">
+<h2>Cancelación de la Orden de Manufactura<a class="headerlink" href="#cancelacion-de-la-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En caso que sea necesaria la cancelación del proceso productivo, se dispone de una opción que vuelve atrás el procesamiento actual de la orden.</p>
+<ol class="arabic simple">
+<li>Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Orden de Manufactura</strong>. El sistema presenta una ventana como lo muestra la Imagen 55.</li>
+<li>Buscar la Orden de Manufactura.</li>
+<li>Cerrar la Orden de Manufactura con el botón <strong>Cancelar</strong>, como se muestra en la Imagen 56-2.</li>
+</ol>
+<div class="align-center figure" id="id9">
+<img alt="Cancelación de Orden de Manufactura" src="_images/ly_om_cancelar.png" />
+<p class="caption"><span class="caption-text">Imagen 56-2: Cancelación de Orden de Manufactura</span></p>
 </div>
 </div>
 </div>
