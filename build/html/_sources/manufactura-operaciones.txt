@@ -6,7 +6,7 @@ Las operaciones con Ordenes de Manufactura son:
 
 	1. **Imprimir y Liberar Orden:** procesa la Orden de Manufactura y si existe stock disponible para los componentes críticos, genera la reserva de stock de los componentes de la fórmula y para a Completo el documento permitiendo operaciones de surtimiento y devoluciones de materiales, recepción de productos terminados y cierre de la orden.
 	2. **Entrega de Materiales para Producción:** permite hacer el surtimiento de materiales para la Orden de Manufactura.
-	3. **Devolución de Materiales de Producción:** permite hacer la devolución de los materiales sobrates en el proceso de la Orden de Manufactura.
+	3. **Devolución de Materiales de Producción:** permite hacer la devolución de los materiales sobrantes en el proceso de la Orden de Manufactura.
 	4. **Recepción de Producto Terminado:** permite registrar el rendimiento final de la Orden de Manufactura.
 	5. **Cierre de la Orden de Manufactura:** permite liberar los materiales reservados, que ya no van a utilizarse y realizar los cálculos de costos asociados a la Orden de Manufactura, finalizando así las transacciones.
 
@@ -35,7 +35,7 @@ Finalizado el proceso puede verificarse la reserva de materiales en los componen
 Entrega de Materiales para Producción
 -------------------------------------
 
-Permite realizar el surtimiento de materiales afectados a la producción. Detalla el stock disponible en el almacen de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la entrega, dependiendo si el producto tiene o no control de lotes asociado.
+Permite realizar el surtimiento de materiales afectados a la producción. Detalla el stock disponible en el almacén de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la entrega, dependiendo si el producto tiene o no control de lotes asociado.
 
 1. Acceder a la opción del menú **Gestión de Manufactura →  Gestión de la Producción → Recibo Orden y Salida de Componentes**.
 2. Seleccionar la **Orden de Manufactura**.
@@ -76,7 +76,7 @@ Permite realizar el surtimiento de materiales afectados a la producción. Detall
 Devolución de Materiales de Producción
 --------------------------------------
 
-Permite realizar la devolución de materiales afectados a la producción. Detalla el stock disponible en el almacen de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la devolución, dependiendo si el producto tiene o no control de lotes asociado.
+Permite realizar la devolución de materiales afectados a la producción. Detalla el stock disponible en el almacén de la Orden de Manufactura, posibilitando seleccionar los lotes específicos o generales desde los que se va a hacer la devolución, dependiendo si el producto tiene o no control de lotes asociado.
 
 1. Acceder a la opción del menú **Gestión de Manufactura → Gestión de la Producción → Recibo Orden y Salida de Componentes**.
 2. Seleccionar la **Orden de Manufactura**.

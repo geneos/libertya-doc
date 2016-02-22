@@ -84,7 +84,7 @@ Una ubicación es una combinación de un pasillo, una estantería y un nivel de 
 	* Prioridad Relativa
 	* Predeterminado
 	* Pasillo (X)
-	* Estanteria (Y)
+	* Estantería (Y)
 	* Nivel (Z) 
 
 .. figure:: _static/images/ly_alm2.png
@@ -96,7 +96,7 @@ Una ubicación es una combinación de un pasillo, una estantería y un nivel de 
 
 **Almacenamiento**
 
-En la tercera pestaña se podrá consultar a posteriori que artículos ha sido  asignados a la ubicación que se hubieran seleccionado en la pestaña anterior.
+En la tercera pestaña se podrá consultar que artículos ha sido asignados a la ubicación que se hubieran seleccionado en la pestaña anterior.
 
 1. Acceder a la pestaña **Almacenamiento**, el sistema presenta una ventana como lo muestra la Imagen 24.
 2. Campos que informa la pestaña:
@@ -104,7 +104,7 @@ En la tercera pestaña se podrá consultar a posteriori que artículos ha sido  
 	* Organización
 	* Ubicación
 	* Artículo
-	* Instancia del Conjunto de Attributos
+	* Instancia del Conjunto de Atributos
 	* Activo
 	* Stock
 	* Ultima Fecha de Recuento de Inventarios
@@ -162,7 +162,6 @@ Para algunas de las operaciones con Stock, se deben configurar elementos especia
     :figclass: align-center
 
     Imagen 26: Contabilidad de Cargo
-
  
 
 Inventario Físico
@@ -179,7 +178,7 @@ Esta ventana se utiliza para realizar ajustes manuales al Stock.
 	* Tipo de Documento
 	* Fecha de Movimiento
 	* Almacén
-	* Configuracion de Inventario
+	* Configuración de Inventario
 	* Generar Lista
 	* Actualizar Cantidades
 	* Proyecto

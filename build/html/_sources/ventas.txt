@@ -29,7 +29,7 @@ Acceder con el perfil "Ventas" a la opción del menú, menú TPV →  TPV, el si
 
 Las referencias para el ingreso de la información de la compra son las siguientes:
 
-1. Es el área de selección de los productos y cantidades (la tecla Intro sirve para fijar el producto y la cantidad ingresando la línea al pedido).
+1. Es el área de selección de los productos y cantidades (la tecla Enter sirve para fijar el producto y la cantidad ingresando la línea al pedido).
 2. Es el área de ingreso del viaje, origen, destino (se mantienen los datos entre diferentes facturas, compartiendo los datos anteriormente registrados, para agilizar la carga de todas las facturas de un viaje) y valor declarado.
 3. Es el área donde va quedando el detalle de las líneas de facturas, tiene una columna editable para ingresar la información de remitente asociada a cada línea.
 4. Es el área de funciones:

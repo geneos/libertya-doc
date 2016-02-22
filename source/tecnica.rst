@@ -7,7 +7,7 @@ Introducción
 
 **Consideraciones**
 
-La presente guía, es desarrollada en el contecto de la instalación de LIbertya ERP sobre la distribución de Linux **Ubuntu**, en otras distribuciones, algunas partes de la guía, pueden requerir alternativas que no serán abordadas.
+La presente guía, es desarrollada en el contexto de la instalación de LIbertya ERP sobre la distribución de Linux **Ubuntu**, en otras distribuciones, algunas partes de la guía, pueden requerir alternativas que no serán abordadas.
 
 **Pasos**
 
@@ -24,9 +24,9 @@ La presente guía, es desarrollada en el contecto de la instalación de LIbertya
 Instalación de Java
 -------------------
 
-Oracle JDK es el JDK oficial de Java; como sea, ya no es más porporcionada por Oracle en la instalación por defecto para Ubuntu.
+Oracle JDK es el JDK oficial de Java; como sea, ya no es más proporcionada por Oracle en la instalación por defecto para Ubuntu.
 
-Aún es posible de instalar usando Apt-Get. Para instalar cualquier versión primero hay que ejecutar los siguientes commandos::
+Aún es posible de instalar usando Apt-Get. Para instalar cualquier versión primero hay que ejecutar los siguientes comandos::
 
 	1. sudo apt-get install python-software-properties
 	2. sudo add-apt-repository ppa:webupd8team/java
@@ -109,8 +109,8 @@ Instalación de Libertya
 -----------------------
 
 	1. Descargamos el servidor de Libertya desde `acá <http://sourceforge.net/projects/libertya/files/libertya/release/1503/multi-platform/ServidorOXP_V15.03.zip/download>`_
-	2. Descomprimimos la carpeta ServidorOXP en un directorio, para nuetro ejemplo /home/usuario/apps/ServidorOXP/
-	3. Asignamos permisos de ejecusión a los script::
+	2. Descomprimimos la carpeta ServidorOXP en un directorio, para nuestro ejemplo /home/usuario/apps/ServidorOXP/
+	3. Asignamos permisos de ejecución a los script::
 		
 		chmod +x *.sh
 
@@ -134,7 +134,7 @@ Instalación de Eclipse
 Descarga de código de Libertya
 ------------------------------
 
-Configuración y ejecusión de Libertya en Eclipse
+Configuración y ejecución de Libertya en Eclipse
 ------------------------------------------------
 
 Configuración y debug de Libertya en Eclipse

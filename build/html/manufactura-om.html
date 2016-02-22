@@ -84,6 +84,7 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="all-about-me.html">Acerca de Libertya Doc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tecnica.html">Documentación técnica de Libertya</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acceso.html">Primeros Pasos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="estructura.html">Estructura de Aplicación</a></li>
 <li class="toctree-l1"><a class="reference internal" href="maestros.html">Principales Maestros de la Aplicación</a></li>
@@ -99,10 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="manufactura-pronostico.html">Manufactura - Pronóstico</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-checklist.html">Manufactura - Checklist para correr el proceso de MRP</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-proceso.html">Manufactura - Ejecución del MRP</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Orden de Manufactura</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#proyecto-y-campana-se-refieren-a-las-dimensiones-estandar-de-libertya"><strong>Proyecto y Campaña</strong> se refieren a las dimensiones estándar de Libertya.</a></li>
-</ul>
-</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Manufactura - Orden de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-revision.html">Manufactura - Revisión a detalle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-operaciones.html">Manufactura - Operaciones con Ordenes de Manufactura</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manufactura-costos.html">Manufactura - Costos</a></li>
@@ -157,35 +155,8 @@
             
   <div class="section" id="manufactura-orden-de-manufactura">
 <h1>Manufactura - Orden de Manufactura<a class="headerlink" href="#manufactura-orden-de-manufactura" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Una Orden de Manufactura es un documento que indica a la planta el compromiso de
-fabricar un producto en una cantidad establecida y en una fecha específica.
-Para  generar  o  modificar  manualmente  una  Orden  de  Manufactura  debemos ir a:
-Manufactura -&gt; Control de Producción -&gt; Manufactura Discreta -&gt; Orden de Manufactura.</p>
-<p>La Orden de Manufactura integra componentes de la lista de materiales, del flujo de
-trabajo y de los datos de planeamiento.</p>
-<p><strong>Fecha de última Entrega</strong>:Es la fecha de la última vez que el material de esta orden
-fue entregado al almacén.</p>
-<p><strong>Fecha de Inicio programada</strong>: Es la fecha en que el MRP establece que la orden
-debe ser surtida a la planta.</p>
-<p><strong>Fecha de Terminación Programada</strong>: Es la fecha en que el MRP establece que la
-orden debe ser entregada al almacén.</p>
-<p><strong>Fecha de Inicio Real</strong>: Es la fecha en que la orden es liberada a la planta para ser
-producida.</p>
-<p><strong>Fecha de Terminación Real</strong>: Es la fecha en que se elabora el cierre de la orden.</p>
-<p><strong>Flotación Anterior</strong> – Se utilizará posteriormente para el proceso de balanceo de la
-carga de Recursos.</p>
-<p><strong>Flotación Posterior</strong> – Se utilizará posteriormente para el balanceo de la carga de
-Recursos.</p>
-<p>En el <strong>Grupo Cantidades</strong> se introduce la cantidad de producto a fabricar con  la Orden de Manufactura y su Unidad de Medida.</p>
-<p>La <strong>Cantidad del Lote</strong> y la <strong>Cantidad del Tamaño del lote</strong> nos indica cuantos lotes de producción integran la OM y de que tamaño serán. Estos datos son tomados del Flujo de Trabajo de la OM.</p>
-<p>En el campo <strong>Cantidad Entregada</strong> se muestra la cantidad que ha sido entregada al almacén de producto terminado hasta el momento.</p>
-<p>La <strong>cantidad Rechazada</strong>: en este campo se muestra la cantidad que no ha cubierto las  especificaciones  de  calidad  hasta  el  momento  y  que  por  lo  tanto  deberá  ser posteriormente  reprocesada  o  enviada  al  desperdicio,  en  éste  último  caso  esa cantidad se desplegará en el campo Desperdicio.</p>
-<p>En  el  campo <strong>Rendimiento</strong> se  despliega  la  cantidad  de  producto  que  reúne  las especificaciones de calidad dividida entre la cantidad total de la orden a producir.</p>
-<div class="section" id="proyecto-y-campana-se-refieren-a-las-dimensiones-estandar-de-libertya">
-<h2><strong>Proyecto y Campaña</strong> se refieren a las dimensiones estándar de Libertya.<a class="headerlink" href="#proyecto-y-campana-se-refieren-a-las-dimensiones-estandar-de-libertya" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Una <strong>Orden de Manufactura</strong> es un documento que indica a la planta el compromiso de fabricar un producto en una cantidad establecida y en una fecha específica.</p>
-<p>Si bien las Ordenes de anufactura sn generadas de formaq automática por el MRP, también pueden ser modificadas y/o creadas manualmente.</p>
+<p>Si bien las Ordenes de Manufactura son generadas de forma automática por el MRP, también pueden ser modificadas y/o creadas manualmente.</p>
 <ol class="arabic">
 <li><p class="first">Acceder a la opción del menú <strong>Gestión de Manufactura →  Gestión de la Producción → Orden de Manufactura</strong>. El sistema presenta una ventana como lo muestra la Imagen 43.</p>
 </li>
@@ -205,7 +176,7 @@ Recursos.</p>
 <li><strong>Almacén:</strong> Almacén asociado al artículo objeto de la producción asociada a esta Orden de Manufactura.</li>
 <li><strong>Prioridad:</strong> Prioridad de un documento. La prioridad indica la importancia (alta; media; baja) de este documento.</li>
 <li><strong>Fecha de la Orden</strong></li>
-<li><strong>Fecha Prometida:</strong> Indica la fecha en la que se espera la Orden de Manufactura este finalizada. Indica la fechaen que la orden fue prometida al cliente.</li>
+<li><strong>Fecha Prometida:</strong> Indica la fecha en la que se espera la Orden de Manufactura este finalizada. Indica la fecha en que la orden fue prometida al cliente.</li>
 <li><strong>Fecha de Confirmación</strong></li>
 <li><strong>Fecha de la Entrega</strong></li>
 <li><strong>Fecha Inicio programada:</strong> Fecha Inicio Programada para la OM.</li>
@@ -213,7 +184,7 @@ Recursos.</p>
 <li><strong>Fecha de Inicio:</strong> Es la fecha cuando el primer movimiento de la orden de manufactura fue reportado, este movimiento puede ser un inventario o movimiento de labor.</li>
 <li><strong>Fecha de Terminación:</strong> La fecha final se usa para indicar cuando se espera que el proyecto se complete o cuando ha sido completado.</li>
 <li><a href="#id1"><span class="problematic" id="id2">**</span></a>Flotante Antes</li>
-<li><a href="#id3"><span class="problematic" id="id4">**</span></a>Flotante Despues</li>
+<li><a href="#id3"><span class="problematic" id="id4">**</span></a>Flotante Después</li>
 <li><strong>Cantidad:</strong> Cantidad de la Orden de Manufactura.</li>
 <li><strong>UM:</strong> Unidad de Medida del Producto de la Orden de Manufactura.</li>
 <li><strong>CantidadLotes</strong></li>
@@ -266,8 +237,6 @@ Recursos.</p>
 <div class="align-center figure" id="id12">
 <img alt="Costos" src="_images/ly_om_6.png" />
 <p class="caption"><span class="caption-text">Imagen 49: Costos</span></p>
-</div>
-<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; fa6e9a28e75d36a2f03b7838d038b1c9c52a8176</p>
 </div>
 </div>
 

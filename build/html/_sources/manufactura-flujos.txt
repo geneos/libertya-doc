@@ -19,7 +19,7 @@ Un primer nivel de agrupamiento será utilizado para definir una tipología de r
 	* **Nombre:** Identificador alfanumérico de la entidad. El nombre de una entidad (registro) se usa como una opción de búsqueda predeterminada adicional a la clave de búsqueda. El nombre es de hasta 60 caracteres de longitud. 
 	* **Descripción:** Descripción corta opcional del registro Una descripción esta limitada a 255 caracteres.
 	* **Activo:** El registro está activo en el sistema Hay dos métodos para que los registros no estén disponibles en el sistema: Uno es eliminar el registro; el otro es desactivarlo. Un registro desactivado no está disponible para selección; pero está disponible para Informes. 
-	* **UM:** Unidad de Medida La UM define una unidad de medida única (dias, horas, kilos, litros).
+	* **UM:** Unidad de Medida La UM define una unidad de medida única (días, horas, kilos, litros).
 	* **Permitir fracciones de UM:** Permitir fracciones de unidad de medida Si se habilita; se puede entrar fracciones de la unidad de medida. 
 	* **Asignación Única solamente:** Solamente una asignación a la vez (No se puede tener asignaciones dobles de tiempo o asignaciones concurrentes) Si se selecciona; solo se puede tener una asignación a la vez para un momento en el tiempo. No es posible tener asignaciones concurrentes.
 	* **Tiempo Disponible:** Indica si el recurso está disponible sólo en algún momento, habilita los campos Inicio y Final.

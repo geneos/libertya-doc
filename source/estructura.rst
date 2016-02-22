@@ -24,7 +24,7 @@ El menú se construye en modo árbol de forma que se pueden agrupar los componen
 
 Existe dos manera de navegar a través del menú: 
 
-	1. Haciendo doble click con el botón de mouse en las carpetas, y con un solo click para que se abra la ventana, procesos o informe a los que se quiera acceder. 
+	1. Haciendo doble clic con el botón de mouse en las carpetas, y con un solo clic para que se abra la ventana, procesos o informe a los que se quiera acceder. 
 	2. La aplicación cuenta con una búsqueda sobre el menú, abajo a la derecha existe un campo de texto que nos permite ingresar el nombre de la utilidad que deseamos utilizar (Ventana, proceso o informe). Cuando se presiona la tecla Enter va a buscar la palabra ingresada, si existe mas de una palabra presionando de nuevo Enter salta a la siguiente opción. Una vez encontrada la funcionalidad con la tecla Ctrl + Enter se puede acceder a la funcionalidad. 
 
 
@@ -33,13 +33,13 @@ Iconos del menú
 
 En el árbol que forma el menú podemos encontrar cinco clases de iconos: 
 
-	1. **Carpetas:** Cada carpeta contiene más elementos, ya sea ventanas de trabajo , procesos o informes. Cada carpeta contempla una temática del sistema, así es como podemos encontrar carpetas denominadas VENTAS, ALMACÉN, COMPRAS, etc. Para ver el contenido de una carpeta, haga click con el botón izquierdo del mouse sobre el botón que se encuentra justo a la izquierda de la carpeta a expandir. 
+	1. **Carpetas:** Cada carpeta contiene más elementos, ya sea ventanas de trabajo , procesos o informes. Cada carpeta contempla una temática del sistema, así es como podemos encontrar carpetas denominadas VENTAS, ALMACÉN, COMPRAS, etc. Para ver el contenido de una carpeta, haga clic con el botón izquierdo del mouse sobre el botón que se encuentra justo a la izquierda de la carpeta a expandir. 
 	2. **Ventanas:** Permite la introducción, consulta y modificación de datos, y desde ella se realizan la mayoría de actividades de interacción del usuario y la aplicación.
 	3. **Procesos:** Partiendo de los parámetros, datos o condiciones que asigne e introduzca el usuario, la aplicación realizara operaciones automáticas como la generación de albaranes o facturas, procesos de pedidos, etc.
 	4. **Informes:** Permite visualizar e imprimir la información de la aplicación según las condiciones definidas por el usuario. Por ejemplo permite visualizar los vencimientos, los últimos movimientos de stock, etc. Cualquier documento salida del sistema de gestión es factible de ser procesado como un informe.
 	5. **Flujo de trabajo:** Muestra una serie de actividades relacionadas entre si, que deben de irse completando en un orden dado, a fin de alimentar de datos de las actividades siguientes y obtener un resultado determinado. Ejemplos típicos son la configuración de artículos y entidades comerciales, o todos los sucesivos pasos de un proceso de negocio. Los flujos de trabajo se utilizaran, típicamente, por los usuarios encargados de la carga inicial de datos y mantenimiento de la aplicación con el fin de seguir un protocolo o procedimiento común en todos los casos que normalice un determinado proceso de negocio complejo.
 
-Adicionalmente, se dispone de la barra de acceso rápido situada a todo lo largo de la parte izquierda del menú. Para añadir ventanas o procesos a dicha barra, solo hay que hacer click con el botón derecho sobre el elemento para que se visualice la opción de Añadir a barra, y confirmar dicho mensaje con un click del botón izquierdo del ratón.
+Adicionalmente, se dispone de la barra de acceso rápido situada a todo lo largo de la parte izquierda del menú. Para añadir ventanas o procesos a dicha barra, solo hay que hacer clic con el botón derecho sobre el elemento para que se visualice la opción de Añadir a barra, y confirmar dicho mensaje con un clic del botón izquierdo del ratón.
 
 Estructura de una ventana
 -------------------------

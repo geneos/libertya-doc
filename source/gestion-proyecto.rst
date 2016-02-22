@@ -4,18 +4,18 @@ Gestión del Proyecto de Documentación
 
 Para el mantenimiento de la documentación se va a trabajar con una combinación de tecnologías que incluyen:
 
-	- Sphinx: es una herramienta que permite escribir documentos en texto plano, formato rst, para una fácil generación de salidas en formatos que satisfagan diversas necesidades, en nuetro caso usaremos salida a html. La documentación de texto plano también es útil para colaboradores a través de distintos sistemas. El texto plano es uno de los formatos más portables disponibles actualmente. Se puede pensar en Sphinx como una infraestructura de documentación que abstrae las partes tediosas y ofrece funcionalidad automática para solucionar problemas comunes como el indexado de títulos y el resaltado de código especial.
+	- Sphinx: es una herramienta que permite escribir documentos en texto plano, formato rst, para una fácil generación de salidas en formatos que satisfagan diversas necesidades, en nuestro caso usaremos salida a html. La documentación de texto plano también es útil para colaboradores a través de distintos sistemas. El texto plano es uno de los formatos más portables disponibles actualmente. Se puede pensar en Sphinx como una infraestructura de documentación que abstrae las partes tediosas y ofrece funcionalidad automática para solucionar problemas comunes como el indexado de títulos y el resaltado de código especial.
 	- Git: para realizar el seguimiento de los cambios y la salida de versiones. Usaremos para esto la infraestructura de Github, donde se alojará el repositorio.
 
 
 Metodología de trabajo con Git
 ------------------------------
 
-Como introducción a Git, recomentados la lectura y la ejercitación a partir de   `Git-La Guía Sencilla <http://rogerdudler.github.io/git-guide>`_. 
+Como introducción a Git, recomendamos la lectura y la ejercitación a partir de   `Git-La Guía Sencilla <http://rogerdudler.github.io/git-guide>`_. 
 
 **Obtener el código de la documentación**
 
-Para esto ejecutamos el siguienete comando en el directorio donde queremos tener el proyecto::
+Para esto ejecutamos el siguiente comando en el directorio donde queremos tener el proyecto::
 
 	git clone git@github.com:geneos/libertya-doc.git
 
@@ -37,7 +37,7 @@ Se comienza a trabajar sobre los archivos de documentación, se puede:
 	- Agregar nuevos archivos.
 	- Reorganizar los archivos existentes.
 
-Si necesito compartir lo que realize con algún miembro del equipo o quiero tener el trabajo en un repositorio remoto se puede subir el branch usando::
+Si necesito compartir lo que realizamos con algún miembro del equipo, o quiero tener el trabajo en un repositorio remoto se puede subir el branch usando::
 
 	# Agregamos cada archivo modificado o creado
 	git add ruta_archivo

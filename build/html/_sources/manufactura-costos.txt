@@ -56,10 +56,10 @@ Un Elemento de Costo, define la característica del costo de un producto:
 Un Tipo de Costo, define el método de costeo de un producto:
 
 	* Último Precio de Factura: obtiene e precio unitario, de la última factura del producto.
-	* Promedio Facturació: obtiene e precio unitario, como un promedio de todas las facturas del producto.
+	* Promedio Facturación: obtiene e precio unitario, como un promedio de todas las facturas del producto.
 	* Último Precio de Orden de Compra: obtiene e precio unitario, de la última orden de compra del producto.
 	* Promedio de Orden de Compra: obtiene e precio unitario, como un promedio de todas las ordenes de compras del producto. 
-	* Costo Estándar: obtiene e precio unitario, del procio configurado en la ventana Costes de Artículo en el campo Precio de Coste Actual.
+	* Costo Estándar: obtiene e precio unitario, del precio configurado en la ventana Costes de Artículo en el campo Precio de Coste Actual.
 
 1. Acceder a la opción del menú **Costes → Tipo de Coste**. El sistema presenta una ventana como lo muestra la Imagen 58.
 2. Campos a ingresar:
@@ -96,7 +96,7 @@ Es la ventana que permite configurar una combinación de parámetros que definen
 	* Almacén: Permite definir el Almacén para la parametrización de costos.
 	* Tipo de Coste: Permite definir el Tipo de Coste para la parametrización de costos.
 	* Elemento de Coste: Permite definir el Elemento de Coste para la parametrización de costos.
-	* Precio de Coste Actual: refleja el último costo calculado cuando correponde o el costo ingresado manualmente para los casos de Costos Estándar.
+	* Precio de Coste Actual: refleja el último costo calculado cuando corresponde o el costo ingresado manualmente para los casos de Costos Estándar.
 	* Nota: el resto de los campos no aplican en la funcionalidad de esta versión.
 
 

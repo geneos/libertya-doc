@@ -20,7 +20,7 @@ Con la arquitectura única de Libertya se puede también restablecer la contabil
 
 En la mayor parte de los casos no hay necesidad de realizar asientos manuales. Al contrario de la mayoría de los sistemas Libertya automáticamente genera y asienta las consecuencias contables o asientos en el libro diario para cada documento procesado, no hay necesidad de introducir asientos en el libro diario para las ventas diarias. 
 
-Algunos procedimientos sin embargo requieren de asientos manuales, incluyendo la depreciación de activo fijo, pago de dividendos, etc. en esas situaciones se debe introducir los asientos utilizando la ventan Carga de Asientos Manuales.
+Algunos procedimientos sin embargo requieren de asientos manuales, incluyendo la depreciación de activo fijo, pago de dividendos, etc. en esas situaciones se debe introducir los asientos utilizando la ventana Carga de Asientos Manuales.
 
 
 Esquema Contable
@@ -59,7 +59,7 @@ Elemento Contable
 Permite la gestión del Plan de Cuentas de la organización.
 
 1. Acceder con el perfil "**Administración**" a la opción del menú, **Contabilidad** → **Elemento Contable**, el sistema presenta una ventana como lo muestra la Imagen 42.
-2. Acceder a la pestaña Valor del Elemento, , el sistema presenta una ventana como lo muestra la Imagen 43. Despliega en forma de árbol el plan de cuentas, permitiendo su gestión, modificando elementos, agregando y reubicando en el árbol y eliminando.
+2. Acceder a la pestaña Valor del Elemento, , el sistema presenta una ventana como lo muestra la Imagen 43. Despliega en forma de árbol el plan de cuentas, permitiendo su gestión, modificando elementos, agregando y re-ubicando en el árbol y eliminando.
 
 .. figure:: _static/images/ly_contabilidad_42.png
     :alt: Contabilidad
