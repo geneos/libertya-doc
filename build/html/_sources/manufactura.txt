@@ -35,6 +35,7 @@ Contenidos:
 .. toctree::
    :maxdepth: 2
 
+   manufactura-readme
    manufactura-flujos
    manufactura-bom
    manufactura-plan

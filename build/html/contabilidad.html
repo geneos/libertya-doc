@@ -95,6 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#esquema-contable">Esquema Contable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuracion-de-cuentas-contables-por-defecto">Configuración de cuentas contables por defecto</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#elemento-contable">Elemento Contable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contabilizacion-de-documentos">Contabilización de documentos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cuentas-contables-por-defecto-en-registros">Cuentas Contables por defecto en registros</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#asientos-manuales">Asientos Manuales</a></li>
 </ul>
@@ -193,18 +194,143 @@ cuentas necesarias están predeterminadas. Por ejemplo, si se vende un producto,
 <h2>Elemento Contable<a class="headerlink" href="#elemento-contable" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Permite la gestión del Plan de Cuentas de la organización.</p>
 <ol class="arabic simple">
-<li>Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Contabilidad</strong> → <strong>Elemento Contable</strong>, el sistema presenta una ventana como lo muestra la Imagen 42.</li>
-<li>Acceder a la pestaña Valor del Elemento, , el sistema presenta una ventana como lo muestra la Imagen 43. Despliega en forma de árbol el plan de cuentas, permitiendo su gestión, modificando elementos, agregando y re-ubicando en el árbol y eliminando.</li>
+<li>Acceder con el perfil &#8220;<strong>Administración</strong>&#8221; a la opción del menú, <strong>Contabilidad</strong> → <strong>Elemento Contable</strong>, el sistema presenta una ventana como lo muestra la Imagen 42 - 1.</li>
+<li>Acceder a la pestaña Valor del Elemento, , el sistema presenta una ventana como lo muestra la Imagen 42 - 2. Despliega en forma de árbol el plan de cuentas, permitiendo su gestión, modificando elementos, agregando y re-ubicando en el árbol y eliminando.</li>
 </ol>
 <div class="align-center figure" id="id3">
 <img alt="Contabilidad" src="_images/ly_contabilidad_42.png" />
-<p class="caption"><span class="caption-text">Imagen 42: Elemento Contable → Datos Generales</span></p>
+<p class="caption"><span class="caption-text">Imagen 42 - 1: Elemento Contable → Datos Generales</span></p>
 </div>
 <div class="align-center figure" id="id4">
 <img alt="Contabilidad" src="_images/ly_contabilidad_43.png" />
-<p class="caption"><span class="caption-text">Imagen 43: Elemento Contable → Cuentas Contables</span></p>
+<p class="caption"><span class="caption-text">Imagen 42 - 2: Elemento Contable → Cuentas Contables</span></p>
 </div>
 <p><strong>Nota</strong>: es necesario respetar las convenciones de nomenclatura de las cuentas contables a la vez que su correcto agrupamiento en el árbol.</p>
+</div>
+<div class="section" id="contabilizacion-de-documentos">
+<h2>Contabilización de documentos<a class="headerlink" href="#contabilizacion-de-documentos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Generalidades</strong></p>
+<ul class="simple">
+<li>El sistema trabaja en base a contabilidad automática con asientos modelos de cada documento.</li>
+<li>El asiento puede visualizarse desde el registro del documento.</li>
+<li>Es posible disparar la contabilización del documento de forma manual.</li>
+<li>Es posible regenerar el asiento contable del documento de forma manual.</li>
+</ul>
+<p>1 - Facturas, Notas de Crédito y Doc. No Fiscales - Transacciones de Compra</p>
+<div class="align-center figure" id="id5">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_0.png" />
+<p class="caption"><span class="caption-text">Imagen 43-1: Contabilidad de documentos</span></p>
+</div>
+<p>2 - Facturas, Notas de Crédito y Doc. No Fiscales - Transacciones de Venta</p>
+<div class="align-center figure" id="id6">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_1.png" />
+<p class="caption"><span class="caption-text">Imagen 43-2: Contabilidad de documentos</span></p>
+</div>
+<p>3 - Cobros y Pagos - Medios de Pago</p>
+<div class="align-center figure" id="id7">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_2.png" />
+<p class="caption"><span class="caption-text">Imagen 43-3: Contabilidad de documentos</span></p>
+</div>
+<p>4 - Cobros y Pagos - Medios de Pago con un Cargo asociado al Pago</p>
+<div class="align-center figure" id="id8">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_3.png" />
+<p class="caption"><span class="caption-text">Imagen 43-4: Contabilidad de documentos</span></p>
+</div>
+<p>5 - Cobros y Pagos - Medios de Cobro</p>
+<div class="align-center figure" id="id9">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_4.png" />
+<p class="caption"><span class="caption-text">Imagen 43-5: Contabilidad de documentos</span></p>
+</div>
+<p>6 - Cobros y Pagos - Medios de Cobro con un Cargo asociado al Cobro</p>
+<div class="align-center figure" id="id10">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_5.png" />
+<p class="caption"><span class="caption-text">Imagen 43-6: Contabilidad de documentos</span></p>
+</div>
+<p>7 - Libros de Caja</p>
+<div class="align-center figure" id="id11">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_6.png" />
+<p class="caption"><span class="caption-text">Imagen 43-7: Contabilidad de documentos</span></p>
+</div>
+<p>8 - Ordenes de Pago - Asignación de Pago (Cheque, Transferencia, Tarjeta)</p>
+<div class="align-center figure" id="id12">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_7.png" />
+<p class="caption"><span class="caption-text">Imagen 43-8: Contabilidad de documentos</span></p>
+</div>
+<p>9 - Ordenes de Pago - Asignación de Pago (Efectivo)</p>
+<div class="align-center figure" id="id13">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_8.png" />
+<p class="caption"><span class="caption-text">Imagen 43-9: Contabilidad de documentos</span></p>
+</div>
+<p>10 - Ordenes de Pago - Asignación de Nota de Crédito</p>
+<div class="align-center figure" id="id14">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_9.png" />
+<p class="caption"><span class="caption-text">Imagen 43-10: Contabilidad de documentos</span></p>
+</div>
+<p>11 - Recibo de Clientes - Asignación de Cobro (Cheque, Transferencia, Tarjeta)</p>
+<div class="align-center figure" id="id15">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_10.png" />
+<p class="caption"><span class="caption-text">Imagen 43-11: Contabilidad de documentos</span></p>
+</div>
+<p>12 - Recibo de Clientes - Asignación de Cobro (Efectivo)</p>
+<div class="align-center figure" id="id16">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_11.png" />
+<p class="caption"><span class="caption-text">Imagen 43_12: Contabilidad de documentos</span></p>
+</div>
+<p>13 - Recibo de Clientes - Asignación de Nota de Crédito</p>
+<div class="align-center figure" id="id17">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_12.png" />
+<p class="caption"><span class="caption-text">Imagen 43-13: Contabilidad de documentos</span></p>
+</div>
+<p>14 - Extractos Bancarios - Conciliación de Pagos</p>
+<div class="align-center figure" id="id18">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_13.png" />
+<p class="caption"><span class="caption-text">Imagen 43-14: Contabilidad de documentos</span></p>
+</div>
+<p>15 - Extractos Bancarios - Conciliación de Pagos, si la línea de extracto es un Cargo</p>
+<div class="align-center figure" id="id19">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_14.png" />
+<p class="caption"><span class="caption-text">Imagen 43-15: Contabilidad de documentos</span></p>
+</div>
+<p>16 - Extractos Bancarios - Conciliación de Cobros</p>
+<div class="align-center figure" id="id20">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_15.png" />
+<p class="caption"><span class="caption-text">Imagen 43-16: Contabilidad de documentos</span></p>
+</div>
+<p>17 - Extractos Bancarios - Conciliación de Cobros, si la línea de extracto es un Cargo</p>
+<div class="align-center figure" id="id21">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_16.png" />
+<p class="caption"><span class="caption-text">Imagen 43-17: Contabilidad de documentos</span></p>
+</div>
+<p>18 - Movimientos de Inventario - Remitos de Entrada (Compra)</p>
+<div class="align-center figure" id="id22">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_17.png" />
+<p class="caption"><span class="caption-text">Imagen 43-18: Contabilidad de documentos</span></p>
+</div>
+<p>19 - Movimientos de Inventario - Remitos de Entrada (Compra) - Asignación de Remito - Factura</p>
+<div class="align-center figure" id="id23">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_18.png" />
+<p class="caption"><span class="caption-text">Imagen 43-19: Contabilidad de documentos</span></p>
+</div>
+<p>20 - Movimientos de Inventario - Remitos de Salida (Ventas)</p>
+<div class="align-center figure" id="id24">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_19.png" />
+<p class="caption"><span class="caption-text">Imagen 43-20: Contabilidad de documentos</span></p>
+</div>
+<p>21 - Movimientos de Inventario - Inventario Físico - Diferencia de Inventario</p>
+<div class="align-center figure" id="id25">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_20.png" />
+<p class="caption"><span class="caption-text">Imagen 43-21: Contabilidad de documentos</span></p>
+</div>
+<p>22 - Movimientos de Inventario - Inventario Físico - Cargo en Cuenta</p>
+<div class="align-center figure" id="id26">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_21.png" />
+<p class="caption"><span class="caption-text">Imagen 43-22: Contabilidad de documentos</span></p>
+</div>
+<p>23 - Movimientos de Inventario - Movimiento de Mercadería</p>
+<div class="align-center figure" id="id27">
+<img alt="Contabilidad de documentos" src="_images/ly_contdoc_22.png" />
+<p class="caption"><span class="caption-text">Imagen 43-23: Contabilidad de documentos</span></p>
+</div>
 </div>
 <div class="section" id="cuentas-contables-por-defecto-en-registros">
 <h2>Cuentas Contables por defecto en registros<a class="headerlink" href="#cuentas-contables-por-defecto-en-registros" title="Enlazar permanentemente con este título">¶</a></h2>
@@ -216,7 +342,7 @@ cuentas necesarias están predeterminadas. Por ejemplo, si se vende un producto,
 <li>Guardar los cambios.</li>
 <li>Confirmar la operación presionando el botón verde.</li>
 </ol>
-<div class="align-center figure" id="id5">
+<div class="align-center figure" id="id28">
 <img alt="Contabilidad" src="_images/ly_contabilidad_44.png" />
 <p class="caption"><span class="caption-text">Imagen 44: Cambio de Cuentas Contables</span></p>
 </div>
@@ -257,15 +383,15 @@ Fecha de Aplicación de CG.</p>
 </dl>
 </li>
 </ol>
-<div class="align-center figure" id="id6">
+<div class="align-center figure" id="id29">
 <img alt="Contabilidad" src="_images/ly_contabilidad_45.png" />
 <p class="caption"><span class="caption-text">Imagen 45: Carga de Asientos Manuales - Lote</span></p>
 </div>
-<div class="align-center figure" id="id7">
+<div class="align-center figure" id="id30">
 <img alt="Contabilidad" src="_images/ly_contabilidad_46.png" />
 <p class="caption"><span class="caption-text">Imagen 46: Carga de Asientos Manuales - Diario</span></p>
 </div>
-<div class="align-center figure" id="id8">
+<div class="align-center figure" id="id31">
 <img alt="Contabilidad" src="_images/ly_contabilidad_47.png" />
 <p class="caption"><span class="caption-text">Imagen 47: Carga de Asientos Manuales - Línea</span></p>
 </div>
